@@ -1,0 +1,10 @@
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+.navbar-center {
+    
+}
