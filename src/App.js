@@ -9,7 +9,9 @@ function App() {
                 <div className="navbar-center">
                     <Sidebar />
                 </div>
-                <MainContent />
+                <div className="main-content">
+                    <MainContent />
+                </div>
             </div>
         </div>
     );

@@ -1,5 +1,5 @@
 .container {
-    width: 75vw;
+    width: 70vw;
 }
 
 .card {
@@ -17,10 +17,15 @@
     color: white;
 }
 
-.avatar {
+.avatar-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     width: 50%;
 }
 
-.avatarCard {
+.content-card {
+    height: 100%;
     width: 50%;
 }
