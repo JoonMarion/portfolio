@@ -1,13 +1,14 @@
 import React from 'react';
 import MiniCard from '../miniCard/MiniCard';
 import './CardContent.css';
+import WalkingAvatar from '../../assets/walking-avatar.png';
 
 const CardContent = () => {
     return (
         <div className="container">
             <div className="card">
                 <div className="avatar-card">
-                    <h1>Teste</h1>
+                    <img src={WalkingAvatar} alt="" />
                 </div>
                 <div className="content-card">
                     <MiniCard />

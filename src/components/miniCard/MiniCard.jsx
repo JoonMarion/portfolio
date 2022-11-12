@@ -1,14 +1,26 @@
 import React from 'react';
 import './MiniCard.css';
+import Avatar from '../../assets/avatar.png';
 
 const MiniCard = () => {
     return (
         <div className="mini-card-container">
             <div className="mini-card">
-                <img
-                    src="https://api.readyplayer.me/v1/avatars/636e4c2ebc1838ec3914de2d.png?cacheControl=true&uat=2022-11-11T13:21:27.603Z"
-                    alt="Avatar João Mariano"
-                />
+                <img src={Avatar} alt="Avatar João Mariano" />
+                <div className="mini-card-content">
+                    <div>
+                        <h2>Username</h2>
+                        <p>João Mariano</p>
+                    </div>
+                    <div>
+                        <h2>Registered on</h2>
+                        <p>20 june, 2001</p>
+                    </div>
+                    <div>
+                        <h2>Class</h2>
+                        <p>Front-end Developer</p>
+                    </div>
+                </div>
             </div>
         </div>
     );

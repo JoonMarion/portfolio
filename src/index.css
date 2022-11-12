@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     color: white;
 }
 
 body {
-    background: rgb(37, 110, 151);
-    background: linear-gradient(108deg, rgba(37, 110, 151, 1) 6%, rgba(136, 54, 187, 1) 29%, rgba(98, 98, 98, 1) 95%);
+    background: url('https://wallpaperaccess.com/full/1410214.jpg');
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
 }

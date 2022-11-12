@@ -1,7 +1,6 @@
 import Sidebar from './components/sidebar/Sidebar';
 import './App.css';
 import MainContent from './components/mainContent/MainContent';
-
 function App() {
     return (
         <div className="App">

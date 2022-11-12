@@ -9,10 +9,27 @@
 
     width: 100%;
     height: 80%;
-    border: 1px solid gray;
     border-radius: 25px;
+    font-size: 1rem;
+
+    background-color: rgba(8, 20, 26, 0.5);
+
+    -webkit-box-shadow: -4px 3px 40px -4px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: -4px 3px 40px -4px rgba(0, 0, 0, 0.54);
+    box-shadow: -4px 3px 40px -4px rgba(0, 0, 0, 0.54);
 }
 
 .mini-card img {
     height: 85%;
+}
+
+.mini-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+
+    height: 100%;
+    width: 100%;
+    font-family: 'IBM Plex Mono', monospace !important;
 }
