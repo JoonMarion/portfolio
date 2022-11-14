@@ -1,6 +1,8 @@
 import Sidebar from './components/sidebar/Sidebar';
 import './App.css';
 import MainContent from './components/mainContent/MainContent';
+import MainProjects from './components/mainProjects/MainProjects';
+
 function App() {
     return (
         <div className="App">
@@ -10,6 +12,7 @@ function App() {
                 </div>
                 <div className="main-content">
                     <MainContent />
+                    <MainProjects />
                 </div>
             </div>
         </div>

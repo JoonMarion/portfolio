@@ -2,6 +2,17 @@
     list-style: none;
 }
 
-.sidebar {
-    width: 30vw;
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+    width: 25vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 20px;
+
+    overflow-x: hidden;
 }

@@ -1,0 +1,17 @@
+.projects-title {
+    margin-top: 30px;
+}
+
+.row {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+.card-text {
+    font-size: 85%;
+}
