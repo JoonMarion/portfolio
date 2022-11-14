@@ -6,17 +6,17 @@ const SocialNetworks = () => {
     return (
         <div className="networks-wrapper">
             <li>
-                <a href="#">
+                <a href="/">
                     <FaLinkedin />
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="/">
                     <FaGithub />
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="/">
                     <FaMailBulk />
                 </a>
             </li>
