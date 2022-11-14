@@ -1,7 +1,7 @@
 import Sidebar from './components/sidebar/Sidebar';
-import './App.css';
 import MainContent from './components/mainContent/MainContent';
 import MainProjects from './components/mainProjects/MainProjects';
+import './App.css';
 
 function App() {
     return (
@@ -10,7 +10,7 @@ function App() {
                 <div className="navbar-center">
                     <Sidebar />
                 </div>
-                <div className="main-content">
+                <div className="container">
                     <MainContent />
                     <MainProjects />
                 </div>

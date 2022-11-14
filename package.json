@@ -15,7 +15,9 @@
     "react-icons": "^4.6.0",
     "react-parallax-card": "^0.5.7",
     "react-scripts": "5.0.1",
+    "react-spring": "^9.5.5",
     "three": "^0.146.0",
+    "use-3d-effect": "^1.1.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

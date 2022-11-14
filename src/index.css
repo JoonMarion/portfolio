@@ -6,13 +6,20 @@
 }
 
 body {
-    background-image: url('https://readyplayer.me/images/home/bg-noise.png'),
-        url('https://readyplayer.me/images/home/bg-noise.png');
-    background-repeat: repeat, no-repeat;
+    background-image: url('https://readyplayer.me/images/home/bg-noise.png');
+    background-repeat: reapeat-y;
     background-color: rgb(50, 51, 62);
     color: rgb(196, 197, 204);
     width: 100%;
     -webkit-font-smoothing: antialiased;
-    font-family: 'Poppins', sans-serif;
     height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+a {
+    color: #9c9386;
 }

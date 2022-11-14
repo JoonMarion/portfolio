@@ -1,49 +1,50 @@
 .mini-card-container {
-    width: 100%;
     height: 100%;
 }
 
 .mini-card {
     display: flex;
-    align-items: flex-end;
-
-    width: 100%;
+    width: 560px;
     height: 80%;
-    border-radius: 25px;
+    border-radius: 2em;
     font-size: 0.8rem;
 
     box-shadow: 0 0 0 1px transparent;
     background-color: rgba(9, 20, 26, 0.8);
     margin: 1px;
     transition: background-color 0.15s, box-shadow 0.15s;
-
-    -webkit-box-shadow: -4px 3px 40px -4px rgba(0, 0, 0, 0.54);
-    -moz-box-shadow: -4px 3px 40px -4px rgba(0, 0, 0, 0.54);
-    box-shadow: -4px 3px 40px -4px rgba(0, 0, 0, 0.54);
+    box-shadow: rgb(255 255 255) 0px 0px 1.2px inset, rgb(255 255 255 / 10%) 0px 0px 14.1107px inset;
 }
 
-.mini-card img {
-    height: 85%;
+.mini-card-image {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.mini-card-image img {
+    margin-left: 30px;
+    height: 75%;
 }
 
 .mini-card-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-
+    justify-content: flex-start;
     height: 100%;
-    width: 100%;
+    margin-top: 2rem;
     font-family: 'IBM Plex Mono', monospace !important;
 }
+
+.mini-card-content h2,
+p {
+    color: #01c9c9 !important;
+}
+
 .centered {
     width: 100%;
     height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.mini-card {
-    box-shadow: rgb(255 255 255) 0px 0px 1.2px inset, rgb(255 255 255 / 10%) 0px 0px 14.1107px inset;
 }

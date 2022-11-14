@@ -1,11 +1,15 @@
 #wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 2rem;
-    gap: 3rem;
 }
 
 .navbar-center {
     display: flex;
     align-items: center;
+}
+
+.container {
+    max-width: 1170px;
+    width: 70vw;
 }
