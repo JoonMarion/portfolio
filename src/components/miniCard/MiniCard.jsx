@@ -1,6 +1,7 @@
 import React from 'react';
 import './MiniCard.css';
 import Avatar from '../../assets/avatar.png';
+import Button from '../button/Button';
 
 const MiniCard = () => {
     return (
@@ -21,6 +22,10 @@ const MiniCard = () => {
                         <p>Front-end Developer</p>
                     </div>
                 </div>
+            </div>
+
+            <div className="centered">
+                <Button title="Download CSV"></Button>
             </div>
         </div>
     );

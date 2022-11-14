@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
 
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.3);
     color: white;
 }
 
@@ -28,4 +28,9 @@
 .content-card {
     height: 100%;
     width: 50%;
+}
+
+#divContent {
+    overflow-y: scroll;
+    height: 100%;
 }

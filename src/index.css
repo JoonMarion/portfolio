@@ -6,7 +6,13 @@
 }
 
 body {
-    background: url('https://wallpaperaccess.com/full/1410214.jpg');
+    background-image: url('https://readyplayer.me/images/home/bg-noise.png'),
+        url('https://readyplayer.me/images/home/bg-noise.png');
+    background-repeat: repeat, no-repeat;
+    background-color: rgb(50, 51, 62);
+    color: rgb(196, 197, 204);
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
     font-family: 'Poppins', sans-serif;
     height: 100vh;
 }
