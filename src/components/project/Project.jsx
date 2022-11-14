@@ -6,7 +6,7 @@ const Project = ({ img, title, description, link }) => {
         <a href={link} className="project-card">
             <img src={img} alt={title} />
             <h3>{title}</h3>
-            <p class="card-text">{description}</p>
+            <p className="card-text">{description}</p>
         </a>
     );
 };

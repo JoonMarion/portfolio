@@ -4,7 +4,7 @@ import './Button.css';
 const Button = ({ title }) => {
     return (
         // eslint-disable-next-line jsx-a11y/no-redundant-roles
-        <button class="button-33" role="button">
+        <button className="button-33" role="button">
             {title}
         </button>
     );

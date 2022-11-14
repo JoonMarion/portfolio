@@ -23,6 +23,12 @@
     justify-content: flex-end;
 }
 
+.content {
+    padding: 1rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 #divContent {
     overflow-y: scroll;
     height: 100%;

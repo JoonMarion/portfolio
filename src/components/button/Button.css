@@ -14,9 +14,12 @@
     transition: all 250ms;
     border: 0;
     font-size: 16px;
+    font-weight: bold;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
 .button-33:hover {

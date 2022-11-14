@@ -24,7 +24,7 @@ const MiniCard = () => {
                     <img src={Avatar} alt="Avatar João Mariano" />
                 </div>
                 <div className="mini-card-content">
-                    <h2 class="hero glitch layers" data-text="Username">
+                    <h2 className="hero glitch layers" data-text="Username">
                         <span>Username</span>
                     </h2>
                     <br />
