@@ -1,5 +1,6 @@
 import React from 'react';
 import './MainProjects.css';
+import ScrollContainer from 'react-indiana-drag-scroll';
 import DevQuiz from '../../assets/dev-quiz.jpeg';
 import FinanceManage from '../../assets/finance-manage.jpeg';
 import Pokedex from '../../assets/pokedex.jpeg';
@@ -10,8 +11,14 @@ const MainProjects = () => {
     return (
         <>
             <div className="container">
-                <h2 className="projects-title">Projects</h2>
-                <div className="row">
+                <h2 className="projects-title">
+                    Some projects, visite my{' '}
+                    <a href="https://github.com/JoonMarion" target="_blank" rel="noreferrer">
+                        GitHub
+                    </a>{' '}
+                    for more
+                </h2>
+                <ScrollContainer className="scroll-container">
                     <Project
                         title="Dev Quiz"
                         img={DevQuiz}
@@ -36,7 +43,7 @@ const MainProjects = () => {
                         description="Calculator with React"
                         link="https://reactcalculatorjs.netlify.app/"
                     />
-                </div>
+                </ScrollContainer>
             </div>
         </>
     );

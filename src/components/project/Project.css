@@ -19,3 +19,7 @@
     width: 100%;
     border-radius: 10px;
 }
+
+.project-card-content {
+    padding: 0 0.75rem;
+}

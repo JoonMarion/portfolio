@@ -47,7 +47,7 @@ const MiniCard = () => {
                     </h2>
                     <br />
                     <p className="hero glitch layers" data-text="20 june, 2001">
-                        <span>Front-end Developer</span>
+                        <span>Web Developer</span>
                     </p>
                 </div>
             </animated.div>

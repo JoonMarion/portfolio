@@ -2,16 +2,19 @@
     margin-top: 30px;
 }
 
-.row {
-    align-items: stretch;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
+.projects-title a {
+    color: #05c6ee;
+    text-decoration: none;
 }
 
+.projects-title a:hover {
+    opacity: 0.8;
+}
 
 .card-text {
-    font-size: 85%;
+    font-size: 0.85rem;
+}
+
+.scroll-container {
+    display: flex;
 }
