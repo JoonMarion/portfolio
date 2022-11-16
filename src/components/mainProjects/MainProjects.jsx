@@ -11,13 +11,16 @@ const MainProjects = () => {
     return (
         <>
             <div className="container">
-                <h2 className="projects-title">
-                    Some projects, visite my{' '}
-                    <a href="https://github.com/JoonMarion" target="_blank" rel="noreferrer">
-                        GitHub
-                    </a>{' '}
-                    for more
-                </h2>
+                <div className="projects-title">
+                    <h2>Some projects</h2>
+                    <h2>
+                        Visite my{' '}
+                        <a href="https://github.com/JoonMarion" target="_blank" rel="noreferrer">
+                            GitHub
+                        </a>{' '}
+                        for more...
+                    </h2>
+                </div>
                 <ScrollContainer className="scroll-container">
                     <Project
                         title="Dev Quiz"

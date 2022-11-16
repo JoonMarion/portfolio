@@ -1,14 +1,17 @@
 .projects-title {
+    display: flex;
+    justify-content: space-between;
     margin-top: 30px;
 }
 
 .projects-title a {
     color: #05c6ee;
     text-decoration: none;
+    opacity: 0.8;
 }
 
 .projects-title a:hover {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .card-text {

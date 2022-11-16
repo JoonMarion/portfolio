@@ -3,7 +3,7 @@ import './Project.css';
 
 const Project = ({ img, title, description, link }) => {
     return (
-        <a href={link} className="project-card">
+        <a href={link} className="project-card" target="_blank" rel="noreferrer">
             <img src={img} alt={title} />
             <div className="project-card-content">
                 <h3>{title}</h3>
