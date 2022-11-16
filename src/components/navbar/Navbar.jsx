@@ -7,19 +7,29 @@ const Navbar = () => {
             <nav className="circle">
                 <ul>
                     <li>
-                        <a href="/">Home</a>
+                        <span>
+                            <a href="/">Home</a>
+                        </span>
                     </li>
                     <li>
-                        <a href="/">About</a>
+                        <span>
+                            <a href="/">About</a>
+                        </span>
                     </li>
                     <li>
-                        <a href="/">Downloads</a>
+                        <span>
+                            <a href="/">Downloads</a>
+                        </span>
                     </li>
                     <li>
-                        <a href="/">More</a>
+                        <span>
+                            <a href="/">More</a>
+                        </span>
                     </li>
                     <li>
-                        <a href="/">Nice staff</a>
+                        <span>
+                            <a href="/">Nice Staff</a>
+                        </span>
                     </li>
                 </ul>
             </nav>

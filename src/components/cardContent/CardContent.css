@@ -29,11 +29,11 @@
     text-justify: inter-word;
 }
 
+.content::-webkit-scrollbar {
+    display: none;
+}
+
 #divContent {
     overflow-y: scroll;
     height: 100%;
 }
-/* 
-::-webkit-scrollbar {
-    display: none;
-} */
