@@ -3,33 +3,20 @@ import './Navbar.css';
 
 const Navbar = () => {
     return (
-        <section className="navbar">
-            <nav className="circle">
-                <ul>
+        <section className="navigation">
+            <nav className="navbar">
+                <ul className="nav-list">
                     <li>
-                        <span>
-                            <a href="/">Home</a>
-                        </span>
+                        <a href="/">Home</a>
                     </li>
                     <li>
-                        <span>
-                            <a href="/">About</a>
-                        </span>
+                        <a href="/">About</a>
                     </li>
                     <li>
-                        <span>
-                            <a href="/">Downloads</a>
-                        </span>
+                        <a href="/">Projects</a>
                     </li>
                     <li>
-                        <span>
-                            <a href="/">More</a>
-                        </span>
-                    </li>
-                    <li>
-                        <span>
-                            <a href="/">Nice Staff</a>
-                        </span>
+                        <a href="/">Contact</a>
                     </li>
                 </ul>
             </nav>

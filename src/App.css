@@ -1,7 +1,7 @@
 #wrapper {
     display: flex;
     justify-content: space-evenly;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .navbar-center {
@@ -9,7 +9,14 @@
     align-items: center;
 }
 
-.container {
+.main-container {
     max-width: 1170px;
     width: 70vw;
+}
+
+@media only screen and (min-width: 1440px) {
+    #wrapper {
+        display: flex;
+        justify-content: space-center;
+    }
 }

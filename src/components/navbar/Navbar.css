@@ -1,71 +1,26 @@
 .navbar {
-    width: 200px;
-}
-
-.navbar li {
-    text-decoration: none;
-    margin-bottom: 30px;
-}
-
-.navbar li a {
-    text-decoration: none;
-}
-
-.navbar ul {
-    padding: 0;
-    list-style-type: none;
-}
-
-.navbar li {
-    font-size: 1.5rem;
-    width: 7em;
-    height: 1.5em;
-    color: orange;
-    border-left: 0.08em solid;
-    position: relative;
-    margin-top: 0.8em;
-    cursor: pointer;
-}
-
-.navbar li::before,
-li::after {
-    content: '';
-    position: absolute;
-    width: inherit;
-    border-left: inherit;
-    z-index: -1;
-}
-
-.navbar li::before {
-    height: 80%;
-    top: 10%;
-    left: calc(-0.15em - 0.08em * 2);
-    filter: brightness(0.8);
-}
-
-.navbar li::after {
-    height: 60%;
-    top: 20%;
-    left: calc(-0.15em * 2 - 0.08em * 3);
-    filter: brightness(0.6);
-}
-
-.navbar li span {
-    position: relative;
-    height: 120%;
-    top: -10%;
-    box-sizing: border-box;
-    border: 0.08em solid;
-    background-color: #333;
+    background-color: #0e171e;
+    width: 100%;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Ubuntu', sans-serif;
-    text-transform: capitalize;
-    transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
-    transition: 0.3s;
+    font-weight: 500;
 }
 
-.navbar li:hover span {
-    transform: translateX(0.15em);
+.nav-list {
+    list-style: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    color: #05c6ee;
+}
+
+.nav-list li {
+    margin-right: 40px;
 }

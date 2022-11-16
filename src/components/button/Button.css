@@ -6,13 +6,12 @@
     border: none;
     cursor: pointer;
     display: flex;
-    font-family: Inter, sans-serif;
-    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
     justify-content: center;
     line-height: 28px;
     max-width: 100%;
     padding: 14px 22px;
-    text-decoration: none;
     transition: all 0.2s;
     user-select: none;
     -webkit-user-select: none;
@@ -32,6 +31,12 @@
 
 .button-46:hover {
     opacity: 0.6;
+}
+
+.btn-title {
+    font-size: 0.825em;
+    letter-spacing: 0.05em;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 @media (min-width: 768px) {

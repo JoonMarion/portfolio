@@ -10,10 +10,16 @@
 
 .project-card img {
     opacity: 0.8;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .project-card img:hover {
     opacity: 1;
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .project-card > img {
@@ -24,4 +30,10 @@
 
 .project-card-content {
     padding: 0 0.75rem;
+}
+
+.project-card-content p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.825rem;
+    letter-spacing: 0.5px;
 }

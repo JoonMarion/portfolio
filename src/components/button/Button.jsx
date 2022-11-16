@@ -10,7 +10,7 @@ const Button = ({ title }) => {
                 target="_blank"
                 rel="noreferrer"
             >
-                <p className="hero glitch layers" data-text="Download CSV">
+                <p className="hero glitch layers btn-title" data-text="Download CSV">
                     <span>{title}</span>
                 </p>
             </a>

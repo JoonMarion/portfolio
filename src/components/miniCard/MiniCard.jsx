@@ -24,31 +24,40 @@ const MiniCard = () => {
                     <img src={Avatar} alt="Avatar João Mariano" />
                 </div>
                 <div className="mini-card-content">
-                    <h2 className="hero glitch layers" data-text="Username">
-                        <span>Username</span>
-                    </h2>
-                    <br />
-                    <p className="hero glitch layers" data-text="Username">
-                        <span>João Mariano</span>
-                    </p>
-                    <br />
-                    <br />
-                    <h2 className="hero glitch layers" data-text="Registered on">
-                        <span>Registered on</span>
-                    </h2>
-                    <br />
-                    <p className="hero glitch layers" data-text="20 june, 2001">
-                        <span>20 june, 2001</span>
-                    </p>
-                    <br />
-                    <br />
-                    <h2 className="hero glitch layers" data-text="Class">
-                        <span>Class</span>
-                    </h2>
-                    <br />
-                    <p className="hero glitch layers" data-text="20 june, 2001">
-                        <span>Web Developer</span>
-                    </p>
+                    <div className="info-content">
+                        <p className="hero glitch layers" data-text="">
+                            <span>
+                                <strong>Username</strong>
+                            </span>
+                        </p>
+                        <br />
+                        <p className="hero glitch layers" data-text="João Mariano">
+                            <span>João Mariano</span>
+                        </p>
+                        <br />
+                    </div>
+                    <div className="info-content">
+                        <p className="hero glitch layers" data-text="">
+                            <span>
+                                <strong>Registered on</strong>
+                            </span>
+                        </p>
+                        <p className="hero glitch layers" data-text="20 june, 2001">
+                            <span>20 june, 2001</span>
+                        </p>
+                        <br />
+                    </div>
+                    <div className="info-content">
+                        <p className="hero glitch layers" data-text="">
+                            <span>
+                                <strong>Class</strong>
+                            </span>
+                        </p>
+                        <br />
+                        <p className="hero glitch layers" data-text="Web Developer">
+                            <span>Web Developer</span>
+                        </p>
+                    </div>
                 </div>
             </animated.div>
 

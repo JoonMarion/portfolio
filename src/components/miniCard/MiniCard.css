@@ -4,10 +4,12 @@
 
 .mini-card {
     display: flex;
-    width: 560px;
+    width: 400px;
+    max-width: 540px;
+    max-height: 340px;
     height: 80%;
     border-radius: 2em;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 
     box-shadow: 0 0 0 1px transparent;
     background-color: rgba(9, 20, 26, 0.8);
@@ -30,15 +32,19 @@
 .mini-card-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    height: 100%;
-    margin-top: 2rem;
+    justify-content: space-evenly;
+    height: 70%;
     font-family: 'IBM Plex Mono', monospace !important;
 }
 
 .mini-card-content h2,
 p {
     color: #05c6ee !important;
+    letter-spacing: 0.3em;
+}
+
+.info-content p {
+    letter-spacing: 0.5em;
 }
 
 .centered {
