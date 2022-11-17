@@ -16,7 +16,7 @@ const MainProjects = () => {
                     <h2>Some projects</h2>
                     <h2>
                         Visite my{' '}
-                        <a href="https://github.com/JoonMarion" target="_blank" rel="noreferrer" className="github-link primary">
+                        <a href="https://github.com/JoonMarion" target="_blank" rel="noreferrer" className="link-hover">
                             GitHub
                         </a>{' '}
                         for more...

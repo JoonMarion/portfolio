@@ -6,7 +6,7 @@ const Project = ({ img, title, description, link }) => {
         <a href={link} className="project-card" target="_blank" rel="noreferrer">
             <img className="project-card-image" src={img} alt={title} />
             <div className="project-card-content">
-                <h3 className="primary">{title}</h3>
+                <h3 className="primary link-hover">{title}</h3>
                 <p className="card-text secondary">{description}</p>
             </div>
         </a>
