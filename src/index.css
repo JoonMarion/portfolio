@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
 }
 
 body {
@@ -22,5 +21,34 @@ h1,
 h2,
 h3,
 a {
+    text-decoration: none;
     color: #9c9386;
+}
+
+.primary {
+    color: #05c6ee;
+}
+
+.secondary {
+    color: #f1ffff;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    backgroundcolor: #05c6ee;
+    color: #9c9386;
+}
+
+::selection {
+    background: #05c6ee;
+    color: #9c9386;
+}
+
+.link-hover {
+    color: #05c6ee;
+    opacity: 0.8;
+}
+
+.link-hover:hover {
+    opacity: 1;
 }

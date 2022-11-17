@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.css';
+import SocialNetworks from './../socialNetworks/SocialNetworks';
 
 const Navbar = () => {
     return (
@@ -18,6 +19,7 @@ const Navbar = () => {
                     <li>
                         <a href="/">Contact</a>
                     </li>
+                    <SocialNetworks />
                 </ul>
             </nav>
         </section>

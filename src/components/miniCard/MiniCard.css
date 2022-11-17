@@ -4,7 +4,7 @@
 
 .mini-card {
     display: flex;
-    width: 400px;
+    width: 500px;
     max-width: 540px;
     max-height: 340px;
     height: 80%;
@@ -34,17 +34,13 @@
     flex-direction: column;
     justify-content: space-evenly;
     height: 70%;
-    font-family: 'IBM Plex Mono', monospace !important;
-}
-
-.mini-card-content h2,
-p {
-    color: #05c6ee !important;
-    letter-spacing: 0.3em;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .info-content p {
-    letter-spacing: 0.5em;
+    font-size: 0.825rem;
+    letter-spacing: 0.3em;
+    color: #fff;
 }
 
 .centered {
@@ -53,4 +49,16 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.key {
+    color: #7add78;
+}
+
+.value {
+    color: #9cd1fc;
+}
+
+.number-value {
+    color: #359cee;
 }

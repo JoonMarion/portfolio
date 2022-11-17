@@ -2,7 +2,6 @@ import React from 'react';
 import { animated } from 'react-spring';
 import { use3dEffect } from 'use-3d-effect';
 import './MiniCard.css';
-import './Glitch.css';
 import Avatar from '../../assets/avatar.png';
 import Button from '../button/Button';
 
@@ -24,38 +23,28 @@ const MiniCard = () => {
                     <img src={Avatar} alt="Avatar João Mariano" />
                 </div>
                 <div className="mini-card-content">
-                    <div className="info-content">
-                        <p className="hero glitch layers" data-text="">
-                            <span>
-                                <strong>Username</strong>
-                            </span>
-                        </p>
-                        <br />
-                        <p className="hero glitch layers" data-text="João Mariano">
-                            <span>João Mariano</span>
-                        </p>
-                        <br />
-                    </div>
-                    <div className="info-content">
-                        <p className="hero glitch layers" data-text="">
-                            <span>
-                                <strong>Registered on</strong>
-                            </span>
-                        </p>
-                        <p className="hero glitch layers" data-text="20 june, 2001">
-                            <span>20 june, 2001</span>
-                        </p>
-                        <br />
-                    </div>
-                    <div className="info-content">
-                        <p className="hero glitch layers" data-text="">
-                            <span>
-                                <strong>Class</strong>
-                            </span>
-                        </p>
-                        <br />
-                        <p className="hero glitch layers" data-text="Web Developer">
-                            <span>Web Developer</span>
+                    <div className="info-content secondary">
+                        <p>
+                            &#123;"developer":
+                            <br />
+                            &emsp;&#123;
+                            <br />
+                            &emsp;&emsp;<span className="key">"name"</span>: <span className="value">"João"</span>,
+                            <br />
+                            &emsp;&emsp;<span className="key">"lastName"</span>:{' '}
+                            <span className="value">"Mariano"</span>
+                            ,
+                            <br />
+                            &emsp;&emsp;<span className="key">"age"</span>: <span className="number-value">21</span>,
+                            <br />
+                            &emsp;&emsp;<span className="key">"server"</span>: <span className="value">"Brazil"</span>,
+                            <br />
+                            &emsp;&emsp;<span className="key">"class"</span>: <span className="value">"Front-end"</span>
+                            ,
+                            <br />
+                            &emsp;&#125;,
+                            <br />
+                            &#125;,
                         </p>
                     </div>
                 </div>

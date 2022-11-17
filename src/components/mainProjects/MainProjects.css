@@ -4,17 +4,12 @@
     margin-top: 30px;
 }
 
-.projects-title a {
-    color: #05c6ee;
+.projects-title .github-link {
     text-decoration: none;
     opacity: 0.8;
 }
 
-.nav-list {
-    display: flex;
-    text-decoration: none;
-}
-.projects-title a:hover {
+.projects-title .github-link:hover {
     opacity: 1;
 }
 

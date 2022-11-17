@@ -8,21 +8,21 @@
     text-decoration: none;
 }
 
-.project-card img {
+.project-card .project-card-image {
     opacity: 0.8;
     -moz-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
-.project-card img:hover {
+.project-card .project-card-image:hover {
     opacity: 1;
     -moz-transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
 
-.project-card > img {
+.project-card .project-card-image {
     margin-bottom: 0.75rem;
     width: 100%;
     border-radius: 10px;
@@ -32,7 +32,7 @@
     padding: 0 0.75rem;
 }
 
-.project-card-content p {
+.project-card-content .card-text {
     font-family: 'Ubuntu', sans-serif;
     font-size: 0.825rem;
     letter-spacing: 0.5px;

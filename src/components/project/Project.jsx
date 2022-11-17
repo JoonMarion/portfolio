@@ -4,10 +4,10 @@ import './Project.css';
 const Project = ({ img, title, description, link }) => {
     return (
         <a href={link} className="project-card" target="_blank" rel="noreferrer">
-            <img src={img} alt={title} />
+            <img className="project-card-image" src={img} alt={title} />
             <div className="project-card-content">
-                <h3>{title}</h3>
-                <p className="card-text">{description}</p>
+                <h3 className="primary">{title}</h3>
+                <p className="card-text secondary">{description}</p>
             </div>
         </a>
     );

@@ -4,8 +4,8 @@ import './Footer.css';
 const Footer = () => {
     return (
         <div className="footer">
-            <p>
-                © 2022 <a href="/">João Mariano</a>. All rights reserved.
+            <p className="footer-text">
+                © 2022 <a href="/" className="footer-link">João Mariano</a>. All rights reserved.
             </p>
         </div>
     );

@@ -5,19 +5,19 @@ import { FaLinkedin, FaGithub, FaMailBulk } from 'react-icons/fa';
 const SocialNetworks = () => {
     return (
         <div className="networks-wrapper">
-            <li>
+            <li className="social-icons">
                 <a href="/">
-                    <FaLinkedin />
+                    <FaLinkedin className="social-icon" />
                 </a>
             </li>
-            <li>
+            <li className="social-icons">
                 <a href="/">
-                    <FaGithub />
+                    <FaGithub className="social-icon" />
                 </a>
             </li>
-            <li>
+            <li className="social-icons">
                 <a href="/">
-                    <FaMailBulk />
+                    <FaMailBulk className="social-icon" />
                 </a>
             </li>
         </div>
