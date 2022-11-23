@@ -19,7 +19,6 @@ const Navbar = () => {
                     <li>
                         <a href="/">Contact</a>
                     </li>
-                    <SocialNetworks />
                 </ul>
             </nav>
         </section>
