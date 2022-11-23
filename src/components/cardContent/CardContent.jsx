@@ -1,6 +1,7 @@
 import React from 'react';
 import MiniCard from '../miniCard/MiniCard';
 import './CardContent.css';
+import SocialNetworks from './../socialNetworks/SocialNetworks';
 
 const CardContent = () => {
     return (
@@ -21,6 +22,9 @@ const CardContent = () => {
                     <a href="/" className="link-hover">
                         Read more...
                     </a>
+                </div>
+                <div className="centered">
+                    <SocialNetworks />
                 </div>
             </div>
             <div className="content-card">
