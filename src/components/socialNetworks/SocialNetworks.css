@@ -3,6 +3,10 @@
     gap: 0.825rem;
 }
 
+.networks-wrapper .social-icons {
+    list-style: none;
+}
+
 .social-icons {
     height: 1.5rem;
 }
