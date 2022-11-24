@@ -24,7 +24,7 @@ const MiniCard = () => {
                 </div>
                 <div className="mini-card-content">
                     <div className="info-content secondary">
-                        <p>
+                        <div className="content-text">
                             &#123;"developer":
                             <br />
                             &emsp;&#123;
@@ -45,7 +45,7 @@ const MiniCard = () => {
                             &emsp;&#125;,
                             <br />
                             &#125;,
-                        </p>
+                        </div>
                     </div>
                 </div>
             </animated.div>
