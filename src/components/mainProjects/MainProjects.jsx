@@ -13,13 +13,13 @@ const MainProjects = () => {
         <>
             <div className="container">
                 <div className="projects-title">
-                    <h2>Some projects</h2>
+                    <h2>Alguns projetos</h2>
                     <h2>
-                        Visite my{' '}
+                        Visite meu{' '}
                         <a href="https://github.com/JoonMarion" target="_blank" rel="noreferrer" className="link-hover">
                             GitHub
                         </a>{' '}
-                        for more...
+                        para ver mais...
                     </h2>
                 </div>
                 <ScrollContainer className="scroll-container">

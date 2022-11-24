@@ -1,6 +1,5 @@
 import React from 'react';
 import './Navbar.css';
-import SocialNetworks from './../socialNetworks/SocialNetworks';
 
 const Navbar = () => {
     return (
@@ -8,16 +7,13 @@ const Navbar = () => {
             <nav className="navbar">
                 <ul className="nav-list">
                     <li>
-                        <a href="/">Home</a>
+                        <a href="/">Sobre</a>
                     </li>
                     <li>
-                        <a href="/">About</a>
+                        <a href="/">Projetos</a>
                     </li>
                     <li>
-                        <a href="/">Projects</a>
-                    </li>
-                    <li>
-                        <a href="/">Contact</a>
+                        <a href="/">Contatos</a>
                     </li>
                 </ul>
             </nav>
