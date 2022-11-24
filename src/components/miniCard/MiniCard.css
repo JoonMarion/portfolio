@@ -75,8 +75,17 @@
         height: 130px;
     }
 
+    .mini-card-image {
+        width: 33%;
+    }
+
+    .mini-card-image .avatar-img {
+        margin-left: 0.5rem;
+    }
+
     .content-text .mini-card-text {
         font-size: 0.4rem;
+        width: 120%;
     }
 }
 
@@ -86,8 +95,17 @@
         height: 160px;
     }
 
+    .mini-card-image {
+        width: 33%;
+    }
+
+    .mini-card-image .avatar-img {
+        margin-left: 0.5rem;
+    }
+
     .content-text .mini-card-text {
         font-size: 0.5rem;
+        width: 120%;
     }
 }
 
@@ -96,8 +114,18 @@
         width: 300px;
         height: 180px;
     }
+
+    .mini-card-image {
+        width: 40%;
+    }
+
+    .mini-card-image .avatar-img {
+        margin-left: 1rem;
+    }
+
     .content-text .mini-card-text {
         font-size: 0.5rem;
+        width: 110%;
     }
 }
 
