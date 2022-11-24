@@ -1,33 +1,26 @@
 import React from 'react';
 import MiniCard from '../miniCard/MiniCard';
 import './CardContent.css';
-import SocialNetworks from './../socialNetworks/SocialNetworks';
 
 const CardContent = () => {
     return (
         <div className="card">
             <div className="avatar-card secondary">
-                <div id="divContent" className="content">
-                    &emsp;&emsp;Hey guys, my name is João Mariano. I'm from Castanhal, Pará. I was born and raised here.
-                    I'm currently an intern on the development team at Sea Telecom and a Software Engineering student at
-                    the Universidade do Estado do Pará. Since i was a kid, i've been an enthusiast of everything that
-                    involves technology, from hardware to software, and today, working as a developer, i'm completely
-                    sure of my destiny and my future in the development career. I love to code!
+                <div className="text-content">
+                    &emsp;&emsp;Olá pessoal, meu nome é João Mariano. Sou de Castanhal, Pará. Eu nasci e cresci aqui.
+                    Atualmente sou estagiário na equipe de desenvolvimento da Sea Telecom e estudante de Engenharia de
+                    Software na Universidade do Estado do Pará. Desde criança sou um entusiasta de tudo que envolve
+                    tecnologia, de hardware a software, e hoje, trabalhando como desenvolvedor, tenho plena certeza do
+                    meu destino e do meu futuro na carreira de desenvolvimento. Eu amo codificar!
                     <br /> <br />
-                    &emsp;&emsp;I developed several management systems in the company where I work, most of them in
-                    Django, I created docker images and they are all in containers, on the company's server. Creating a
-                    small microservices ecosystem. I had experience with agile development. I took several courses of
-                    personal and professional improvement. Among the technologies i had more contact with are React JS,
-                    Django, JavaScript, Python, HTML and CSS.{' '}
-                    <a href="/" className="link-hover">
-                        Read more...
-                    </a>
-                </div>
-                <div className="centered">
-                    <SocialNetworks />
+                    &emsp;&emsp;Desenvolvi vários sistemas de gestão na empresa onde trabalho, a maioria deles em
+                    Django, criei imagens docker e estão todos em containers, no servidor da empresa. Criando um pequeno
+                    ecossistema de microsserviços. Tive experiência com desenvolvimento ágil. Fiz vários cursos de
+                    aperfeiçoamento pessoal e profissional. Entre as tecnologias com as quais tive mais contato estão
+                    React JS, Django, JavaScript, Python, HTML e CSS.{' '}
                 </div>
             </div>
-            <div className="content-card">
+            <div className="card-content">
                 <MiniCard />
             </div>
         </div>
