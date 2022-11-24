@@ -1,6 +1,7 @@
 .button-46 {
     align-items: center;
     background-color: #0e171c;
+    margin-top: 1rem;
     border-radius: 1em;
     box-sizing: border-box;
     border: none;
@@ -34,14 +35,12 @@
 }
 
 .btn-title {
-    font-size: 0.825em;
     letter-spacing: 0.05em;
     font-family: 'Ubuntu', sans-serif;
 }
 
 @media (min-width: 768px) {
     .button-46 {
-        font-size: 20px;
         min-width: 200px;
         padding: 14px 16px;
     }

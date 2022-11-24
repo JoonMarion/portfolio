@@ -4,17 +4,13 @@
     margin-top: 30px;
 }
 
-.projects-title .github-link {
-    text-decoration: none;
+.link-hover {
+    color: #05c6ee;
     opacity: 0.8;
 }
 
-.projects-title .github-link:hover {
+.link-hover:hover {
     opacity: 1;
-}
-
-.card-text {
-    font-size: 0.85rem;
 }
 
 .scroll-container {

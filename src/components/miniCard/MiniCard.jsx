@@ -23,29 +23,29 @@ const MiniCard = () => {
                     <img className="avatar-img" src={Avatar} alt="Avatar João Mariano" />
                 </div>
                 <div className="mini-card-content">
-                    <div className="info-content secondary">
-                        <div className="content-text">
-                            &#123;"developer":
+                    <div className="content-text secondary">
+                        <p className="mini-card-text">
+                            &#123;"desenvolvedor":
                             <br />
                             &emsp;&#123;
                             <br />
-                            &emsp;&emsp;<span className="key">"name"</span>: <span className="value">"João"</span>,
+                            &emsp;&emsp;<span className="key">"nome"</span>: <span className="value">"João"</span>,
                             <br />
-                            &emsp;&emsp;<span className="key">"lastName"</span>:{' '}
+                            &emsp;&emsp;<span className="key">"sobrenome"</span>:{' '}
                             <span className="value">"Mariano"</span>
                             ,
                             <br />
-                            &emsp;&emsp;<span className="key">"age"</span>: <span className="number-value">21</span>,
+                            &emsp;&emsp;<span className="key">"idade"</span>: <span className="number-value">21</span>
+                            ,
                             <br />
-                            &emsp;&emsp;<span className="key">"server"</span>: <span className="value">"Brazil"</span>,
-                            <br />
-                            &emsp;&emsp;<span className="key">"class"</span>: <span className="value">"Front-end"</span>
+                            &emsp;&emsp;<span className="key">"classe"</span>:{' '}
+                            <span className="value">"Front-end"</span>
                             ,
                             <br />
                             &emsp;&#125;,
                             <br />
                             &#125;,
-                        </div>
+                        </p>
                     </div>
                 </div>
             </animated.div>

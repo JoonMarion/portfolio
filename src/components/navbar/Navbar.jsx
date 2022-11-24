@@ -6,10 +6,10 @@ const Navbar = () => {
         <section className="navigation">
             <nav className="navbar">
                 <ul className="nav-list">
-                    <li>
+                    <li className="nav-margin">
                         <a href="/">Sobre</a>
                     </li>
-                    <li>
+                    <li className="nav-margin">
                         <a href="/">Projetos</a>
                     </li>
                     <li>

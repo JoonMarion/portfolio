@@ -26,12 +26,33 @@ a {
     color: #9c9386;
 }
 
+p {
+    font-size: 1rem;
+    color: #f1ffff;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
 .primary {
     color: #05c6ee;
 }
 
 .secondary {
     color: #f1ffff;
+}
+
+.tertiary {
+    color: #9c9386;
 }
 
 ::-moz-selection {
@@ -43,13 +64,4 @@ a {
 ::selection {
     background: #05c6ee;
     color: #9c9386;
-}
-
-.link-hover {
-    color: #05c6ee;
-    opacity: 0.8;
-}
-
-.link-hover:hover {
-    opacity: 1;
 }
