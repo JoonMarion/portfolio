@@ -20,7 +20,7 @@ const MiniCard = () => {
                 className="mini-card"
             >
                 <div className="mini-card-image">
-                    <img src={Avatar} alt="Avatar João Mariano" />
+                    <img className="avatar-img" src={Avatar} alt="Avatar João Mariano" />
                 </div>
                 <div className="mini-card-content">
                     <div className="info-content secondary">
