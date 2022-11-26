@@ -51,7 +51,7 @@ const MiniCard = () => {
             </animated.div>
 
             <div className="centered">
-                <Button title="Download CSV"></Button>
+                <Button title="Currículo"></Button>
             </div>
         </div>
     );

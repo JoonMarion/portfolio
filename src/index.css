@@ -5,6 +5,10 @@
     line-height: 1.3;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url('https://readyplayer.me/images/home/bg-noise.png');
     background-repeat: reapeat-y;
