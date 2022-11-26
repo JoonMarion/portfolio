@@ -4,15 +4,6 @@
     margin-top: 30px;
 }
 
-.link-hover {
-    color: #05c6ee;
-    opacity: 0.8;
-}
-
-.link-hover:hover {
-    opacity: 1;
-}
-
 .scroll-container {
     display: flex;
 }

@@ -70,3 +70,12 @@ h3 {
     background: #05c6ee;
     color: #9c9386;
 }
+
+.link-hover {
+    color: #05c6ee;
+    opacity: 0.8;
+}
+
+.link-hover:hover {
+    opacity: 1;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import MiniCard from '../miniCard/MiniCard';
 import './CardContent.css';
+import Modal from '../modal/Modal';
 
 const CardContent = () => {
     return (
@@ -13,13 +14,8 @@ const CardContent = () => {
                         acadêmico de Engenharia de Software na Universidade do Estado do Pará. Desde criança sou
                         entusiasta de tudo que envolva tecnologia, do hardware ao software, e hoje, trabalhando como
                         desenvolvedor, tenho plena certeza do meu futuro na carreira de desenvolvimento. Codar é minha
-                        paixão!
-                        <br /> <br />
-                        &emsp;&emsp;Desenvolvi vários sistemas de gestão na empresa onde trabalho, a maioria deles em
-                        Django, criei imagens docker e estão todos em containers, no servidor da empresa. Criando assim
-                        um pequeno ambiente de microsserviços. Tive experiência com desenvolvimento ágil. Fiz bootcamps
-                        de aperfeiçoamento pessoal e profissional. Dentre as tecnologias com as quais tive mais contato
-                        estão: React JS, Django, JavaScript, Python, HTML, CSS e Docker.{' '}
+                        paixão!&nbsp;
+                        <Modal />
                     </p>
                 </div>
             </div>
