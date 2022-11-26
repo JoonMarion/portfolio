@@ -11,7 +11,7 @@ import InstagramLogin from '../../assets/instagram-login-clone.png';
 const MainProjects = () => {
     return (
         <>
-            <div className="container">
+            <div className="container" id="projects">
                 <div className="projects-title">
                     <h2>Projetos</h2>
                     <p className="tertiary">

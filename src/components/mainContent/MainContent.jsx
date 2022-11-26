@@ -1,5 +1,6 @@
 import React from 'react';
 import CardContent from '../cardContent/CardContent';
+import './MainContent.css';
 
 const MainContent = () => {
     return (

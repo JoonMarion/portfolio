@@ -16,6 +16,7 @@
         "react-indiana-drag-scroll": "^2.2.0",
         "react-scripts": "5.0.1",
         "react-spring": "^9.5.5",
+        "styled-components": "^5.3.6",
         "three": "^0.146.0",
         "use-3d-effect": "^1.0.0",
         "web-vitals": "^2.1.4"

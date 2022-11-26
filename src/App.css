@@ -14,6 +14,10 @@
     width: 70vw;
 }
 
+.index {
+    z-index: 1;
+}
+
 @media only screen and (max-width: 427px) and (min-width: 0) {
     .main-container {
         width: 90vw;

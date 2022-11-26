@@ -6,11 +6,13 @@ import Footer from './components/footer/Footer';
 
 function App() {
     return (
-        <div className="App">
+        <div className="App" id="home">
             <Navbar />
             <div id="wrapper">
                 <div className="main-container">
-                    <MainContent />
+                    <div className="index">
+                        <MainContent />
+                    </div>
                     <MainProjects />
                 </div>
             </div>
