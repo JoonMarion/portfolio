@@ -14,6 +14,7 @@ body {
     -webkit-font-smoothing: antialiased;
     height: 100vh;
     font-family: 'Ubuntu', sans-serif;
+    overflow-y: scroll !important;
 }
 
 p,

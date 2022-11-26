@@ -1,37 +1,31 @@
-import React, { useState } from 'react';
-import './Navbar.css';
-import { HeaderStyled, MenuContentStyled, MenuIconStyled, MenuStyled } from './style';
-import menu from '../../assets/menu.svg';
+import React from 'react';
+import { Container } from './style';
+import { RiMenu3Fill } from 'react-icons/ri';
 
-const Navbar = () => {
-    const [show, setShow] = useState(false);
-
-    const toggleMenu = () => {
-        setShow(!show);
-    };
+export function Navbar({ setMenuIsVisible }) {
 
     return (
-        <HeaderStyled>
-            <MenuContentStyled>
-                <MenuIconStyled onClick={toggleMenu} src={menu} width="24px" />
-            </MenuContentStyled>
+        <Container>
+            <section>
+                <nav>
+                    <a href="#home" className="secondary">
+                        Início
+                    </a>
+                    <a href="#projects" className="secondary">
+                        Tecnologias
+                    </a>
+                    <a href="#projects" className="secondary">
+                        Projetos
+                    </a>
+                    <a href="#movies" className="secondary">
+                        Contatos
+                    </a>
+                </nav>
+            </section>
 
-            <MenuStyled show={show}>
-                <li>
-                    <a href="#home">Início</a>
-                </li>
-                <li>
-                    <a href="#projects">Tecnologias</a>
-                </li>
-                <li>
-                    <a href="#projects">Projetos</a>
-                </li>
-                <li>
-                    <a href="#movies">Contatos</a>
-                </li>
-            </MenuStyled>
-        </HeaderStyled>
+            <section>
+                <RiMenu3Fill onClick={() => setMenuIsVisible(true)} className="mobile" />
+            </section>
+        </Container>
     );
-};
-
-export default Navbar;
+}
