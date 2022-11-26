@@ -7,7 +7,7 @@ export const Container = styled.header`
     padding: 14.5px 64px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     position: fixed;
     z-index: 998;
     > section {

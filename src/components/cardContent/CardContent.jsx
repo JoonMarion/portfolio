@@ -19,7 +19,7 @@ const CardContent = () => {
                         Django, criei imagens docker e estão todos em containers, no servidor da empresa. Criando assim
                         um pequeno ambiente de microsserviços. Tive experiência com desenvolvimento ágil. Fiz bootcamps
                         de aperfeiçoamento pessoal e profissional. Dentre as tecnologias com as quais tive mais contato
-                        estão React JS, Django, JavaScript, Python, HTML e CSS.{' '}
+                        estão: React JS, Django, JavaScript, Python, HTML, CSS e Docker.{' '}
                     </p>
                 </div>
             </div>

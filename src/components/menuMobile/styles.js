@@ -4,10 +4,9 @@ export const Container = styled.section`
     position: fixed;
     backdrop-filter: blur(3px);
     width: 50%;
-    height: 300px;
+    height: 100%;
     font-size: 0.825rem;
-    border-radius: 0 0 0 1rem;
-    top: 0;
+    border-radius: 1rem 0 0 1rem;
     right: 0;
     z-index: 999;
     display: flex;
