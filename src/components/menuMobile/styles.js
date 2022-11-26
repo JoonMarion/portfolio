@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
-    position: absolute;
+    position: fixed;
     backdrop-filter: blur(3px);
     width: 50%;
     height: 300px;
@@ -9,7 +9,7 @@ export const Container = styled.section`
     border-radius: 0 0 0 1rem;
     top: 0;
     right: 0;
-    z-index: 5;
+    z-index: 999;
     display: flex;
     align-items: center;
     justify-content: center;

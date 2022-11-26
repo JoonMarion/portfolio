@@ -8,8 +8,10 @@ export const Container = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    position: fixed;
+    z-index: 998;
     > section {
+        cursor: pointer;
         display: flex;
         gap: 2rem;
         &:last-child {
