@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
     width: 100%;
+    height: 3rem;
     background: rgba(9, 20, 26, 0.8);
     padding: 14.5px 64px;
     display: flex;
@@ -14,12 +15,7 @@ export const Container = styled.header`
         &:last-child {
             gap: 1rem;
         }
-        > img {
-            width: 230px;
-            @media (max-width: 500px) {
-                width: 120px;
-            }
-        }
+
         > nav {
             list-style: none;
             display: flex;

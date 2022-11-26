@@ -3,7 +3,6 @@ import { Container } from './style';
 import { RiMenu3Fill } from 'react-icons/ri';
 
 export function Navbar({ setMenuIsVisible }) {
-
     return (
         <Container>
             <section>
@@ -24,7 +23,7 @@ export function Navbar({ setMenuIsVisible }) {
             </section>
 
             <section>
-                <RiMenu3Fill onClick={() => setMenuIsVisible(true)} className="mobile" />
+                <RiMenu3Fill size={30} onClick={() => setMenuIsVisible(true)} className="mobile" />
             </section>
         </Container>
     );
