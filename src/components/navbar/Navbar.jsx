@@ -6,7 +6,9 @@ export function Navbar({ setMenuIsVisible }) {
     return (
         <Container>
             <div>
-                <h1 className="primary">Marian.io</h1>
+                <h1 className="primary">
+                    Marian<span className="secondary">.io</span>
+                </h1>
             </div>
             <section>
                 <nav>
