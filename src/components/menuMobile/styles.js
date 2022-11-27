@@ -5,7 +5,7 @@ export const Container = styled.section`
     backdrop-filter: blur(3px);
     width: 100%;
     height: 100%;
-    font-size: 0.825rem;
+    font-size: 0.9rem;
     z-index: 999;
     display: flex;
     align-items: center;
