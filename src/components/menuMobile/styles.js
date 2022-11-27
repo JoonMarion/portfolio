@@ -6,7 +6,7 @@ export const Container = styled.section`
     width: 50%;
     height: 100%;
     font-size: 0.825rem;
-    border-radius: 50% 0 0 50%;
+    border-radius: 1rem 0 0 1rem;
     right: 0;
     z-index: 999;
     display: flex;
