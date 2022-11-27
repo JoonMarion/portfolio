@@ -6,8 +6,7 @@ export const Container = styled.section`
     width: 50%;
     height: 100%;
     font-size: 0.825rem;
-    border-radius: 1rem 0 0 1rem;
-    right: 0;
+    border-radius: 0 1rem 1rem 0;
     z-index: 999;
     display: flex;
     align-items: center;
@@ -16,14 +15,14 @@ export const Container = styled.section`
     background: linear-gradient(34deg, rgba(9, 20, 26, 0.8) ; 0%, rgba(17, 18, 17, 0.95) 95%);
     opacity: 0;
     pointer-events: none;
-    transform: translateX(50px);
+    transform: translate-X(50px);
     transition: 0.5s;
     > svg {
         position: absolute;
         top: 1rem;
-        right: 1rem;
+        left: 1rem;
         transform: rotate(45deg);
-        transition: 0.7s;
+        transition: 0.5s;
         cursor: pointer;
     }
     nav {
@@ -33,7 +32,7 @@ export const Container = styled.section`
         flex-direction: column;
         gap: 2rem;
         transform: scale(0.7);
-        transition: 0.7s;
+        transition: 0.5s;
     }
     a {
         color: #f1ffff;
@@ -46,7 +45,7 @@ export const Container = styled.section`
         css`
             opacity: 1;
             pointer-events: auto;
-            transform: translateY(0px);
+            transform: translate-Y(0px);
             > svg {
                 transform: rotate(0deg);
             }

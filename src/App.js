@@ -17,8 +17,8 @@ function App() {
             <div id="wrapper">
                 <div className="main-container">
                     <CardContent />
-                    <MainSkills />
                     <MainProjects />
+                    <MainSkills />
                 </div>
             </div>
             <Footer />

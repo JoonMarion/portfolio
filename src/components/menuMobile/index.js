@@ -16,12 +16,12 @@ export function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
                     Início
                 </a>
 
-                <a href="#skills" className="secondary" onClick={() => setMenuIsVisible(false)}>
-                    Skills
-                </a>
-
                 <a href="#projects" className="secondary" onClick={() => setMenuIsVisible(false)}>
                     Projetos
+                </a>
+
+                <a href="#skills" className="secondary" onClick={() => setMenuIsVisible(false)}>
+                    Skills
                 </a>
 
                 <a href="#movies" className="secondary" onClick={() => setMenuIsVisible(false)}>

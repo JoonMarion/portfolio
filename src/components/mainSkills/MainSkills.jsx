@@ -11,11 +11,6 @@ const MainSkills = () => {
                 </div>
                 <div className="skills-cards">
                     <Skill
-                        title="React"
-                        img="https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png"
-                        description="Biblioteca Front-end"
-                    />
-                    <Skill
                         title="JavaScript"
                         img="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
                         description="Front-end e Back-end"
@@ -25,7 +20,16 @@ const MainSkills = () => {
                         img="https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png"
                         description="Front-end e Back-end"
                     />
-
+                    <Skill
+                        title="Python"
+                        img="https://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png"
+                        description="Back-end"
+                    />
+                    <Skill
+                        title="React"
+                        img="https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png"
+                        description="Biblioteca Front-end"
+                    />
                     <Skill
                         title="StyledComponents"
                         img="https://cdn.sanity.io/images/djtlwm1o/production/cd48e3fba521deb47078ea36b7073e2f0e511af7-257x286.png"
@@ -35,11 +39,6 @@ const MainSkills = () => {
                         title="Django"
                         img="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/django-icon.png"
                         description="Framework web em Python"
-                    />
-                    <Skill
-                        title="Python"
-                        img="https://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png"
-                        description="Back-end"
                     />
                     <Skill
                         title="Bootstrap"

@@ -10,6 +10,9 @@ export const Container = styled.header`
     justify-content: flex-end;
     position: fixed;
     z-index: 998;
+    @media (max-width: 900px) {
+        rotate: 180deg;
+    }
     > section {
         cursor: pointer;
         display: flex;
@@ -17,7 +20,6 @@ export const Container = styled.header`
         &:last-child {
             gap: 1rem;
         }
-
         > nav {
             list-style: none;
             display: flex;
