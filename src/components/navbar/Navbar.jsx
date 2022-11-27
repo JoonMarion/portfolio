@@ -22,6 +22,15 @@ export function Navbar({ setMenuIsVisible }) {
                     <a href="#movies" className="secondary">
                         Contatos
                     </a>
+                    <a
+                        href="https://drive.google.com/file/d/1cLd9U3HhYOC6yOyf3ZE7iq73Nyj2M29q/view?usp=sharing"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="secondary"
+                    >
+                        {' '}
+                        Currículo
+                    </a>
                 </nav>
             </section>
 

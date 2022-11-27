@@ -3,7 +3,7 @@ import { animated } from 'react-spring';
 import { use3dEffect } from 'use-3d-effect';
 import './MiniCard.css';
 import Avatar from '../../assets/avatar.png';
-import Button from '../button/Button';
+// import Button from '../button/Button';
 
 const MiniCard = () => {
     const ref = React.useRef(null);
@@ -45,9 +45,9 @@ const MiniCard = () => {
                     </p>
                 </div>
             </animated.div>
-            <div className="centered">
+            {/* <div className="centered">
                 <Button title="Currículo"></Button>
-            </div>
+            </div> */}
         </div>
     );
 };
