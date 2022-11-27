@@ -7,12 +7,9 @@ export const Container = styled.header`
     padding: 14.5px 64px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     position: fixed;
     z-index: 998;
-    @media (max-width: 900px) {
-        rotate: 180deg;
-    }
     > section {
         cursor: pointer;
         display: flex;
@@ -23,6 +20,7 @@ export const Container = styled.header`
         > nav {
             list-style: none;
             display: flex;
+            align-items: center;
             gap: 1rem;
             a {
                 font-size: 16px;

@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 export const Container = styled.section`
     position: fixed;
     backdrop-filter: blur(3px);
-    width: 50%;
+    width: 100%;
     height: 100%;
     font-size: 0.825rem;
     border-radius: 0 1rem 1rem 0;

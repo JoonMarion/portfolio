@@ -5,6 +5,9 @@ import { RiMenu3Fill } from 'react-icons/ri';
 export function Navbar({ setMenuIsVisible }) {
     return (
         <Container>
+            <div>
+                <h1 className="primary">Marian.io</h1>
+            </div>
             <section>
                 <nav>
                     <a href="#home" className="secondary">
