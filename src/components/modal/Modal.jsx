@@ -1,9 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Modal from 'react-modal';
 import './Modal.css';
+import { IoClose } from 'react-icons/io5';
+import { useEffect } from 'react';
 
 const CardContent = () => {
-    let subtitle;
     const [modalIsOpen, setIsOpen] = React.useState(false);
 
     function openModal() {
@@ -12,23 +14,29 @@ const CardContent = () => {
 
     function afterOpenModal() {
         // references are now sync'd and can be accessed.
-        subtitle.style.color = '#9c9386';
     }
 
     function closeModal() {
         setIsOpen(false);
     }
 
+    useEffect(() => {
+        const body = document.querySelector('body');
+        body.style.overflow = modalIsOpen ? 'hidden' : 'auto';
+    }, [modalIsOpen]);
+
     return (
         <>
-            <a href="#home" className="primary link-hover" onClick={openModal}>
+            <a className="primary link-hover" onClick={openModal}>
                 Ler mais...
             </a>
+
             <Modal
+                closeTimeoutMS={500}
                 isOpen={modalIsOpen}
                 onAfterOpen={afterOpenModal}
                 onRequestClose={closeModal}
-                contentLabel="Example Modal"
+                contentLabel="Sobre mim"
                 style={{
                     overlay: {
                         position: 'fixed',
@@ -36,46 +44,49 @@ const CardContent = () => {
                         left: 0,
                         right: 0,
                         bottom: 0,
-                        backgroundColor: 'transparent',
-                        backdropFilter: 'blur(5px)',
+                        backgroundImage: 'url("https://readyplayer.me/images/home/bg-noise.png")',
+                        backgroundRepeat: 'reapeat-y',
+                        backgroundColor: 'rgb(50, 51, 62, 0.8)',
                     },
                     content: {
                         marginTop: '3rem',
                         position: 'absolute',
-                        top: '40px',
-                        left: '40px',
-                        right: '40px',
-                        bottom: '40px',
+                        top: '6rem',
+                        left: '8%',
+                        right: '8%',
+                        bottom: '6rem',
                         border: 'none',
                         background: 'rgba(9, 20, 26)',
-                        overflow: 'auto',
                         WebkitOverflowScrolling: 'touch',
                         borderRadius: '1rem',
                         outline: 'none',
-                        padding: '20px',
+                        padding: '2rem',
+                        overflow: 'auto',
                     },
                 }}
             >
-                <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Sobre mim</h2>
-
-                <div>I am a modal</div>
-
+                <div className="close-modal-button">
+                    <IoClose size={35} onClick={() => closeModal(false)} />
+                </div>
+                <h2 className="primary centered">Sobre mim</h2>
+                <br />
+                <h3>Primeiro contato</h3>
                 <p>
-                    &emsp;&emsp;Olá, meu nobre! Meu nome é João Mariano. Sou de Castanhal - Pará, lugar onde nasci e
-                    cresci. Atualmente sou estagiário na equipe de desenvolvimento da empresa Sea Telecom e acadêmico de
-                    Engenharia de Software na Universidade do Estado do Pará. Desde criança sou entusiasta de tudo que
-                    envolva tecnologia, do hardware ao software, e hoje, trabalhando como desenvolvedor, tenho plena
-                    certeza do meu futuro na carreira de desenvolvimento. Codar é minha paixão!
-                    <br />
-                    <br />
                     &emsp;&emsp;Desenvolvi vários sistemas de gestão na empresa onde trabalho, a maioria deles em
                     Django, criei imagens docker e estão todos em containers, no servidor da empresa. Criando assim um
                     pequeno ambiente de microsserviços. Tive experiência com desenvolvimento ágil. Fiz bootcamps de
                     aperfeiçoamento pessoal e profissional. Dentre as tecnologias com as quais tive mais contato estão:
                     React JS, Django, JavaScript, Python, HTML, CSS e Docker.
                 </p>
-
-                <button onClick={closeModal}>close</button>
+                <br />
+                <h3>Experiência</h3>
+                <p>
+                    &emsp;&emsp;Desenvolvi vários sistemas de gestão na empresa onde trabalho, a maioria deles em
+                    Django, criei imagens docker e estão todos em containers, no servidor da empresa. Criando assim um
+                    pequeno ambiente de microsserviços. Tive experiência com desenvolvimento ágil. Fiz bootcamps de
+                    aperfeiçoamento pessoal e profissional. Dentre as tecnologias com as quais tive mais contato estão:
+                    React JS, Django, JavaScript, Python, HTML, CSS e Docker.
+                </p>
             </Modal>
         </>
     );

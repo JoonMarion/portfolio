@@ -9,12 +9,11 @@ const CardContent = () => {
             <div className="avatar-card secondary">
                 <div className="text-content">
                     <p>
-                        &emsp;&emsp;Olá, meu nobre! Meu nome é João Mariano. Sou de Castanhal - Pará, lugar onde nasci e
-                        cresci. Atualmente sou estagiário na equipe de desenvolvimento da empresa Sea Telecom e
+                        &emsp;&emsp;Olá, meu nome é João Mariano. Sou de Castanhal, no estado do Pará, lugar onde nasci
+                        e cresci. Atualmente sou estagiário na equipe de desenvolvimento da empresa Sea Telecom e
                         acadêmico de Engenharia de Software na Universidade do Estado do Pará. Desde criança sou
                         entusiasta de tudo que envolva tecnologia, do hardware ao software, e hoje, trabalhando como
-                        desenvolvedor, tenho plena certeza do meu futuro na carreira de desenvolvimento. Codar é minha
-                        paixão!&nbsp;
+                        desenvolvedor, tenho plena certeza do meu futuro na carreira de desenvolvimento.&nbsp;
                         <Modal />
                     </p>
                 </div>
