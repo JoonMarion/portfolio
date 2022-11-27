@@ -16,8 +16,8 @@ export function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
                     Início
                 </a>
 
-                <a href="#projects" className="secondary" onClick={() => setMenuIsVisible(false)}>
-                    Tecnologias
+                <a href="#skills" className="secondary" onClick={() => setMenuIsVisible(false)}>
+                    Skills
                 </a>
 
                 <a href="#projects" className="secondary" onClick={() => setMenuIsVisible(false)}>
