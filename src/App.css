@@ -1,16 +1,11 @@
 #wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 2rem 0;
 }
 
-.navbar-center {
-    display: flex;
-    align-items: center;
-}
-
 .main-container {
-    max-width: 1000px;
+    max-width: 900px;
     width: 70vw;
 }
 
@@ -59,12 +54,5 @@
 
     h3 {
         font-size: 0.9rem;
-    }
-}
-
-@media only screen and (max-width: 1440px) and (min-width: 801px) {
-    #wrapper {
-        display: flex;
-        justify-content: space-center;
     }
 }

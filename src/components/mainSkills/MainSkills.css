@@ -1,0 +1,28 @@
+.skills-title {
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 0.75rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .skills-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 4;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        justify-content: space-around;
+    }
+}

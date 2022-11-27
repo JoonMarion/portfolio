@@ -10,8 +10,8 @@ export function Navbar({ setMenuIsVisible }) {
                     <a href="#home" className="secondary">
                         Início
                     </a>
-                    <a href="#projects" className="secondary">
-                        Tecnologias
+                    <a href="#skills" className="secondary">
+                        Skills
                     </a>
                     <a href="#projects" className="secondary">
                         Projetos
