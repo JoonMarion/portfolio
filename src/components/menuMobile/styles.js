@@ -15,12 +15,12 @@ export const Container = styled.section`
     background: linear-gradient(34deg, rgba(9, 20, 26, 0.8) ; 0%, rgba(17, 18, 17, 0.95) 95%);
     opacity: 0;
     pointer-events: none;
-    transform: translate-X(50px);
+    transform: translateX(-50px);
     transition: 0.5s;
     > svg {
         position: absolute;
         top: 1rem;
-        left: 1rem;
+        right: 1rem;
         transform: rotate(45deg);
         transition: 0.5s;
         cursor: pointer;
@@ -45,7 +45,7 @@ export const Container = styled.section`
         css`
             opacity: 1;
             pointer-events: auto;
-            transform: translate-Y(0px);
+            transform: translateX(0px);
             > svg {
                 transform: rotate(0deg);
             }
