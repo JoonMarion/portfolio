@@ -8,6 +8,9 @@ const CardContent = () => {
             <h1>Bem-vindo ao meu portfólio!</h1>
             <br />
             <div className="card">
+                <div className="card-content">
+                    <MiniCard />
+                </div>
                 <div className="avatar-card secondary">
                     <div className="text-content">
                         <p>
@@ -20,9 +23,6 @@ const CardContent = () => {
                             <Modal />
                         </p>
                     </div>
-                </div>
-                <div className="card-content">
-                    <MiniCard />
                 </div>
             </div>
         </div>

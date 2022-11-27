@@ -9,6 +9,12 @@
     flex-direction: column;
 }
 
+.skills-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .skills-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
