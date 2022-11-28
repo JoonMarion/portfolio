@@ -28,7 +28,7 @@ const CardContent = () => {
     return (
         <>
             <a className="primary link-hover" onClick={openModal}>
-                Ler mais...
+                Ler mais sobre mim...
             </a>
 
             <Modal

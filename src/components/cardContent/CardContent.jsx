@@ -15,13 +15,18 @@ const CardContent = () => {
                 <div className="avatar-card secondary">
                     <div className="text-content">
                         <p>
-                            &emsp;&emsp;Olá, meu nome é João Mariano. Sou de Castanhal, no estado do Pará, lugar onde
-                            nasci e cresci. Atualmente sou estagiário na equipe de desenvolvimento da empresa Sea
-                            Telecom e acadêmico de Engenharia de Software na Universidade do Estado do Pará. Desde
-                            criança sou entusiasta de tudo que envolva tecnologia, do hardware ao software.&nbsp;
+                            &emsp;&emsp;Olá, meu nome é João Mariano. Sou desenvolvedor Front-end, acadêmico de
+                            Engenharia de Software na Universidade do Estado do Pará e estagiário de desenvolvimento na
+                            empresa Sea Telecom.&nbsp;
                             <Modal />
                         </p>
-                        <br />
+                    </div>
+
+                    <div>
+                        <div>
+                            <p>&emsp;&emsp;Minhas redes:</p>
+                            <br />
+                        </div>
                         <div className="social-networks">
                             <SocialNetworks />
                         </div>
