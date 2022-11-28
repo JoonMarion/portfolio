@@ -24,12 +24,6 @@ const MainProjects = () => {
                 </div>
                 <ScrollContainer className="scroll-container">
                     <Project
-                        title="Dev Quiz"
-                        img={DevQuiz}
-                        description="A quiz for developers to test their knowledge"
-                        link="https://dev-js-quiz.netlify.app/"
-                    />
-                    <Project
                         title="Finance Manage"
                         img={FinanceManage}
                         description="A web system to manage your earnings and expenses"
@@ -52,6 +46,12 @@ const MainProjects = () => {
                         img={Calculator}
                         description="Calculator with React"
                         link="https://reactcalculatorjs.netlify.app/"
+                    />
+                    <Project
+                        title="Dev Quiz"
+                        img={DevQuiz}
+                        description="A quiz for developers to test their knowledge"
+                        link="https://dev-js-quiz.netlify.app/"
                     />
                 </ScrollContainer>
             </div>
