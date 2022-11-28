@@ -2,6 +2,7 @@
 import { Container } from './styles';
 import { IoClose } from 'react-icons/io5';
 import { useEffect } from 'react';
+import { MdOpenInNew } from 'react-icons/md';
 
 export function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
     useEffect(() => {
@@ -35,7 +36,8 @@ export function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
                     className="secondary"
                 >
                     {' '}
-                    Currículo
+                    Currículo 
+                    <MdOpenInNew className="icon" size={13} />
                 </a>
             </nav>
         </Container>

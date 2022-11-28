@@ -24,33 +24,33 @@ const MainProjects = () => {
                 </div>
                 <ScrollContainer className="scroll-container">
                     <Project
-                        title="Finance Manage"
+                        title="Controle de Finanças"
                         img={FinanceManage}
-                        description="A web system to manage your earnings and expenses"
+                        description="Sistema web para controle de finanças feito em React JS. Os dados ficam salvos no localstorage do seu navegador."
                         link="https://financemanage.netlify.app/"
                     />
                     <Project
-                        title="Pokedex"
+                        title="Pokédex"
                         img={Pokedex}
-                        description="Pokedex with Vanilla JavaScript"
+                        description="Pokédex feito com JavaScript puro. Dados consumidos da API PokeAPI."
                         link="https://joonmarion.github.io/pokedex/"
                     />
                     <Project
                         title="Instagram Login Clone"
                         img={InstagramLogin}
-                        description="Instagram login screen clone"
+                        description="Clone da tela de login do Instagram."
                         link="https://joonmarion.github.io/login-instagram/"
                     />
                     <Project
-                        title="Calculator"
+                        title="Calculadora"
                         img={Calculator}
-                        description="Calculator with React"
+                        description="Calculadora feita em React JS."
                         link="https://reactcalculatorjs.netlify.app/"
                     />
                     <Project
-                        title="Dev Quiz"
+                        title="Quiz de Programação"
                         img={DevQuiz}
-                        description="A quiz for developers to test their knowledge"
+                        description="Um quiz para desenvolvedores feito em React JS."
                         link="https://dev-js-quiz.netlify.app/"
                     />
                 </ScrollContainer>

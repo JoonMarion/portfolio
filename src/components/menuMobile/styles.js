@@ -14,7 +14,7 @@ export const Container = styled.section`
     background: linear-gradient(34deg, rgba(9, 20, 26, 0.8) ; 0%, rgba(17, 18, 17, 0.95) 95%);
     opacity: 0;
     pointer-events: none;
-    transform: translateX(-50px);
+    transform: translateX(50px);
     transition: 0.5s;
     > svg {
         position: absolute;

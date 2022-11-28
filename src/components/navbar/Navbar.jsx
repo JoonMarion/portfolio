@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from './style';
 import { RiMenu3Fill } from 'react-icons/ri';
+import { MdOpenInNew } from 'react-icons/md';
 
 export function Navbar({ setMenuIsVisible }) {
     return (
@@ -32,6 +33,7 @@ export function Navbar({ setMenuIsVisible }) {
                     >
                         {' '}
                         Currículo
+                        <MdOpenInNew className="icon" size={13} />
                     </a>
                 </nav>
             </section>
