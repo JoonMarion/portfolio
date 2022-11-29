@@ -6,12 +6,12 @@ import SocialNetworks from '../socialNetworks/SocialNetworks';
 const Contacts = () => {
     return (
         <>
-            <div className="contacts-container title" id="contacts">
+            <div className="contacts-container" id="contacts">
                 <div className="footer-background">
                     <div className="divisor"></div>
                     <div className="background"></div>
 
-                    <div className="contacts-content title">
+                    <div className="contacts-content">
                         <div className="footer-content">
                             {' '}
                             <div className="contacts-info">
