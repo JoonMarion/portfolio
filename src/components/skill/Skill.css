@@ -15,7 +15,8 @@
 .skill-card:hover {
     scale: 1.02;
     transition: 0.5s;
-    background: rgba(9, 20, 26, 0.5);
+    background: rgba(9, 20, 26, 0.3);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .skill-card .skill-card-image {

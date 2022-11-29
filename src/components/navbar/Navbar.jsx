@@ -22,7 +22,7 @@ export function Navbar({ setMenuIsVisible }) {
                     <a href="#skills" className="secondary">
                         Skills
                     </a>
-                    <a href="#movies" className="secondary">
+                    <a href="#contacts" className="secondary">
                         Contatos
                     </a>
                     <a

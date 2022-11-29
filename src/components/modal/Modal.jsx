@@ -102,7 +102,7 @@ const CardContent = () => {
                     Ademais, tive experiência com criação de imagens docker e containerização dos sistemas
                     desenvolvidos, onde foi realizado o deploy no servidor da empresa. Dessa forma, criando um pequeno ambiente
                     de microsserviços. Além disso, tive contato com a criação de documentação dos sistemas da empresa
-                    (diagramas, casos de uso, manual para usuário, etc) para facilitar a manutenibilidade. Tive experiência com desenvolvimento ágil. Fiz
+                    (diagramas, casos de uso, manual de usuário, etc) para facilitar a manutenibilidade. Tive experiência com desenvolvimento ágil. Fiz
                     bootcamps de aperfeiçoamento pessoal e profissional. Dentre as tecnologias com as quais tive mais
                     contato estão: React JS, Django, JavaScript, Python, HTML, CSS e Docker.
                 </p>
