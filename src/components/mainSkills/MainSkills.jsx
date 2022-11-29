@@ -7,7 +7,7 @@ const MainSkills = () => {
         <>
             <div className="skills-container" id="skills">
                 <div className="skills-title">
-                    <h2>Skills</h2>
+                    <h2> Principais skills</h2>
                 </div>
                 <div className="skills-content">
                     <div className="skills-cards">

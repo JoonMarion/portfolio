@@ -11,7 +11,6 @@ export const Container = styled.section`
     align-items: center;
     justify-content: center;
     background: rgba(9, 20, 26, 0.8);
-    background: linear-gradient(34deg, rgba(9, 20, 26, 0.8) ; 0%, rgba(17, 18, 17, 0.95) 95%);
     opacity: 0;
     pointer-events: none;
     transform: translateX(50px);
