@@ -14,7 +14,6 @@ import Button from './../button/Button';
 const MainProjects = () => {
     var text = '<Projetos />';
     return (
-<<<<<<< HEAD
         <>
             <div className="projects-container" id="projects">
                 <div className="projects-title">
@@ -60,18 +59,6 @@ const MainProjects = () => {
                     <p>Visite meu GitHub para ver todos os meus projetos...</p>
                     <Button title="@JoonMarion" />
                 </div>
-=======
-        <div className="projects-container" id="projects">
-            <div className="projects-title title">
-                <h2>Projetos</h2>
-                <p className="tertiary">
-                    Visite meu{' '}
-                    <a href="https://github.com/JoonMarion" target="_blank" rel="noreferrer" className="link-hover">
-                        GitHub
-                    </a>{' '}
-                    para ver mais...
-                </p>
->>>>>>> 60f52e0b994b4e6cbc4701e396ac5eca4b6a752a
             </div>
             <ScrollContainer className="scroll-container">
                 <Project
@@ -105,7 +92,7 @@ const MainProjects = () => {
                     link="https://dev-js-quiz.netlify.app/"
                 />
             </ScrollContainer>
-        </div>
+        </>
     );
 };
 
