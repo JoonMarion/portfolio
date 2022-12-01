@@ -60,38 +60,6 @@ const MainProjects = () => {
                     <Button title="@JoonMarion" />
                 </div>
             </div>
-            <ScrollContainer className="scroll-container">
-                <Project
-                    title="Controle de Finanças"
-                    img={FinanceManage}
-                    description="Sistema web para controle de finanças feito em React JS. Os dados ficam salvos no localstorage do seu navegador."
-                    link="https://financemanage.netlify.app/"
-                />
-                <Project
-                    title="Pokédex"
-                    img={Pokedex}
-                    description="Pokédex feito com JavaScript puro. Dados consumidos da API PokeAPI."
-                    link="https://joonmarion.github.io/pokedex/"
-                />
-                <Project
-                    title="Instagram Login Clone"
-                    img={InstagramLogin}
-                    description="Clone da tela de login do Instagram."
-                    link="https://joonmarion.github.io/login-instagram/"
-                />
-                <Project
-                    title="Calculadora"
-                    img={Calculator}
-                    description="Calculadora feita em React JS."
-                    link="https://reactcalculatorjs.netlify.app/"
-                />
-                <Project
-                    title="Quiz de Programação"
-                    img={DevQuiz}
-                    description="Um quiz para desenvolvedores feito em React JS."
-                    link="https://dev-js-quiz.netlify.app/"
-                />
-            </ScrollContainer>
         </>
     );
 };
