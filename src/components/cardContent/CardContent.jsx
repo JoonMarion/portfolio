@@ -15,7 +15,7 @@ const CardContent = () => {
                 <div className="avatar-card secondary">
                     <div className="text-content">
                         <p>
-                            &emsp;&emsp;Olá, meu nome é João Mariano. Sou desenvolvedor Front-end, acadêmico de
+                            &emsp;&emsp;Olá, meu nome é João Mariano, tenho 21 anos. Sou desenvolvedor Front-end, acadêmico de
                             Engenharia de Software na Universidade do Estado do Pará e estagiário de desenvolvimento na
                             empresa Sea Telecom.&nbsp;
                             <Modal />

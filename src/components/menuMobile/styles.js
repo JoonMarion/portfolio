@@ -10,7 +10,11 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     background: rgb(119, 190, 169, 0.7);
+=======
+    background: rgba(9, 20, 26, 0.8);
+>>>>>>> 60f52e0b994b4e6cbc4701e396ac5eca4b6a752a
     opacity: 0;
     pointer-events: none;
     transform: translateX(50px);

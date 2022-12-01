@@ -3,9 +3,9 @@ import { MenuMobile } from './components/menuMobile';
 import { Navbar } from './components/navbar/Navbar';
 import CardContent from './components/cardContent/CardContent';
 import MainProjects from './components/mainProjects/MainProjects';
-import Footer from './components/footer/Footer';
 import './App.css';
 import MainSkills from './components/mainSkills/MainSkills';
+import Footer from './components/footer/Footer';
 
 function App() {
     const [menuIsVisible, setMenuIsVisible] = useState(false);

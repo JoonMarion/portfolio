@@ -1,5 +1,6 @@
 .projects-title {
     display: flex;
+<<<<<<< HEAD
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -11,6 +12,9 @@
     display: flex;
     justify-content: flex-end;
     color: white;
+=======
+    justify-content: space-between;
+>>>>>>> 60f52e0b994b4e6cbc4701e396ac5eca4b6a752a
 }
 
 .scroll-container {
