@@ -1,9 +1,24 @@
 .projects-title {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.drag-text {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
 }
 
 .scroll-container {
     display: flex;
+}
+
+.visit-github {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
 }

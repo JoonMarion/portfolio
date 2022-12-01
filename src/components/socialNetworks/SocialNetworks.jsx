@@ -9,7 +9,7 @@ const SocialNetworks = () => {
         <div className="networks-wrapper">
             <div className="social-icons">
                 <a href="https://www.linkedin.com/in/joaomariano52/" target="_blank" rel="noreferrer">
-                    <FaLinkedin size={35} className="social-icon secondary" />
+                    <FaLinkedin size={30} className="social-icon secondary" />
                 </a>
             </div>
             <div className="social-icons">
@@ -18,17 +18,17 @@ const SocialNetworks = () => {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <SiGmail size={35} className="social-icon secondary" />
+                    <SiGmail size={30} className="social-icon secondary" />
                 </a>
             </div>
             <div className="social-icons">
                 <a href="https://github.com/JoonMarion" target="_blank" rel="noreferrer">
-                    <FaGithub size={35} className="social-icon secondary" />
+                    <FaGithub size={30} className="social-icon secondary" />
                 </a>
             </div>
             <div className="social-icons">
                 <a href="https://www.instagram.com/joonmarion/" target="_blank" rel="noreferrer">
-                    <BsInstagram size={35} className="social-icon secondary" />
+                    <BsInstagram size={30} className="social-icon secondary" />
                 </a>
             </div>
         </div>

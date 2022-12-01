@@ -7,30 +7,58 @@
 .skills-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .skills-content {
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.skills-drop-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.skills-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 4rem;
-    align-self: center;
-    justify-self: center;
+.skills-divisor {
+    border-bottom: 1px solid rgb(27, 152, 224, 0.5);
+    height: 1px;
+    width: 100%;
 }
 
-@media only screen and (max-width: 1024px) {
-    .skills-cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        flex-grow: 4;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
-        justify-content: space-around;
-    }
+.skills-dropdown {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.menu {
+    display: none;
+}
+
+.menu.active {
+    display: block;
+    transition: all 2s linear;
+}
+
+.menu.bactive {
+    display: block;
+}
+
+.menu.button-active {
+    transition: 0.5s;
+    display: block;
+    rotate: -180deg;
+}
+
+.menu.button-inactive {
+    transition: 0.5s;
+    display: block;
 }

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
 import './MainProjects.css';
 import ScrollContainer from 'react-indiana-drag-scroll';
@@ -7,20 +8,20 @@ import Pokedex from '../../assets/pokedex.png';
 import Calculator from '../../assets/calculator.jpeg';
 import Project from '../project/Project';
 import InstagramLogin from '../../assets/instagram-login-clone.png';
+import { HiOutlineChevronDoubleRight } from 'react-icons/hi';
+import Button from './../button/Button';
 
 const MainProjects = () => {
+    var text = '<Projetos />';
     return (
         <>
             <div className="projects-container" id="projects">
                 <div className="projects-title">
-                    <h2>Projetos</h2>
-                    <p className="tertiary">
-                        Visite meu{' '}
-                        <a href="https://github.com/JoonMarion" target="_blank" rel="noreferrer" className="link-hover">
-                            GitHub
-                        </a>{' '}
-                        para ver mais...
-                    </p>
+                    <h2 className="content-title">{text}</h2>
+                </div>
+                <div className="drag-text">
+                    <p>Arraste para ver mais </p>
+                    <HiOutlineChevronDoubleRight size={20} />
                 </div>
                 <ScrollContainer className="scroll-container">
                     <Project
@@ -54,6 +55,10 @@ const MainProjects = () => {
                         link="https://dev-js-quiz.netlify.app/"
                     />
                 </ScrollContainer>
+                <div className="centered visit-github">
+                    <p>Visite meu GitHub para ver todos os meus projetos...</p>
+                    <Button title="@JoonMarion" />
+                </div>
             </div>
         </>
     );

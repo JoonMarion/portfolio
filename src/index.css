@@ -10,10 +10,8 @@ html {
 }
 
 body {
-    background-image: url('https://readyplayer.me/images/home/bg-noise.png');
     background-repeat: reapeat-y;
-    background-color: rgb(50, 51, 62);
-    color: rgb(196, 197, 204);
+    background-color: rgb(82, 97, 117);
     width: 100%;
     -webkit-font-smoothing: antialiased;
     height: 100vh;
@@ -28,19 +26,19 @@ h2,
 h3,
 a {
     text-decoration: none;
-    color: #9c9386;
+    color: white;
 }
 
 p {
     font-size: 1rem;
-    color: #f1ffff;
+    color: rgb(241, 243, 240);
 }
 
-h1 {
+.content-title {
     font-size: 2rem;
 }
 
-h2 {
+.content-subtitle {
     font-size: 1.5rem;
 }
 
@@ -53,7 +51,7 @@ h3 {
 }
 
 .secondary {
-    color: #f1ffff;
+    color: #e8f1f2;
 }
 
 .tertiary {

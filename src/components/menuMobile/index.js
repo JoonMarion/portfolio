@@ -12,7 +12,7 @@ export function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
     return (
         <Container isVisible={menuIsVisible}>
             <IoClose size={45} onClick={() => setMenuIsVisible(false)} />
-            <nav>
+            <nav className="content-subtitle">
                 <a href="#home" className="secondary" onClick={() => setMenuIsVisible(false)}>
                     Início
                 </a>
@@ -36,7 +36,7 @@ export function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
                     className="secondary"
                 >
                     {' '}
-                    Currículo 
+                    Currículo
                     <MdOpenInNew className="icon" size={13} />
                 </a>
             </nav>

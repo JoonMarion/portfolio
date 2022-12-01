@@ -10,8 +10,7 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(9, 20, 26, 0.8);
-    background: linear-gradient(34deg, rgba(9, 20, 26, 0.8) ; 0%, rgba(17, 18, 17, 0.95) 95%);
+    background: rgb(119, 190, 169, 0.7);
     opacity: 0;
     pointer-events: none;
     transform: translateX(50px);
@@ -34,9 +33,9 @@ export const Container = styled.section`
         transition: 0.5s;
     }
     a {
-        color: #f1ffff;
+        color: black;
         &:hover {
-            color: #05c6ee;
+            color: rgb(82, 97, 117);
         }
     }
     ${({ isVisible }) =>

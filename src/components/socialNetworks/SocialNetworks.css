@@ -10,9 +10,11 @@
 }
 
 .social-icon {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .social-icon:hover {
+    transform: scale(1.01);
+    transition: 0.5s;
     opacity: 1;
 }

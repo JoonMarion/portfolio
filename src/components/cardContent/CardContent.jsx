@@ -6,7 +6,7 @@ import SocialNetworks from '../socialNetworks/SocialNetworks';
 const CardContent = () => {
     return (
         <div className="main-content">
-            <h1>Bem-vindo ao meu portfólio!</h1>
+            <h1 className="content-title">Bem-vindo ao meu portfólio!</h1>
             <br />
             <div className="card">
                 <div className="card-content">
