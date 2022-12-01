@@ -1,8 +1,10 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Modal from 'react-modal';
 import './Modal.css';
 import { IoClose } from 'react-icons/io5';
+import { AiFillFileText } from 'react-icons/ai';
 import { useEffect } from 'react';
 
 const CardContent = () => {
@@ -26,10 +28,14 @@ const CardContent = () => {
     }, [modalIsOpen]);
 
     return (
-        <>
-            <a className="primary link-hover" onClick={openModal}>
-                Ler mais sobre mim...
-            </a>
+        <div>
+            <div className="centered">
+                <button class="button-43" role="button" onClick={openModal}>
+                    <p className="centered">
+                        Sobre mim <AiFillFileText className="margin-icon" size={18} />
+                    </p>
+                </button>
+            </div>
 
             <Modal
                 closeTimeoutMS={500}
@@ -100,14 +106,15 @@ const CardContent = () => {
                 <p>
                     &emsp;&emsp;Desenvolvi vários sistemas de gestão na empresa onde estagio, a maioria deles em Django.
                     Ademais, tive experiência com criação de imagens docker e containerização dos sistemas
-                    desenvolvidos, onde foi realizado o deploy no servidor da empresa. Dessa forma, criando um pequeno ambiente
-                    de microsserviços. Além disso, tive contato com a criação de documentação dos sistemas da empresa
-                    (diagramas, casos de uso, manual de usuário, etc) para facilitar a manutenibilidade. Tive experiência com desenvolvimento ágil. Fiz
-                    bootcamps de aperfeiçoamento pessoal e profissional. Dentre as tecnologias com as quais tive mais
-                    contato estão: React JS, Django, JavaScript, Python, HTML, CSS e Docker.
+                    desenvolvidos, onde foi realizado o deploy no servidor da empresa. Dessa forma, criando um pequeno
+                    ambiente de microsserviços. Além disso, tive contato com a criação de documentação dos sistemas da
+                    empresa (diagramas, casos de uso, manual de usuário, etc) para facilitar a manutenibilidade. Tive
+                    experiência com desenvolvimento ágil. Fiz bootcamps de aperfeiçoamento pessoal e profissional.
+                    Dentre as tecnologias com as quais tive mais contato estão: React JS, Django, JavaScript, Python,
+                    HTML, CSS e Docker.
                 </p>
             </Modal>
-        </>
+        </div>
     );
 };
 

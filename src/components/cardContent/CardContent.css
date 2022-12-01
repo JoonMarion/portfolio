@@ -1,11 +1,9 @@
-.main-content {
-    margin-top: 2rem;
-}
-
 .card {
     width: 100%;
     height: auto;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .avatar-card {
@@ -16,16 +14,27 @@
 }
 
 .card-content {
-    width: 100%;
+    width: auto;
     height: 100%;
 }
 
 .text-content {
-    padding: 2rem;
-    text-align: justify;
-    text-justify: inter-word;
+    text-justify: inter-character;
     height: 100%;
     overflow-y: hidden;
+    width: 100%;
+}
+
+.my-name {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.first-about {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
 }
 
 .text-content::-webkit-scrollbar {
@@ -37,26 +46,15 @@
 }
 
 .text-content::-webkit-scrollbar-thumb {
-    background-color: #9c9386;
     border-radius: 20px;
     height: 50px;
 }
 
-.social-networks {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media only screen and (max-width: 1090px) {
+@media only screen and (max-width: 850px) {
     .card {
         display: flex;
-        flex-direction: column;
-    }
-    .card-content {
-        display: flex;
-        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
     }
 }
 

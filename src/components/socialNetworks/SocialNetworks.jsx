@@ -17,6 +17,7 @@ const SocialNetworks = () => {
                     href="https://mail.google.com/mail/u/0/?fs=1&to=marianojoao52@gmail.com&su=Ol%C3%A1,+Jo%C3%A3o!&body=Vamos+conversar!&tf=cm"
                     target="_blank"
                     rel="noreferrer"
+                    className="social-tag-a"
                 >
                     <SiGmail size={30} className="social-icon secondary" />
                 </a>

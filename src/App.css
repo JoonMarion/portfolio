@@ -5,8 +5,8 @@
 }
 
 .main-container {
-    max-width: 900px;
-    width: 70vw;
+    max-width: 1000px;
+    width: 90vw;
 }
 
 .index {
@@ -37,7 +37,7 @@
 
 @media only screen and (max-width: 800px) and (min-width: 427px) {
     .main-container {
-        width: 80vw;
+        width: 90vw;
     }
 
     p {

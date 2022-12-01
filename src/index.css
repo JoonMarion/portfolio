@@ -11,7 +11,7 @@ html {
 
 body {
     background-repeat: reapeat-y;
-    background-color: rgb(82, 97, 117);
+    background-color: rgb(19, 41, 61);
     width: 100%;
     -webkit-font-smoothing: antialiased;
     height: 100vh;
@@ -36,6 +36,8 @@ p {
 
 .content-title {
     font-size: 2rem;
+    padding-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 .content-subtitle {
@@ -47,7 +49,7 @@ h3 {
 }
 
 .primary {
-    color: #05c6ee;
+    color: #1b98e0;
 }
 
 .secondary {
@@ -55,28 +57,26 @@ h3 {
 }
 
 .tertiary {
-    color: #9c9386;
+    color: #006494;
 }
-
 ::-moz-selection {
     /* Code for Firefox */
-    backgroundcolor: #05c6ee;
-    color: #9c9386;
+    /* backgroundcolor: #05c6ee;
+    color: #9c9386; */
 }
 
 ::selection {
-    background: #05c6ee;
-    color: #9c9386;
+    /* background: #05c6ee;
+    color: #9c9386; */
 }
 
 .link-hover {
     cursor: pointer;
-    color: #05c6ee;
-    opacity: 0.8;
+    color: #1b98e0;
 }
 
 .link-hover:hover {
-    opacity: 1;
+    color: #006494;
 }
 
 .title {

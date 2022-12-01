@@ -44,10 +44,3 @@
     align-items: center;
     justify-content: center;
 }
-
-@media (min-width: 768px) {
-    .button-46 {
-        min-width: 200px;
-        padding: 14px 16px;
-    }
-}

@@ -10,10 +10,10 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(119, 190, 169, 0.7);
+    background: #13293d;
     opacity: 0;
     pointer-events: none;
-    transform: translateX(50px);
+    transform: translateY(-500px);
     transition: 0.5s;
     > svg {
         position: absolute;
@@ -33,9 +33,22 @@ export const Container = styled.section`
         transition: 0.5s;
     }
     a {
-        color: black;
+        font-size: 1.5rem;
+        position: relative;
+        &:before {
+            content: '';
+            border-radius: 50px;
+            bottom: 0px;
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background: #006494;
+            transition: 0.2s;
+        }
         &:hover {
-            color: rgb(82, 97, 117);
+            &:before {
+                width: 100%;
+            }
         }
     }
     ${({ isVisible }) =>

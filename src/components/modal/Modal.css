@@ -26,3 +26,32 @@
 ::-webkit-scrollbar {
     width: 0px;
 }
+
+/* CSS */
+.button-43 {
+    background-color: #1b98e0;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    text-decoration: none;
+    width: 90%;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 1rem 0;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 1rem 2rem;
+}
+
+.button-43:hover {
+    background-color: #006494;
+}
+
+.margin-icon {
+    margin: 0 0.5rem;
+}

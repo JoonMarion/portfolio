@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.header`
     width: 100%;
     height: 3rem;
-    background: rgb(105, 167, 149);
+    background: rgba(19, 41, 61, 0.8);
     padding: 14.5px 64px;
     display: flex;
     align-items: center;
@@ -32,7 +32,7 @@ export const Container = styled.header`
                     position: absolute;
                     width: 0%;
                     height: 2px;
-                    background: #05c6ee;
+                    background: #006494;
                     transition: 0.3s;
                 }
                 &:hover {

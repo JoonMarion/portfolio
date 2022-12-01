@@ -8,7 +8,6 @@ import Pokedex from '../../assets/pokedex.png';
 import Calculator from '../../assets/calculator.jpeg';
 import Project from '../project/Project';
 import InstagramLogin from '../../assets/instagram-login-clone.png';
-import { HiOutlineChevronDoubleRight } from 'react-icons/hi';
 import Button from './../button/Button';
 
 const MainProjects = () => {
@@ -19,9 +18,8 @@ const MainProjects = () => {
                 <div className="projects-title">
                     <h2 className="content-title">{text}</h2>
                 </div>
-                <div className="drag-text">
-                    <p>Arraste para ver mais </p>
-                    <HiOutlineChevronDoubleRight size={20} />
+                <div className="drag-text centered">
+                    <p>Arraste para ver mais...</p>
                 </div>
                 <ScrollContainer className="scroll-container">
                     <Project

@@ -9,8 +9,8 @@ const Project = ({ img, title, description, link }) => {
                     <img className="project-card-img" src={img} alt={title} />
                 </div>
                 <div className="project-card-content">
-                    <h3 className="primary link-hover">{title}</h3>
-                    <p className="card-text secondary">{description}</p>
+                    <h3 className="link-hover">{title}</h3>
+                    <p className="card-text ">{description}</p>
                 </div>
             </a>
         </div>
