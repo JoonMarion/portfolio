@@ -16,8 +16,12 @@ const MainProjects = () => {
         <div className="projects-container" id="projects">
             <div className="projects-title">
                 <h2 className="content-title">{text}</h2>
+                <p className="tertiary">Alguns projetos web para você acessar</p>
             </div>
-            <Carouselzin />
+            <div className="projects-content">
+                <Carouselzin />
+            </div>
+
             {/* <ScrollContainer className="scroll-container">
                 <Project
                     title="Controle de Finanças"

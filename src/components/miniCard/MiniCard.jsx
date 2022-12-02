@@ -1,24 +1,11 @@
 import React from 'react';
-import { animated } from 'react-spring';
-import { use3dEffect } from 'use-3d-effect';
 import './MiniCard.css';
 import Avatar from '../../assets/avatar.png';
-// import Button from '../button/Button';
 
 const MiniCard = () => {
-    const ref = React.useRef(null);
-    const { style, ...mouseHandlers } = use3dEffect(ref);
     return (
         <div className="mini-card-container">
-            {' '}
-            <animated.div
-                ref={ref}
-                style={{
-                    ...style,
-                }}
-                {...mouseHandlers}
-                className="mini-card"
-            >
+            <div className="mini-card">
                 <div className="mini-card-image">
                     <img className="avatar-img" src={Avatar} alt="Avatar João Mariano" />
                 </div>
@@ -44,10 +31,7 @@ const MiniCard = () => {
                         &#125;,
                     </p>
                 </div>
-            </animated.div>
-            {/* <div className="centered">
-                <Button title="Currículo"></Button>
-            </div> */}
+            </div>
         </div>
     );
 };

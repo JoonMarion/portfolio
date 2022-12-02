@@ -1,21 +1,33 @@
 .projects-container {
     height: 100vh;
+    width: 100%;
+    flex-direction: column;
 }
+
 .projects-title {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.content-title {
+    margin-bottom: 1rem;
+}
+
+.projects-content {
+    height: 70%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 .drag-text {
     display: flex;
     justify-content: flex-end;
     color: white;
-}
-
-.scroll-container {
-    display: flex;
 }
 
 .visit-github {
