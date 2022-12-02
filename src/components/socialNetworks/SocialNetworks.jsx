@@ -2,14 +2,24 @@ import React from 'react';
 import './SocialNetworks.css';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { BsInstagram } from 'react-icons/bs';
-import { SiGmail } from 'react-icons/si';
+import { AiTwotoneMail } from 'react-icons/ai';
 
-const SocialNetworks = () => {
+const SocialNetworks = ({ size }) => {
     return (
         <div className="networks-wrapper">
             <div className="social-icons">
                 <a href="https://www.linkedin.com/in/joaomariano52/" target="_blank" rel="noreferrer">
-                    <FaLinkedin size={30} className="social-icon secondary" />
+                    <FaLinkedin size={size} className="social-icon secondary" />
+                </a>
+            </div>
+            <div className="social-icons">
+                <a href="https://github.com/JoonMarion" target="_blank" rel="noreferrer">
+                    <FaGithub size={size} className="social-icon secondary" />
+                </a>
+            </div>
+            <div className="social-icons">
+                <a href="https://www.instagram.com/joonmarion/" target="_blank" rel="noreferrer">
+                    <BsInstagram size={size} className="social-icon secondary" />
                 </a>
             </div>
             <div className="social-icons">
@@ -19,17 +29,7 @@ const SocialNetworks = () => {
                     rel="noreferrer"
                     className="social-tag-a"
                 >
-                    <SiGmail size={30} className="social-icon secondary" />
-                </a>
-            </div>
-            <div className="social-icons">
-                <a href="https://github.com/JoonMarion" target="_blank" rel="noreferrer">
-                    <FaGithub size={30} className="social-icon secondary" />
-                </a>
-            </div>
-            <div className="social-icons">
-                <a href="https://www.instagram.com/joonmarion/" target="_blank" rel="noreferrer">
-                    <BsInstagram size={30} className="social-icon secondary" />
+                    <AiTwotoneMail size={size} className="social-icon secondary" />
                 </a>
             </div>
         </div>

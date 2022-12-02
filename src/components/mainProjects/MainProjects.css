@@ -1,3 +1,6 @@
+.projects-container {
+    height: 100vh;
+}
 .projects-title {
     display: flex;
     flex-direction: column;

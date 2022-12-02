@@ -4,11 +4,8 @@ import Modal from '../modal/Modal';
 import SocialNetworks from '../socialNetworks/SocialNetworks';
 
 const CardContent = () => {
-    const text = '<BemVindo />';
     return (
         <div className="main-content">
-            <h1 className="content-title centered secondary">{text}</h1>
-            <br />
             <div className="card">
                 <div className="avatar-card secondary">
                     <div className="text-content secondary">
@@ -18,10 +15,7 @@ const CardContent = () => {
                         <h2 className="first-about secondary">Entusiasta de tecnologia e ciências exatas</h2>
                         <Modal />
                     </div>
-
-                    <div className="social-networks">
-                        <SocialNetworks />
-                    </div>
+                    <SocialNetworks size="25" />
                 </div>
                 <div className="card-content">
                     <MiniCard />
