@@ -1,5 +1,5 @@
 .projects-container {
-    height: 100vh;
+    height: auto;
     width: 100%;
     flex-direction: column;
 }
@@ -17,7 +17,6 @@
 }
 
 .projects-content {
-    height: 70%;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -28,10 +27,4 @@
     display: flex;
     justify-content: flex-end;
     color: white;
-}
-
-.visit-github {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
 }

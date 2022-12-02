@@ -1,16 +1,15 @@
-import { useEffect, useState, useRef } from 'react';
+import { useRef } from 'react';
 import { SlArrowLeft, SlArrowRight } from 'react-icons/sl';
 import './Carousel.css';
+import Project from './../project/Project';
+import FinanceManage from '../../assets/finance-manage.jpeg';
+import Pokedex from '../../assets/pokedex.png';
+import DevQuiz from '../../assets/dev-quiz.jpeg';
+import Calculator from '../../assets/calculator.jpeg';
+import InstagramLogin from '../../assets/instagram-login-clone.png';
 
 const Carouselzin = () => {
-    const [data, setData] = useState([]);
     const carousel = useRef(null);
-
-    useEffect(() => {
-        fetch('http://localhost:3000/static/projects.json')
-            .then((response) => response.json())
-            .then(setData);
-    }, []);
 
     const handleLeftClick = (e) => {
         e.preventDefault();
@@ -22,10 +21,6 @@ const Carouselzin = () => {
         carousel.current.scrollLeft += carousel.current.offsetWidth;
     };
 
-    if (!data || !data.length) {
-        return null;
-    }
-
     return (
         <div className="container">
             <div className="carousel-button">
@@ -33,23 +28,39 @@ const Carouselzin = () => {
             </div>
 
             <div className="carousel" ref={carousel}>
-                {data.map((item) => {
-                    const { name, image, description } = item;
-                    return (
-                        <div className="card-project">
-                            <div className="image">
-                                <img src={image} alt="" />
-                            </div>
-
-                            <div className="info">
-                                <h3>{name}</h3>
-                                <br />
-                                <p className="primary">{description}</p>
-                            </div>
-                        </div>
-                    );
-                })}
+                <Project
+                    title="Controle de Finanças"
+                    img={FinanceManage}
+                    description="Sistema web para controle de finanças feito em React JS. Os dados ficam salvos no localstorage do seu navegador. Utilizando conceitos dos React Hooks."
+                    link="https://financemanage.netlify.app/"
+                />
+                <Project
+                    title="Pokédex"
+                    img={Pokedex}
+                    description="Pokédex com paginação feita com JavaScript puro. Estudo de consumo de API, consumindo dados da PokeAPI."
+                    link="https://joonmarion.github.io/pokedex/"
+                />
+                <Project
+                    title="Instagram Login Clone"
+                    img={InstagramLogin}
+                    description="Clone da tela de login do Instagram feita com HTML e CSS. Estudo de responsividade e Flexbox."
+                    link="https://joonmarion.github.io/login-instagram/"
+                />
+                <Project
+                    title="Quiz de Programação"
+                    img={DevQuiz}
+                    description="Um quiz para desenvolvedores feito em React JS."
+                    link="https://dev-js-quiz.netlify.app/"
+                />
+                <Project
+                    title="Calculadora"
+                    img={Calculator}
+                    description="Calculadora feita em React JS e StyledComponents."
+                    link="https://reactcalculatorjs.netlify.app/"
+                />
+                
             </div>
+
             <div className="carousel-button">
                 <SlArrowRight className="icon" onClick={handleRightClick} size={30} color="white" />
             </div>

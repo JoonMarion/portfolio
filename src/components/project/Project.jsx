@@ -1,18 +1,27 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 import React from 'react';
 import './Project.css';
+import { ImArrowRight2 } from 'react-icons/im';
 
 const Project = ({ img, title, description, link }) => {
     return (
-        <div className="project-card">
-            <a href={link} target="_blank" rel="noreferrer">
-                <div className="project-card-image">
-                    <img className="project-card-img" src={img} alt={title} />
-                </div>
-                <div className="project-card-content">
-                    <h3 className="link-hover">{title}</h3>
-                    <p className="card-text ">{description}</p>
-                </div>
-            </a>
+        <div className="card-project">
+            <div className="image">
+                <img src={img} alt={title} />
+            </div>
+
+            <div className="info">
+                <h2>{title}</h2>
+                <br />
+                <p className="secondary">{description}</p>
+                <a href={link} className="centered" target="_blank" rel="noreferrer">
+                    <button class="button-43" role="button">
+                        <p className="centered">
+                            Acessar Projeto <ImArrowRight2 className="margin-icon" size={18} />
+                        </p>
+                    </button>
+                </a>
+            </div>
         </div>
     );
 };

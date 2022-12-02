@@ -81,3 +81,11 @@ h3 {
 .title {
     padding-top: 3rem;
 }
+
+@media only screen and (max-width: 758px) {
+    .content-title {
+        font-size: 2rem;
+        padding-top: 2.5rem;
+        margin-bottom: 1rem;
+    }
+}
