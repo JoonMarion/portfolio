@@ -28,7 +28,6 @@
 .text-content {
     text-justify: inter-character;
     height: 100%;
-    overflow-y: hidden;
     width: 100%;
 }
 

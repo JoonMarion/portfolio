@@ -1,8 +1,10 @@
 import React from 'react';
 import './MainSkills.css';
-import FrontEnd from './../frontEnd/FrontEnd';
-import BackEnd from './../backEnd/BackEnd';
-import DevOps from './../devops/DevOps';
+import FrontEnd from '../technologies/frontEnd/FrontEnd';
+import BackEnd from '../technologies/backEnd/BackEnd';
+import DevOps from '../technologies/devops/DevOps';
+import Tools from '../technologies/tools/Tools';
+import Languages from '../technologies/languages/Languages';
 
 const MainSkills = () => {
     const Skills = '<Skills />';
@@ -15,6 +17,8 @@ const MainSkills = () => {
                 <FrontEnd />
                 <BackEnd />
                 <DevOps />
+                <Tools />
+                <Languages />
             </div>
         </div>
     );

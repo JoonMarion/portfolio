@@ -9,7 +9,7 @@ const MainProjects = () => {
         <div className="projects-container" id="projects">
             <div className="projects-title">
                 <h2 className="content-title">{text}</h2>
-                <p className="tertiary">Alguns projetos web para você acessar</p>
+                <p className="tertiary">Alguns projetos web para acessar</p>
             </div>
             <div className="projects-content">
                 <Carousel />

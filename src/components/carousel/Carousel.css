@@ -11,6 +11,26 @@
     scroll-behavior: smooth;
 }
 
+.carousel::-webkit-scrollbar {
+    width: 12px;
+}
+
+.carousel::-webkit-scrollbar-track {
+    background: #006494; /* color of the tracking area */
+    border-radius: 20px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background-color: #1b98e0; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid #006494; /* creates padding around scroll thumb */
+}
+
+.carousel {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: blue orange; /* scroll thumb and track */
+}
+
 .carousel-button {
     cursor: pointer;
 }

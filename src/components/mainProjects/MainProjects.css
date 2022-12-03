@@ -10,10 +10,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .content-title {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .projects-content {

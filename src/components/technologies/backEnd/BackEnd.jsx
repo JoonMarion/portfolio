@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useRef, useState } from 'react';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
-import Skill from './../skill/Skill';
+import Skill from '../../skill/Skill';
 
 const backEnd = () => {
     const bdropDownRef = useRef(null);
@@ -13,13 +13,13 @@ const backEnd = () => {
             <button onClick={bonClick} className="skills-drop-button">
                 <h3 className="secondary">Back-End</h3>
                 <MdOutlineKeyboardArrowDown
-                    className={`menu ${bisActive ? 'button-active' : 'button-inactive'}`}
+                    className={`${bisActive ? 'button-inactive' : 'button-active'}`}
                     size={30}
                     color="#e8f1f2"
                 />
             </button>
             <div className="skills-divisor"></div>
-            <nav ref={bdropDownRef} className={`menu ${bisActive ? 'bactive' : ''}`}>
+            <nav ref={bdropDownRef} className={`menu ${bisActive ? 'inactive' : 'active'}`}>
                 <ul className="skills-dropdown">
                     <li>
                         <Skill

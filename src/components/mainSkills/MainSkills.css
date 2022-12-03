@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: auto;
 }
 
 .skills-content {
@@ -34,25 +35,28 @@
 }
 
 .menu {
-    display: none;
+    overflow-y: auto;
+    max-height: 200px;
+    transition: max-height 0.5s ease-in-out;
 }
 
 .menu.active {
-    display: block;
-    transition: all 2s linear;
+    max-height: 0;
+    pointer-events: none;
+    transition: max-height 0.5s ease-in-out;
 }
 
 .menu.bactive {
     display: block;
 }
 
-.menu.button-active {
+.button-active {
+    transition: 0.5s;
+    display: block;
+}
+
+.button-inactive {
     transition: 0.5s;
     display: block;
     rotate: -180deg;
-}
-
-.menu.button-inactive {
-    transition: 0.5s;
-    display: block;
 }
