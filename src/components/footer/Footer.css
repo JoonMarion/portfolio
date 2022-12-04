@@ -1,11 +1,3 @@
-.contacts-container {
-    height: auto;
-}
-
-.contacts-content {
-    margin-top: 1.5rem;
-}
-
 .divisor {
     height: 0.5rem;
     background-color: #05c6ee;
@@ -24,14 +16,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.contacts-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 100%;
 }
 
 .footer-content {

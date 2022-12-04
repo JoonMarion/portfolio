@@ -1,0 +1,41 @@
+.contacts-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-content {
+    width: 100%;
+    display: flex;
+}
+
+.contacts {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.send-email {
+    width: 50%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-style {
+    border: none;
+    border-radius: 0.5rem;
+    height: 3rem;
+    background-color: #006494;
+}
+
+.form-style::placeholder {
+    margin-left: 0.5rem;
+    color: black;
+}

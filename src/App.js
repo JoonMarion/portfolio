@@ -3,9 +3,10 @@ import { MenuMobile } from './components/menuMobile';
 import { Navbar } from './components/navbar/Navbar';
 import CardContent from './components/cardContent/CardContent';
 import MainProjects from './components/mainProjects/MainProjects';
-import './App.css';
 import MainSkills from './components/mainSkills/MainSkills';
+import Contacts from './components/contacts/Contacts';
 import Footer from './components/footer/Footer';
+import './App.css';
 
 function App() {
     const [menuIsVisible, setMenuIsVisible] = useState(false);
@@ -19,6 +20,7 @@ function App() {
                     <CardContent />
                     <MainProjects />
                     <MainSkills />
+                    <Contacts />
                 </div>
             </div>
             <Footer />
