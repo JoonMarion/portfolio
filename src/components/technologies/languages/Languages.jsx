@@ -10,7 +10,10 @@ const Languages = () => {
     return (
         <div className="skills-cards">
             <button onClick={fonClick} className="skills-drop-button">
-                <h3 className="secondary">Linguagens de programação base</h3>
+                <div className="skills-title">
+                    <h3 className="secondary">Linguagens de programação base</h3>
+                    <p className="skills-subtitle">Primeiras linguagens de programação que tive contato</p>
+                </div>
                 <MdOutlineKeyboardArrowDown
                     className={`${fisActive ? 'button-inactive' : 'button-active'}`}
                     color="#e8f1f2"
@@ -24,14 +27,14 @@ const Languages = () => {
                         <Skill
                             title="C"
                             img="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png"
-                            description="Linguagem de programação"
+                            description="Linguagem de programação de propósito geral"
                         />
                     </li>
                     <li>
                         <Skill
                             title="Java"
                             img="https://logospng.org/download/java/logo-java-512.png"
-                            description="Linguagem de programação"
+                            description="Linguagem de programação de propósito geral"
                         />
                     </li>
                 </ul>

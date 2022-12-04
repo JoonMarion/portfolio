@@ -10,7 +10,12 @@ const DevOps = () => {
     return (
         <div className="skills-cards">
             <button onClick={fonClick} className="skills-drop-button">
-                <h3 className="secondary">DevOps</h3>
+                <div className="skills-title">
+                    <h3 className="secondary">DevOps</h3>
+                    <p className="skills-subtitle">
+                        Integração entre desenvolvimento e infraestrutura para produção de serviços
+                    </p>
+                </div>
                 <MdOutlineKeyboardArrowDown
                     className={`${disActive ? 'button-inactive' : 'button-active'}`}
                     color="#e8f1f2"

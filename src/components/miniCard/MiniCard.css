@@ -9,7 +9,7 @@
     display: flex;
     align-items: flex-start;
     border-radius: 30% 30% 30% 30% / 100% 0% 100% 0%;
-    box-shadow: 0 0 0 1px transparent;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     background-color: rgba(9, 20, 26, 0.8);
     transition: background-color 0.15s, box-shadow 0.15s;
 }

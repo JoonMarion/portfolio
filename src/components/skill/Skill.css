@@ -9,6 +9,12 @@
     justify-content: space-around;
 }
 
+.skill-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    background-color: rgba(9, 20, 26, 0.8);
+    transition: 0.5s;
+}
+
 .skill-card .skill-card-image {
     width: 50px;
     height: 50px;

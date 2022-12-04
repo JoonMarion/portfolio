@@ -11,6 +11,17 @@
     gap: 2rem;
 }
 
+.skills-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.skills-title .skills-subtitle {
+    text-align: left;
+    margin: 0.5rem 0;
+    color: #006494;
+}
 .skills-drop-button {
     background-color: transparent;
     border: none;
@@ -37,13 +48,13 @@
 .menu {
     overflow-y: auto;
     max-height: 200px;
-    transition: max-height 0.5s ease-in-out;
+    transition: 0.5s linear;
 }
 
 .menu.active {
     max-height: 0;
     pointer-events: none;
-    transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.5s linear;
 }
 
 .menu.bactive {
@@ -51,12 +62,12 @@
 }
 
 .button-active {
-    transition: 0.5s;
+    transition: 0.5s linear;
     display: block;
 }
 
 .button-inactive {
-    transition: 0.5s;
+    transition: 0.5s linear;
     display: block;
     rotate: -180deg;
 }

@@ -11,7 +11,10 @@ const FrontEnd = () => {
     return (
         <div className="skills-cards">
             <button onClick={fonClick} className="skills-drop-button">
-                <h3 className="secondary">Front-End</h3>
+                <div className="skills-title">
+                    <h2 className="secondary">Front-End</h2>
+                    <p className="skills-subtitle">Aqui é onde toda a parte gráfica é desenvolvida</p>
+                </div>
                 <MdOutlineKeyboardArrowDown
                     className={`${fisActive ? 'button-inactive' : 'button-active'}`}
                     color="#e8f1f2"

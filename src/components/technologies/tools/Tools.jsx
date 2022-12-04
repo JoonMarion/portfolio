@@ -24,7 +24,14 @@ const Tools = () => {
                         <Skill
                             title="Git"
                             img="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
-                            description="Versionamento de código"
+                            description="Ferramenta para controle de versionamento de código"
+                        />
+                    </li>
+                    <li>
+                        <Skill
+                            title="Astah UML"
+                            img="https://astah.change-vision.com/ja/Resources/Images/logos/edition/uml_astah.png"
+                            description="Ferramenta de modelagem de soluções de software"
                         />
                     </li>
                 </ul>

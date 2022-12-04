@@ -10,15 +10,15 @@ const MainSkills = () => {
     const Skills = '<Skills />';
     return (
         <div className="skills-container" id="skills">
-            <div className="centered skills-title">
+            <div className="centered">
                 <h2 className="content-title">{Skills}</h2>
             </div>
             <div className="skills-content">
                 <FrontEnd />
                 <BackEnd />
                 <DevOps />
-                <Tools />
                 <Languages />
+                <Tools />
             </div>
         </div>
     );

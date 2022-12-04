@@ -11,9 +11,12 @@ const backEnd = () => {
     return (
         <div className="skills-cards">
             <button onClick={bonClick} className="skills-drop-button">
-                <h3 className="secondary">Back-End</h3>
+                <div className="skills-title">
+                    <h3 className="secondary">Back-End</h3>
+                    <p className="skills-subtitle">Aqui é onde fica as regras de negócio do sistema</p>
+                </div>
                 <MdOutlineKeyboardArrowDown
-                    className={`${bisActive ? 'button-inactive' : 'button-active'}`}
+                    className={`${bisActive ? 'button-i nactive' : 'button-active'}`}
                     size={30}
                     color="#e8f1f2"
                 />
@@ -25,14 +28,21 @@ const backEnd = () => {
                         <Skill
                             title="Python"
                             img="https://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png"
-                            description="Back-end"
+                            description="Linguagem de programação de alto nível"
                         />
                     </li>
                     <li>
                         <Skill
                             title="Django"
                             img="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/django-icon.png"
-                            description="Framework web em Python"
+                            description="Framework para desenvolvimento web em Python"
+                        />
+                    </li>
+                    <li>
+                        <Skill
+                            title="SQL"
+                            img="https://www.freeiconspng.com/thumbs/sql-server-icon-png/sql-server-icon-png-29.png"
+                            description="Linguagem padrão para banco de dados"
                         />
                     </li>
                 </ul>
