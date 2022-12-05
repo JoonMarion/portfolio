@@ -11,7 +11,7 @@ html {
 
 body {
     background-repeat: reapeat-y;
-    background-color: rgb(19, 41, 61);
+    background-color: #181a1b;
     width: 100%;
     -webkit-font-smoothing: antialiased;
     height: 100vh;
@@ -85,7 +85,7 @@ h3 {
 @media only screen and (max-width: 758px) {
     .content-title {
         font-size: 2rem;
-        padding-top: 2.5rem;
+        padding-top: 3rem;
         margin-bottom: 1rem;
     }
 }

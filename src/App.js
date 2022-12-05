@@ -15,9 +15,9 @@ function App() {
         <div className="App" id="home">
             <MenuMobile menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />
             <Navbar setMenuIsVisible={setMenuIsVisible} />
+            <CardContent />
             <div id="wrapper">
                 <div className="main-container">
-                    <CardContent />
                     <MainProjects />
                     <MainSkills />
                     <Contacts />

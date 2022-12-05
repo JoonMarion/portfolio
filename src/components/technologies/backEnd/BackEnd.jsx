@@ -16,7 +16,7 @@ const backEnd = () => {
                     <p className="skills-subtitle">Aqui é onde fica as regras de negócio do sistema</p>
                 </div>
                 <MdOutlineKeyboardArrowDown
-                    className={`${bisActive ? 'button-i nactive' : 'button-active'}`}
+                    className={`${bisActive ? 'button-inactive' : 'button-active'}`}
                     size={30}
                     color="#e8f1f2"
                 />

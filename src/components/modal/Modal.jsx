@@ -52,7 +52,7 @@ const CardContent = () => {
                         bottom: 0,
                         backgroundImage: 'url("https://readyplayer.me/images/home/bg-noise.png")',
                         backgroundRepeat: 'reapeat-y',
-                        backgroundColor: 'rgb(50, 51, 62, 0.8)',
+                        backgroundColor: 'rgba(19, 41, 61, 0.8)',
                     },
                     content: {
                         marginTop: '3rem',
@@ -72,7 +72,7 @@ const CardContent = () => {
                 }}
             >
                 <div className="close-modal-button">
-                    <IoClose size={35} onClick={() => closeModal(false)} />
+                    <IoClose size={35} onClick={() => closeModal(false)} color="white" />
                 </div>
                 <h2 className="primary centered">Sobre mim</h2>
                 <br />

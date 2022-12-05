@@ -22,7 +22,7 @@ const Carouselzin = () => {
     };
 
     return (
-        <div className="container">
+        <div className="carousel-container">
             <div className="carousel-button">
                 <SlArrowLeft className="icon" onClick={handleLeftClick} size={30} color="white" />
             </div>
@@ -58,7 +58,6 @@ const Carouselzin = () => {
                     description="Calculadora feita em React JS e StyledComponents."
                     link="https://reactcalculatorjs.netlify.app/"
                 />
-                
             </div>
 
             <div className="carousel-button">

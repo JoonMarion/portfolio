@@ -1,4 +1,4 @@
-.container {
+.carousel-container {
     width: 100%;
     display: flex;
     align-items: center;
@@ -24,11 +24,6 @@
     background-color: #1b98e0; /* color of the scroll thumb */
     border-radius: 20px; /* roundness of the scroll thumb */
     border: 3px solid #006494; /* creates padding around scroll thumb */
-}
-
-.carousel {
-    scrollbar-width: thin; /* "auto" or "thin" */
-    scrollbar-color: blue orange; /* scroll thumb and track */
 }
 
 .carousel-button {

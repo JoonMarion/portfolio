@@ -30,13 +30,26 @@ const Contacts = () => {
                 <div className="send-email">
                     <h2>Me envie um email</h2>
                     <form className="form" onSubmit={() => {}}>
-                        <input className="input form-style" type="text" placeholder="Digite seu nome" />
-
-                        <input className="input form-style" type="text" placeholder="Digite seu email" />
-
-                        <textarea className="textarea form-style" placeholder="Digite sua mensagem..." />
-
-                        <input className="button form-style" type="submit" value="Enviar" />
+                        <ul>
+                            <li>
+                                <label for="name">Name</label>
+                                <input className="input form-style" type="text" name="name" />
+                                <span>Digite seu nome e sobrenome</span>
+                            </li>
+                            <li>
+                                <label for="email">Email</label>
+                                <input className="input form-style" type="text" name="email" />
+                                <span>Digite um email válido</span>
+                            </li>
+                            <li>
+                                <label for="message">Mensagem</label>
+                                <textarea className="textarea form-style" name="message" />
+                                <span>Digite sua mensagem</span>
+                            </li>
+                            <li>
+                                <input className="button form-style" type="submit" value="Enviar" />
+                            </li>
+                        </ul>
                     </form>
                 </div>
             </div>
