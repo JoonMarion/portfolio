@@ -28,26 +28,29 @@ const Contacts = () => {
                     </div>
                 </div>
                 <div className="send-email">
-                    <h2>Me envie um email</h2>
+                    <h2 className="send-email-title">Me envie um email</h2>
                     <form className="form" onSubmit={() => {}}>
-                        <ul>
-                            <li>
-                                <label for="name">Name</label>
+                        <ul className="forms">
+                            <li className="form-content">
+                                <label for="name" className="form-label secondary">
+                                    Digite seu nome
+                                </label>
                                 <input className="input form-style" type="text" name="name" />
-                                <span>Digite seu nome e sobrenome</span>
                             </li>
-                            <li>
-                                <label for="email">Email</label>
+                            <li className="form-content">
+                                <label for="email" className="form-label secondary">
+                                    Digite um email válido
+                                </label>
                                 <input className="input form-style" type="text" name="email" />
-                                <span>Digite um email válido</span>
                             </li>
-                            <li>
-                                <label for="message">Mensagem</label>
+                            <li className="form-content">
+                                <label for="message" className="form-label secondary">
+                                    Digite sua mensagem
+                                </label>
                                 <textarea className="textarea form-style" name="message" />
-                                <span>Digite sua mensagem</span>
                             </li>
-                            <li>
-                                <input className="button form-style" type="submit" value="Enviar" />
+                            <li className="form-content form-button">
+                                <input className="button form-style secondary" type="submit" value="Enviar" />
                             </li>
                         </ul>
                     </form>
