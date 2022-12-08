@@ -74,6 +74,10 @@
         align-items: center;
         padding-top: 2rem;
     }
+
+    .button-roll-down {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 800px) {
