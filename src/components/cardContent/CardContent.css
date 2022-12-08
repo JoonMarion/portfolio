@@ -46,6 +46,28 @@
     margin-bottom: 0.5rem;
 }
 
+.button-roll-down {
+    position: absolute;
+    bottom: 100px;
+}
+
+@keyframes floater {
+    0% {
+        transform: translateY(-20%);
+        transition: ease 1s;
+    }
+    50% {
+        transform: translateY(20%);
+        transition: ease 1s;
+    }
+}
+
+.button-roll-down {
+    transform: translateY(-20%);
+    animation: floater 2s infinite;
+    transition: ease 1s;
+}
+
 @media only screen and (max-width: 850px) {
     .card {
         display: flex;

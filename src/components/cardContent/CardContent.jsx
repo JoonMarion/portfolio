@@ -2,6 +2,7 @@ import MiniCard from '../miniCard/MiniCard';
 import './CardContent.css';
 import Modal from '../modal/Modal';
 import SocialNetworks from '../socialNetworks/SocialNetworks';
+import { HiOutlineChevronDoubleDown } from 'react-icons/hi';
 
 const CardContent = () => {
     return (
@@ -20,6 +21,12 @@ const CardContent = () => {
                 <div className="card-content">
                     <MiniCard />
                 </div>
+            </div>
+            <div className="button-roll-down">
+                <a href="#projects" className="secondary centered">
+                    Rolar para baixo &nbsp;
+                    <HiOutlineChevronDoubleDown size={20} />
+                </a>
             </div>
         </div>
     );
