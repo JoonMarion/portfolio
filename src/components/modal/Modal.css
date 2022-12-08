@@ -30,10 +30,6 @@
     transform: translateX(-100px);
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-}
-
 /* CSS */
 .button-43 {
     background-color: #1b98e0;

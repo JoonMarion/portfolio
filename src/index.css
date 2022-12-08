@@ -58,16 +58,6 @@ h3 {
 .tertiary {
     color: #006494;
 }
-::-moz-selection {
-    /* Code for Firefox */
-    /* backgroundcolor: #05c6ee;
-    color: #9c9386; */
-}
-
-::selection {
-    /* background: #05c6ee;
-    color: #9c9386; */
-}
 
 .link-hover {
     cursor: pointer;
@@ -80,6 +70,20 @@ h3 {
 
 .title {
     padding-top: 3rem;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1b98e0;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #006494;
+    border-radius: 20px;
 }
 
 @media only screen and (max-width: 758px) {
