@@ -1,7 +1,8 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
 import './MainProjects.css';
-import Carousel from './../carousel/Carousel';
+import ProjectsMobile from '../projectsMobile/ProjectsMobile';
+import ProjectsDesktop from '../projectsDesktop/ProjectsDesktop';
 
 const MainProjects = () => {
     var text = '<Projetos />';
@@ -11,8 +12,11 @@ const MainProjects = () => {
                 <h2 className="content-title">{text}</h2>
                 <p className="tertiary">Alguns projetos web para acessar</p>
             </div>
-            <div className="projects-content">
-                <Carousel />
+            <div className="projects-desktop">
+                <ProjectsDesktop />
+            </div>
+            <div className="projects-mobile">
+                <ProjectsMobile />
             </div>
         </div>
     );

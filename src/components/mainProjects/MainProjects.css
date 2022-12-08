@@ -17,7 +17,7 @@
     margin-bottom: 0.5rem;
 }
 
-.projects-content {
+.projects-mobile {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -28,4 +28,18 @@
     display: flex;
     justify-content: flex-end;
     color: white;
+}
+
+.projects-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 867px) {
+    .projects-mobile {
+        display: block;
+    }
+
+    .projects-desktop {
+        display: none;
+    }
 }

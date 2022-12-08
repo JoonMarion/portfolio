@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/no-redundant-roles */
 import React from 'react';
-import './Project.css';
+import './ProjectMobile.css';
 import { ImArrowRight2 } from 'react-icons/im';
 
 const Project = ({ img, title, description, link }) => {

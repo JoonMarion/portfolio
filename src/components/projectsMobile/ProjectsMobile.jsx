@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { SlArrowLeft, SlArrowRight } from 'react-icons/sl';
-import './Carousel.css';
-import Project from './../project/Project';
+import './ProjectsMobile.css';
+import ProjectMobile from '../projectMobile/ProjectMobile';
 import FinanceManage from '../../assets/finance-manage.jpeg';
 import Pokedex from '../../assets/pokedex.png';
 import DevQuiz from '../../assets/dev-quiz.jpeg';
@@ -28,31 +28,31 @@ const Carouselzin = () => {
             </div>
 
             <div className="carousel" ref={carousel}>
-                <Project
+                <ProjectMobile
                     title="Controle de Finanças"
                     img={FinanceManage}
                     description="Sistema web para controle de finanças feito em React JS. Os dados ficam salvos no localstorage do seu navegador. Utilizando conceitos dos React Hooks."
                     link="https://financemanage.netlify.app/"
                 />
-                <Project
+                <ProjectMobile
                     title="Pokédex"
                     img={Pokedex}
                     description="Pokédex com paginação feita com JavaScript puro. Estudo de consumo de API, consumindo dados da PokeAPI."
                     link="https://joonmarion.github.io/pokedex/"
                 />
-                <Project
+                <ProjectMobile
                     title="Instagram Login Clone"
                     img={InstagramLogin}
                     description="Clone da tela de login do Instagram feita com HTML e CSS. Estudo de responsividade e Flexbox."
                     link="https://joonmarion.github.io/login-instagram/"
                 />
-                <Project
+                <ProjectMobile
                     title="Quiz de Programação"
                     img={DevQuiz}
                     description="Um quiz para desenvolvedores feito em React JS."
                     link="https://dev-js-quiz.netlify.app/"
                 />
-                <Project
+                <ProjectMobile
                     title="Calculadora"
                     img={Calculator}
                     description="Calculadora feita em React JS e StyledComponents."
