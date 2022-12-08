@@ -27,7 +27,7 @@ const backEnd = () => {
                     <li>
                         <Skill
                             title="Python"
-                            img="https://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png"
+                            img="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png"
                             description="Linguagem de programação de alto nível"
                         />
                     </li>

@@ -10,7 +10,10 @@ const Tools = () => {
     return (
         <div className="skills-cards">
             <button onClick={fonClick} className="skills-drop-button">
-                <h3 className="secondary">Ferramentas</h3>
+                <div className="skills-title">
+                    <h2 className="secondary">Ferramentas</h2>
+                    <p className="skills-subtitle">Ferramentas que auxiliam no desenvolvimento</p>
+                </div>
                 <MdOutlineKeyboardArrowDown
                     className={`${fisActive ? 'button-inactive' : 'button-active'}`}
                     color="#e8f1f2"
