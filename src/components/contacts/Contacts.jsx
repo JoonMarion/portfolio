@@ -16,36 +16,38 @@ const Contacts = () => {
                 <p className="tertiary">Minhas informações de contato</p>
             </div>
             <div className="contacts-content">
-                <div className="contacts">
-                    <div>
-                        <h2 className="contact-content">
-                            <FaPhone size={19} />
-                            Telefone
-                        </h2>
-                        <p>(91) 98843-2057</p>
-                    </div>
-                    <div>
-                        <h2 className="contact-content">
-                            <GrMail size={19} />
-                            Email
-                        </h2>
-                        <p>marianojoao52@gmail.com</p>
-                    </div>
-                    <div>
-                        <h2 className="contact-content">
-                            <SiTelegram size={19} />
-                            Telegram
-                        </h2>
-                        <a href="https://t.me/JoonMarion" className="link-hover">
-                            t.me/joonmarion
-                        </a>
-                    </div>
-                    <div>
-                        <h2 className="contact-content">
-                            <FaMapPin size={19} />
-                            Localização
-                        </h2>
-                        <p>Castanhal - PA</p>
+                <div className="contacts-wrapper">
+                    <div className="contacts-info">
+                        <div>
+                            <h2 className="contact-content">
+                                <FaPhone size={19} />
+                                Telefone
+                            </h2>
+                            <p>(91) 98843-2057</p>
+                        </div>
+                        <div>
+                            <h2 className="contact-content">
+                                <GrMail size={19} />
+                                Email
+                            </h2>
+                            <p>marianojoao52@gmail.com</p>
+                        </div>
+                        <div>
+                            <h2 className="contact-content">
+                                <SiTelegram size={19} />
+                                Telegram
+                            </h2>
+                            <a href="https://t.me/JoonMarion" className="link-hover">
+                                t.me/joonmarion
+                            </a>
+                        </div>
+                        <div>
+                            <h2 className="contact-content">
+                                <FaMapPin size={19} />
+                                Localização
+                            </h2>
+                            <p>Castanhal - PA</p>
+                        </div>
                     </div>
                     <div className="contacts-social-networks">
                         <SocialNetworks size="25" />
