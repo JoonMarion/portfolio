@@ -4,9 +4,9 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { BsInstagram } from 'react-icons/bs';
 import { AiTwotoneMail } from 'react-icons/ai';
 
-const SocialNetworks = ({ size }) => {
+const SocialNetworks = ({ size, style }) => {
     return (
-        <div className="networks-wrapper">
+        <div className="networks-wrapper" style={style}>
             <div className="social-icons">
                 <a href="https://www.linkedin.com/in/joaomariano52/" target="_blank" rel="noreferrer">
                     <FaLinkedin size={size} className="social-icon secondary" />

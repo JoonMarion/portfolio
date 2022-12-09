@@ -15,6 +15,10 @@
     align-items: center;
 }
 
+.social-networks-card {
+    width: 100%;
+}
+
 .avatar-card {
     display: flex;
     flex-direction: column;

@@ -15,8 +15,8 @@ const CardContent = () => {
                         <h2 className="first-about secondary">Engenharia de Software</h2>
                         <h2 className="first-about secondary">Entusiasta de tecnologia e ciências exatas</h2>
                         <Modal />
+                        <SocialNetworks size="25" style={{ display: 'flex', justifyContent: 'space-evenly' }} />
                     </div>
-                    <SocialNetworks size="25" />
                 </div>
                 <div className="card-content">
                     <MiniCard />

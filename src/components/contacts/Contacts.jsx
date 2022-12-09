@@ -50,7 +50,7 @@ const Contacts = () => {
                         </div>
                     </div>
                     <div className="contacts-social-networks">
-                        <SocialNetworks size="25" />
+                        <SocialNetworks size="25" style={{ display: 'flex', flexDirection: 'column' }} />
                     </div>
                 </div>
                 <div className="send-email">
