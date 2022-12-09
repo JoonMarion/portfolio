@@ -15,7 +15,7 @@ const ProjectsDesktop = () => {
             <ProjectDesktop
                 title="Controle de Finanças"
                 img={FinanceManage}
-                description="Sistema web para controle de finanças feito em React JS. Os dados ficam salvos no localstorage do seu navegador. Utilizando conceitos dos React Hooks."
+                description="Sistema web para controle de finanças feito em React JS e StyledComponents. Os dados ficam salvos no localStorage do seu navegador. Utilizando conceitos dos React Hooks."
                 link="https://financemanage.netlify.app/"
             />
             <ProjectDesktop

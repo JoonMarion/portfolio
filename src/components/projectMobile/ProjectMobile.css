@@ -32,6 +32,10 @@
     .card-project .image {
         width: 80%;
     }
+
+    .info {
+        max-width: 450px;
+    }
 }
 
 @media only screen and (max-width: 500px) {

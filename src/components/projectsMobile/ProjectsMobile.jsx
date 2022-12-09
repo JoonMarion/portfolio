@@ -31,7 +31,7 @@ const Carouselzin = () => {
                 <ProjectMobile
                     title="Controle de Finanças"
                     img={FinanceManage}
-                    description="Sistema web para controle de finanças feito em React JS. Os dados ficam salvos no localstorage do seu navegador. Utilizando conceitos dos React Hooks."
+                    description="Sistema web para controle de finanças feito em React JS e StyledComponents. Os dados ficam salvos no localStorage do seu navegador. Utilizando conceitos dos React Hooks."
                     link="https://financemanage.netlify.app/"
                 />
                 <ProjectMobile
@@ -39,12 +39,6 @@ const Carouselzin = () => {
                     img={Pokedex}
                     description="Pokédex com paginação feita com JavaScript puro. Estudo de consumo de API, consumindo dados da PokeAPI."
                     link="https://joonmarion.github.io/pokedex/"
-                />
-                <ProjectMobile
-                    title="Instagram Login Clone"
-                    img={InstagramLogin}
-                    description="Clone da tela de login do Instagram feita com HTML e CSS. Estudo de responsividade e Flexbox."
-                    link="https://joonmarion.github.io/login-instagram/"
                 />
                 <ProjectMobile
                     title="Quiz de Programação"
@@ -57,6 +51,12 @@ const Carouselzin = () => {
                     img={Calculator}
                     description="Calculadora feita em React JS e StyledComponents."
                     link="https://reactcalculatorjs.netlify.app/"
+                />
+                <ProjectMobile
+                    title="Instagram Login Clone"
+                    img={InstagramLogin}
+                    description="Clone da tela de login do Instagram feita com HTML e CSS. Estudo de responsividade e Flexbox."
+                    link="https://joonmarion.github.io/login-instagram/"
                 />
             </div>
 

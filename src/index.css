@@ -48,7 +48,7 @@ h3 {
 }
 
 .primary {
-    color: #1b98e0;
+    color: #4da7fa;
 }
 
 .secondary {
@@ -56,16 +56,16 @@ h3 {
 }
 
 .tertiary {
-    color: #006494;
+    color: #3e85c7;
 }
 
 .link-hover {
     cursor: pointer;
-    color: #1b98e0;
+    color: #4da7fa;
 }
 
 .link-hover:hover {
-    color: #006494;
+    color: #3e85c7;
 }
 
 .title {
@@ -77,12 +77,11 @@ h3 {
 }
 
 ::-webkit-scrollbar-track {
-    background: #1b98e0;
-    border-radius: 20px;
+    background: #4da7fa;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #006494;
+    background-color: #4b637a;
     border-radius: 20px;
 }
 

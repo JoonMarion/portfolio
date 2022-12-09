@@ -68,6 +68,7 @@ const CardContent = () => {
                         outline: 'none',
                         padding: '2rem',
                         overflow: 'auto',
+                        maxWidth: '1000px',
                     },
                 }}
             >
@@ -97,18 +98,19 @@ const CardContent = () => {
                 <h3>Qual meu foco no desenvolvimento?</h3>
                 <p>
                     &emsp;&emsp;Até certo tempo atrás eu não fazia ideia de qual caminho seguir dentro da programação,
-                    no entanto, dentro da empresa que estagio hoje em dia, consegui me encontrar. Tendo foco total em
+                    no entanto, dentro da empresa que performei, consegui me encontrar. Tendo foco total em
                     desenvolvimento web, atualmente, realizo cursos, bootcamps, realizo projetos e dedico grande parte
-                    do meu tempo para me aperfeiçoar na área.
+                    do meu tempo para me aperfeiçoar na área. Visite meu GitHub para ver alguns projetos que desenvolvi
+                    e meu progresso de atividades.
                 </p>
                 <br />
                 <h3>Experiência</h3>
                 <p>
                     &emsp;&emsp;Desenvolvi vários sistemas de gestão na empresa onde estagio, a maioria deles em Django.
-                    Ademais, tive experiência com criação de imagens docker e containerização dos sistemas
-                    desenvolvidos, onde foi realizado o deploy no servidor da empresa. Dessa forma, criando um pequeno
-                    ambiente de microsserviços. Além disso, tive contato com a criação de documentação dos sistemas da
-                    empresa (diagramas, casos de uso, manual de usuário, etc) para facilitar a manutenibilidade. Tive
+                    Ademais, tive experiência com criação de imagens Docker, manipulação de containers Docker, onde foi
+                    realizado o deploy no servidor da empresa. Dessa forma, criando um pequeno ambiente de
+                    microsserviços. Além disso, tive contato com a criação de documentação dos sistemas da empresa
+                    (diagramas, casos de uso, manual de usuário, etc) para facilitar a manutenibilidade. Tive
                     experiência com desenvolvimento ágil. Fiz bootcamps de aperfeiçoamento pessoal e profissional.
                     Dentre as tecnologias com as quais tive mais contato estão: React JS, Django, JavaScript, Python,
                     HTML, CSS e Docker.
