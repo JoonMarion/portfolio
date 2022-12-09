@@ -18,6 +18,13 @@
     gap: 1rem;
 }
 
+.contacts-social-networks {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 2rem;
+}
+
 .send-email {
     width: 50%;
 }
@@ -34,7 +41,6 @@
 
 .form-style {
     border: none;
-    border-radius: 0.5rem;
     height: 2rem;
     background-color: #006494;
 }
@@ -83,4 +89,12 @@ textarea {
 
 textarea:focus {
     outline: none;
+}
+
+.button.form-style {
+    font-weight: bold;
+}
+
+.button.form-style:hover {
+    background-color: #3e85c7;
 }
