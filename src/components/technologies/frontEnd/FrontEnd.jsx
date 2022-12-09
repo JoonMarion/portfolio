@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import Skill from '../../skill/Skill';
-import './FrontEnd.css';
 
 const FrontEnd = () => {
     const fdropDownRef = useRef(null);
@@ -15,14 +14,16 @@ const FrontEnd = () => {
                     <h2 className="secondary">Front-End</h2>
                     <p className="skills-subtitle">Aqui é onde toda a parte gráfica é desenvolvida</p>
                 </div>
-                <MdOutlineKeyboardArrowDown
-                    className={`${fisActive ? 'button-inactive' : 'button-active'}`}
-                    color="#e8f1f2"
-                    size={30}
-                />
+                <div>
+                    <MdOutlineKeyboardArrowDown
+                        className={`${fisActive ? 'button-active' : 'button-inactive'}`}
+                        color="#e8f1f2"
+                        size={30}
+                    />
+                </div>
             </button>
             <div className="skills-divisor"></div>
-            <nav ref={fdropDownRef} className={`front-end menu ${fisActive ? 'inactive' : 'active'}`}>
+            <nav ref={fdropDownRef} className={`front-end menu ${fisActive ? 'active' : 'inactive'}`}>
                 <ul className={`skills-dropdown ${fisActive ? 'transition-active' : 'transition-inactive'}`}>
                     <li>
                         <Skill

@@ -20,7 +20,6 @@ export const Container = styled.header`
         > nav {
             list-style: none;
             display: flex;
-            align-items: center;
             gap: 1rem;
             a {
                 font-size: 16px;
@@ -47,7 +46,7 @@ export const Container = styled.header`
         }
         @media (max-width: 900px) {
             .mobile {
-                display: initial;
+                display: block;
             }
             > nav {
                 display: none;

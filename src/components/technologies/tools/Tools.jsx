@@ -14,11 +14,13 @@ const Tools = () => {
                     <h2 className="secondary">Ferramentas</h2>
                     <p className="skills-subtitle">Ferramentas que auxiliam no desenvolvimento</p>
                 </div>
-                <MdOutlineKeyboardArrowDown
-                    className={`${fisActive ? 'button-inactive' : 'button-active'}`}
-                    color="#e8f1f2"
-                    size={30}
-                />
+                <div>
+                    <MdOutlineKeyboardArrowDown
+                        className={`${fisActive ? 'button-inactive' : 'button-active'}`}
+                        color="#e8f1f2"
+                        size={30}
+                    />
+                </div>
             </button>
             <div className="skills-divisor"></div>
             <nav ref={fdropDownRef} className={`menu ${fisActive ? 'inactive' : 'active'}`}>

@@ -8,9 +8,9 @@ const MainProjects = () => {
     var text = '<Projetos />';
     return (
         <div className="projects-container" id="projects">
-            <div className="projects-title">
+            <div className="session-title">
                 <h2 className="content-title">{text}</h2>
-                <p className="tertiary">Alguns projetos web para acessar</p>
+                <p className="tertiary">Alguns Projetos Web para Acessar</p>
             </div>
             <div className="projects-desktop">
                 <ProjectsDesktop />

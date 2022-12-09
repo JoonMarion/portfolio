@@ -36,10 +36,9 @@ export function Navbar({ setMenuIsVisible }) {
                         <MdOpenInNew className="icon" size={13} />
                     </a>
                 </nav>
-            </section>
-
-            <section>
-                <RiMenu3Fill size={30} onClick={() => setMenuIsVisible(true)} className="mobile" color="white" />
+                <section>
+                    <RiMenu3Fill size={30} onClick={() => setMenuIsVisible(true)} className="mobile" color="white" />
+                </section>
             </section>
         </Container>
     );

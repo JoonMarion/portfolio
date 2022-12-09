@@ -15,11 +15,13 @@ const backEnd = () => {
                     <h3 className="secondary">Back-End</h3>
                     <p className="skills-subtitle">Aqui é onde fica as regras de negócio do sistema</p>
                 </div>
-                <MdOutlineKeyboardArrowDown
-                    className={`${bisActive ? 'button-inactive' : 'button-active'}`}
-                    size={30}
-                    color="#e8f1f2"
-                />
+                <div>
+                    <MdOutlineKeyboardArrowDown
+                        className={`${bisActive ? 'button-inactive' : 'button-active'}`}
+                        size={30}
+                        color="#e8f1f2"
+                    />
+                </div>
             </button>
             <div className="skills-divisor"></div>
             <nav ref={bdropDownRef} className={`menu ${bisActive ? 'inactive' : 'active'}`}>

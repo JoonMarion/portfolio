@@ -5,26 +5,28 @@ import Skill from '../../skill/Skill';
 const DevOps = () => {
     const ddropDownRef = useRef(null);
     const [disActive, dsetIsActive] = useState(false);
-    const fonClick = () => dsetIsActive(!disActive);
+    const donClick = () => dsetIsActive(!disActive);
 
     return (
         <div className="skills-cards">
-            <button onClick={fonClick} className="skills-drop-button">
+            <button onClick={donClick} className="skills-drop-button">
                 <div className="skills-title">
                     <h3 className="secondary">DevOps</h3>
                     <p className="skills-subtitle">
                         Integração entre desenvolvimento e infraestrutura para produção de serviços
                     </p>
                 </div>
-                <MdOutlineKeyboardArrowDown
-                    className={`${disActive ? 'button-inactive' : 'button-active'}`}
-                    color="#e8f1f2"
-                    size={30}
-                />
+                <div>
+                    <MdOutlineKeyboardArrowDown
+                        className={`${disActive ? 'button-inactive' : 'button-active'}`}
+                        size={30}
+                        color="#e8f1f2"
+                    />
+                </div>
             </button>
             <div className="skills-divisor"></div>
             <nav ref={ddropDownRef} className={`menu ${disActive ? 'inactive' : 'active'}`}>
-                <ul className={`skills-dropdown ${disActive ? 'transition-active' : 'transition-inactive'}`}>
+                <ul className="skills-dropdown">
                     <li>
                         <Skill
                             title="Docker"

@@ -14,11 +14,13 @@ const Languages = () => {
                     <h3 className="secondary">Linguagens de programação base</h3>
                     <p className="skills-subtitle">Primeiras linguagens de programação que tive contato</p>
                 </div>
-                <MdOutlineKeyboardArrowDown
-                    className={`${fisActive ? 'button-inactive' : 'button-active'}`}
-                    color="#e8f1f2"
-                    size={30}
-                />
+                <div>
+                    <MdOutlineKeyboardArrowDown
+                        className={`${fisActive ? 'button-inactive' : 'button-active'}`}
+                        color="#e8f1f2"
+                        size={30}
+                    />
+                </div>
             </button>
             <div className="skills-divisor"></div>
             <nav ref={fdropDownRef} className={`menu ${fisActive ? 'inactive' : 'active'}`}>

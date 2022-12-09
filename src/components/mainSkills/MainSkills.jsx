@@ -10,8 +10,9 @@ const MainSkills = () => {
     const Skills = '<Skills />';
     return (
         <div className="skills-container" id="skills">
-            <div className="centered">
+            <div className="centered session-title">
                 <h2 className="content-title">{Skills}</h2>
+                <p className="tertiary">Minhas Habilidades</p>
             </div>
             <div className="skills-content">
                 <FrontEnd />
