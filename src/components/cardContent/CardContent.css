@@ -13,6 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: -3rem;
 }
 
 .social-networks-card {
@@ -66,6 +67,14 @@
         flex-direction: column-reverse;
         align-items: center;
         padding-top: 2rem;
+        margin-top: 0rem;
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 480px;
     }
 
     .button-roll-down {
@@ -76,5 +85,6 @@
 @media only screen and (max-width: 800px) {
     .text-content {
         padding: 1rem;
+        margin-top: 0;
     }
 }

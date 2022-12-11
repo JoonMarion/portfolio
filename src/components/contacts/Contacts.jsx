@@ -37,7 +37,7 @@ const Contacts = () => {
                                 <SiTelegram size={19} />
                                 Telegram
                             </h2>
-                            <a href="https://t.me/JoonMarion" className="link-hover">
+                            <a href="https://t.me/JoonMarion" className="link-hover" target="_blank" rel="noreferrer">
                                 t.me/joonmarion
                             </a>
                         </div>
@@ -81,10 +81,7 @@ const Contacts = () => {
                                 <textarea className="textarea form-style" name="message" required />
                             </li>
                             <li className="form-button-content centered">
-                                <button
-                                    className="button form-style form-button secondary centered"
-                                    type="submit"
-                                >
+                                <button className="button form-style form-button secondary centered" type="submit">
                                     {' '}
                                     Enviar
                                     <BiMailSend size={20} className="margin-icon secondary" />
