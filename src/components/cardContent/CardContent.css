@@ -54,17 +54,6 @@
     bottom: 100px;
 }
 
-@keyframes floater {
-    0% {
-        transform: translateY(-20%);
-        transition: ease 1s;
-    }
-    50% {
-        transform: translateY(20%);
-        transition: ease 1s;
-    }
-}
-
 .button-roll-down {
     transform: translateY(-20%);
     animation: floater 2s infinite;

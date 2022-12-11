@@ -81,8 +81,18 @@
     height: 6rem;
 }
 
-.form-button {
+.form-button-content {
     margin-top: 1rem;
+    width: 100%;
+}
+
+.form-button {
+    width: 50%;
+}
+
+.form-button:hover {
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
 }
 
 input {

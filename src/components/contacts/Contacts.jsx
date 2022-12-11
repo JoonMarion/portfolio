@@ -57,34 +57,33 @@ const Contacts = () => {
                     <form action="https://formsubmit.co/marianojoao52@gmail.com" className="form" method="POST">
                         <ul className="forms">
                             <li className="form-content">
-                                <label for="name" className="form-label secondary">
+                                <label htmlFor="name" className="form-label secondary">
                                     Digite seu nome
                                 </label>
                                 <input className="input form-style" type="text" name="name" required />
                             </li>
                             <li className="form-content">
-                                <label for="email" className="form-label secondary">
+                                <label htmlFor="email" className="form-label secondary">
                                     Digite um email válido
                                 </label>
                                 <input className="input form-style" type="text" name="email" required />
                             </li>
                             <li className="form-content">
-                                <label for="message" className="form-label secondary">
+                                <label htmlFor="message" className="form-label secondary">
                                     Digite o título da mensagem
                                 </label>
                                 <input type="text" name="_subject" className="input form-style" required />
                             </li>
                             <li className="form-content">
-                                <label for="message" className="form-label secondary">
+                                <label htmlFor="message" className="form-label secondary">
                                     Digite sua mensagem
                                 </label>
                                 <textarea className="textarea form-style" name="message" required />
                             </li>
-                            <li className="form-content form-button">
+                            <li className="form-button-content centered">
                                 <button
-                                    className="button form-style secondary centered"
+                                    className="button form-style form-button secondary centered"
                                     type="submit"
-                                    disabled="disabled"
                                 >
                                     {' '}
                                     Enviar

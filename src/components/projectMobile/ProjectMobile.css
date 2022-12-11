@@ -10,8 +10,8 @@
 }
 
 .card-project .image img {
+    border-left: 5px solid #1b98e0;
     width: 100%;
-    border-radius: 1rem;
 }
 
 .card-project .info {

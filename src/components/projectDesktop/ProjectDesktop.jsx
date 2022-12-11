@@ -17,7 +17,7 @@ const Project = ({ img, title, description, link }) => {
             </div>
             <div className="projects-desktop-button">
                 <a href={link} className="centered projects2-button" target="_blank" rel="noreferrer">
-                    <button class="button-43" role="button">
+                    <button className="button-43" role="button">
                         <p className="centered">
                             Acessar Projeto <ImArrowRight2 className="margin-icon" size={18} />
                         </p>

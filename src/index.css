@@ -81,12 +81,17 @@ h3 {
 }
 
 ::-webkit-scrollbar-track {
-    background: #4da7fa;
+    background: #769dc2;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #4b637a;
+    background-color: rgba(75, 99, 122);
     border-radius: 20px;
+    border: 2px solid #769dc2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #244e75;
 }
 
 @media only screen and (max-width: 758px) {

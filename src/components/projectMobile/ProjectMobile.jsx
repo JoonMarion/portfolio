@@ -15,7 +15,7 @@ const Project = ({ img, title, description, link }) => {
                 <br />
                 <p className="secondary">{description}</p>
                 <a href={link} className="centered" target="_blank" rel="noreferrer">
-                    <button class="button-43" role="button">
+                    <button className="button-43" role="button">
                         <p className="centered">
                             Acessar Projeto <ImArrowRight2 className="margin-icon" size={18} />
                         </p>

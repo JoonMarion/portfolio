@@ -30,7 +30,7 @@ const CardContent = () => {
     return (
         <div>
             <div className="centered">
-                <button class="button-43" role="button" onClick={openModal}>
+                <button className="button-43" role="button" onClick={openModal}>
                     <p className="centered">
                         Sobre Mim <AiFillFileText className="margin-icon" size={18} />
                     </p>
