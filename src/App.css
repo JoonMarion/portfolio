@@ -14,8 +14,7 @@
     z-index: 1;
 }
 
-#button-roll-up {
-    display: none;
+.button-roll-up {
     position: fixed;
     bottom: 20px;
     right: 30px;
@@ -29,7 +28,7 @@
     color: #e0eaf9;
 }
 
-#button-roll-up:hover {
+.button-roll-up:hover {
     color: #fff;
 }
 
@@ -47,6 +46,10 @@
 @media only screen and (max-width: 850px) {
     .main-container {
         margin-top: 0rem;
+    }
+
+    .button-roll-up {
+        display: none;
     }
 }
 
