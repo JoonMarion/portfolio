@@ -45,22 +45,12 @@ const CardContent = () => {
                 contentLabel="Sobre mim"
                 style={{
                     overlay: {
-                        position: 'fixed',
-                        top: 0,
-                        left: 0,
-                        right: 0,
-                        bottom: 0,
                         backgroundImage: 'url("https://readyplayer.me/images/home/bg-noise.png")',
                         backgroundRepeat: 'reapeat-y',
                         backgroundColor: 'rgba(19, 41, 61, 0.8)',
                     },
                     content: {
                         marginTop: '3rem',
-                        position: 'absolute',
-                        top: '3rem',
-                        left: '5%',
-                        right: '5%',
-                        bottom: '3rem',
                         border: 'none',
                         background: 'rgba(9, 20, 26)',
                         WebkitOverflowScrolling: 'touch',
@@ -68,7 +58,6 @@ const CardContent = () => {
                         outline: 'none',
                         padding: '2rem',
                         overflow: 'auto',
-                        maxWidth: '1000px',
                     },
                 }}
             >

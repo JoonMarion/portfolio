@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 /* eslint-disable react/style-prop-object */
 import React from 'react';
 import './Contacts.css';
@@ -81,10 +82,11 @@ const Contacts = () => {
                                 <textarea className="textarea form-style" name="message" required />
                             </li>
                             <li className="form-button-content centered">
-                                <button className="button form-style form-button secondary centered" type="submit">
-                                    {' '}
-                                    Enviar
-                                    <BiMailSend size={20} className="margin-icon secondary" />
+                                <button className="button-43" role="button" type="submit">
+                                    <p className="centered">
+                                        Enviar
+                                        <BiMailSend size={20} className="margin-icon send-email-icon secondary" />
+                                    </p>
                                 </button>
                             </li>
                         </ul>
