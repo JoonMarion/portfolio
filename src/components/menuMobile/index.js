@@ -29,12 +29,7 @@ export function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
                     Contatos
                 </a>
 
-                <a
-                    href="https://drive.google.com/file/d/1cLd9U3HhYOC6yOyf3ZE7iq73Nyj2M29q/view?usp=sharing"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="secondary"
-                >
+                <a href="https://resume.io/r/CXkGXKu00" target="_blank" rel="noreferrer" className="secondary">
                     {' '}
                     Currículo
                     <MdOpenInNew className="icon" size={13} />
