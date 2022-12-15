@@ -14,7 +14,7 @@ const Contacts = () => {
         <div className="contacts-container" id="contacts">
             <div className="centered session-title">
                 <h2 className="content-title">{Contacts}</h2>
-                <p className="secondary">Minhas informações de contato</p>
+                <p className="secondary">Minhas Informações de Contato</p>
             </div>
             <div className="contacts-content">
                 <div className="contacts-wrapper">
