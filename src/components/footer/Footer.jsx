@@ -6,11 +6,12 @@ const Contacts = () => {
         <>
             <div className="contacts-container" id="contacts">
                 <div className="footer-background">
-                    <div className="divisor"></div>
-                    <div className="background"></div>
+                    <div className="center-divisor centered">
+                        <div className="divisor"></div>
+                    </div>
                     <div className="contacts-content">
                         <div className="copyright">
-                            <p className="copyright-text tertiary">
+                            <p className="copyright-text secondary">
                                 © 2022{' '}
                                 <a href="/" className="link-hover">
                                     João Mariano

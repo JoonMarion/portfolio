@@ -11,7 +11,7 @@ export function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
 
     return (
         <Container isVisible={menuIsVisible}>
-            <IoClose size={45} onClick={() => setMenuIsVisible(false)} color="white" />
+            <IoClose className="secondary" size={45} onClick={() => setMenuIsVisible(false)} />
             <nav className="content-subtitle">
                 <a href="#home" className="secondary" onClick={() => setMenuIsVisible(false)}>
                     Início

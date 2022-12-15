@@ -62,26 +62,27 @@
 
 .button-roll-down a:after {
     content: '';
+    border-radius: 50px;
+    bottom: -5px;
     position: absolute;
     width: 0%;
-    height: 1px;
-    display: block;
-    transition: all 0.3s ease;
-    bottom: 0%;
+    height: 2px;
+    background: #57a4fc;
+    transition: 0.3s;
 }
 .button-roll-down a:hover::after {
     width: 100%;
-    height: 1px;
+    height: 2px;
     background-color: #57a4fc;
 }
 
 @media only screen and (max-width: 850px) {
     .main-content {
-        height: 100vh;
+        height: auto;
     }
 
     .card-content {
-        padding-top: 6rem;
+        padding-top: 7rem;
     }
 
     .card {

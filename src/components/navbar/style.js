@@ -31,7 +31,7 @@ export const Container = styled.header`
                     position: absolute;
                     width: 0%;
                     height: 2px;
-                    background: #006494;
+                    background: #b7cccf;
                     transition: 0.3s;
                 }
                 &:hover {

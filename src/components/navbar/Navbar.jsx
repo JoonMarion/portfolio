@@ -37,7 +37,11 @@ export function Navbar({ setMenuIsVisible }) {
                     </a>
                 </nav>
                 <section>
-                    <RiMenu3Fill size={30} onClick={() => setMenuIsVisible(true)} className="mobile" color="white" />
+                    <RiMenu3Fill
+                        size={30}
+                        onClick={() => setMenuIsVisible(true)}
+                        className="mobile secondary"
+                    />
                 </section>
             </section>
         </Container>

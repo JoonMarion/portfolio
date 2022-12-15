@@ -45,18 +45,16 @@ const CardContent = () => {
                 contentLabel="Sobre mim"
                 style={{
                     overlay: {
-                        backgroundImage: 'url("https://readyplayer.me/images/home/bg-noise.png")',
-                        backgroundRepeat: 'reapeat-y',
-                        backgroundColor: 'rgba(19, 41, 61, 0.8)',
+                        backgroundColor: 'rgba(22, 27, 34, 0.8)',
                     },
+
                     content: {
                         marginTop: '3rem',
                         border: 'none',
-                        background: 'rgba(9, 20, 26)',
+                        background: '#0d1117',
                         WebkitOverflowScrolling: 'touch',
                         borderRadius: '1rem',
                         outline: 'none',
-                        padding: '2rem',
                         overflow: 'auto',
                     },
                 }}
@@ -67,7 +65,7 @@ const CardContent = () => {
                 <h2 className="primary centered">Sobre mim</h2>
                 <br />
                 <h3>Início de tudo</h3>
-                <p>
+                <p className="secondary">
                     &emsp;&emsp;Desde muito novo eu sou apaixonado por tecnologia, do hardware ao software. Meu pai
                     sempre precisou utilizar computador para trabalhar, então, desde muito novo eu tenho certa
                     intimidade com o computador. Gostava de desmontar e montar, descobrir funcionalidades, jogar, etc.
@@ -76,7 +74,7 @@ const CardContent = () => {
                 </p>
                 <br />
                 <h3>Primeiro contato com a programação</h3>
-                <p>
+                <p className="secondary">
                     &emsp;&emsp;Meu primeiro contato com a programação foi na faculdade, na matéria de Programação
                     Estruturada, que foi ministrada pelo professor Thiago Conte, na linguagem C, onde vimos lógica de
                     programação, estruturas condicionais e laços de repetição. A partir daí passei a ter certeza do que
@@ -85,7 +83,7 @@ const CardContent = () => {
                 </p>
                 <br />
                 <h3>Qual meu foco no desenvolvimento?</h3>
-                <p>
+                <p className="secondary">
                     &emsp;&emsp;Até certo tempo atrás eu não fazia ideia de qual caminho seguir dentro da programação,
                     no entanto, dentro da empresa que performei, consegui me encontrar. Tendo foco total em
                     desenvolvimento web, atualmente, realizo cursos, bootcamps, realizo projetos e dedico grande parte
@@ -94,7 +92,7 @@ const CardContent = () => {
                 </p>
                 <br />
                 <h3>Experiência</h3>
-                <p>
+                <p className="secondary">
                     &emsp;&emsp;Desenvolvi vários sistemas de gestão na empresa onde estagio, a maioria deles em Django.
                     Ademais, tive experiência com criação de imagens Docker, manipulação de containers Docker, onde foi
                     realizado o deploy no servidor da empresa. Dessa forma, criando um pequeno ambiente de

@@ -10,7 +10,7 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #13293d;
+    background: #0d1117;
     opacity: 0;
     pointer-events: none;
     transform: translateY(-500px);
@@ -42,7 +42,7 @@ export const Container = styled.section`
             position: absolute;
             width: 0%;
             height: 2px;
-            background: #006494;
+            background: #b7cccf;
             transition: 0.2s;
         }
         &:hover {

@@ -37,6 +37,7 @@
 .content-text .mini-card-text {
     font-size: 0.825rem;
     letter-spacing: 0.1em;
+    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 .centered {

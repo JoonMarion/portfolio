@@ -14,7 +14,7 @@ const Contacts = () => {
         <div className="contacts-container" id="contacts">
             <div className="centered session-title">
                 <h2 className="content-title">{Contacts}</h2>
-                <p className="tertiary">Minhas informações de contato</p>
+                <p className="secondary">Minhas informações de contato</p>
             </div>
             <div className="contacts-content">
                 <div className="contacts-wrapper">
@@ -82,7 +82,7 @@ const Contacts = () => {
                                 <textarea className="textarea form-style" name="message" required />
                             </li>
                             <li className="form-button-content centered">
-                                <button className="button-43" role="button" type="submit">
+                                <button className="button-43 send-mail-button" role="button" type="submit">
                                     <p className="centered">
                                         Enviar
                                         <BiMailSend size={20} className="margin-icon send-email-icon secondary" />
