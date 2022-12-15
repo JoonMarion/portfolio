@@ -1,5 +1,4 @@
 .skill-card {
-    width: 300px;
     padding: 0.75rem;
     border-radius: 1rem;
     display: flex;
@@ -34,4 +33,22 @@
 .skill-desc {
     font-size: 0.8rem;
     margin: 0.2rem 0;
+}
+
+@media only screen and (max-width: 361px) {
+    .skill-card {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .skill-card-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill-card .skill-card-image {
+        margin: 0;
+    }
 }
