@@ -1,4 +1,4 @@
-import MiniCard from '../miniCard/MiniCard';
+// import MiniCard from '../miniCard/MiniCard';
 import './CardContent.css';
 import Modal from '../modal/Modal';
 import SocialNetworks from '../socialNetworks/SocialNetworks';
@@ -17,9 +17,6 @@ const CardContent = () => {
                         <Modal />
                         <SocialNetworks size="25" style={{ display: 'flex', justifyContent: 'space-evenly' }} />
                     </div>
-                </div>
-                <div className="card-content">
-                    <MiniCard />
                 </div>
             </div>
             <div className="button-roll-down">
