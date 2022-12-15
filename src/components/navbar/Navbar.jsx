@@ -25,23 +25,14 @@ export function Navbar({ setMenuIsVisible }) {
                     <a href="#contacts" className="secondary">
                         Contatos
                     </a>
-                    <a
-                        href="https://drive.google.com/file/d/1cLd9U3HhYOC6yOyf3ZE7iq73Nyj2M29q/view?usp=sharing"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="secondary"
-                    >
+                    <a href="https://resume.io/r/CXkGXKu00" target="_blank" rel="noreferrer" className="secondary">
                         {' '}
                         Currículo
                         <MdOpenInNew className="icon" size={13} />
                     </a>
                 </nav>
                 <section>
-                    <RiMenu3Fill
-                        size={30}
-                        onClick={() => setMenuIsVisible(true)}
-                        className="mobile secondary"
-                    />
+                    <RiMenu3Fill size={30} onClick={() => setMenuIsVisible(true)} className="mobile secondary" />
                 </section>
             </section>
         </Container>
