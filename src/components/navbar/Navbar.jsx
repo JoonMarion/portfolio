@@ -8,7 +8,7 @@ export function Navbar({ setMenuIsVisible }) {
         <Container>
             <div>
                 <h1 className="primary">
-                    Marian<span className="secondary">.io</span>
+                    Mariano <span className="secondary">20.06 LTS</span>
                 </h1>
             </div>
             <section>

@@ -8,10 +8,11 @@
     height: 300px;
     display: flex;
     align-items: flex-start;
-    border-radius: 30% 30% 30% 30% / 100% 0% 100% 0%;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-    background-color: rgba(9, 20, 26, 0.8);
+    justify-content: flex-end;
+    border-radius: 10px;
     transition: background-color 0.15s, box-shadow 0.15s;
+    background-image: url('../../assets/me.jpg');
+    background-size: cover;
 }
 
 .mini-card-image {
@@ -22,7 +23,7 @@
 
 .mini-card-image .avatar-img {
     margin-left: 2rem;
-    height: 250px;
+    height: 270px;
 }
 
 .mini-card-content {
@@ -30,7 +31,7 @@
 }
 
 .content-text {
-    padding: 0.825rem 0;
+    padding: 1rem 0.5rem 0 0;
 }
 
 .content-text .mini-card-text {
@@ -61,6 +62,10 @@
         margin-left: 1rem;
     }
 
+    .mini-card-image .avatar-img {
+        height: 200px;
+    }
+
     .content-text .mini-card-text {
         font-size: 0.7rem;
     }
@@ -71,10 +76,6 @@
         width: 350px;
         height: 220px;
     }
-
-    .mini-card-image .avatar-img {
-        height: 180px;
-    }
 }
 
 @media only screen and (max-width: 500px) and (min-width: 375px) {
@@ -83,27 +84,23 @@
         height: 220px;
     }
 
-    .mini-card-image .avatar-img {
-        height: 160px;
-    }
-
     .content-text .mini-card-text {
         letter-spacing: 0em;
     }
 }
 
-@media only screen and (max-width: 375px) and (min-width: 0px) {
+@media only screen and (max-width: 375px) {
     .mini-card {
         width: 300px;
         height: 200px;
     }
 
     .mini-card-image .avatar-img {
-        height: 140px;
+        height: 190px;
     }
 
     .content-text .mini-card-text {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         letter-spacing: 0em;
     }
 }

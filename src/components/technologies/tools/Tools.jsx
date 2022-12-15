@@ -11,8 +11,8 @@ const Tools = () => {
         <div className="skills-cards">
             <button onClick={fonClick} className="skills-drop-button">
                 <div className="skills-title">
-                    <h2 className="secondary">Ferramentas</h2>
-                    <p className="skills-subtitle">Ferramentas que auxiliam no desenvolvimento</p>
+                    <h2 className="">Ferramentas</h2>
+                    <p className="skills-subtitle secondary">Ferramentas que auxiliam no desenvolvimento</p>
                 </div>
                 <div>
                     <MdOutlineKeyboardArrowDown

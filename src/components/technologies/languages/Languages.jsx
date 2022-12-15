@@ -11,8 +11,8 @@ const Languages = () => {
         <div className="skills-cards">
             <button onClick={fonClick} className="skills-drop-button">
                 <div className="skills-title">
-                    <h3 className="secondary">Linguagens de programação base</h3>
-                    <p className="skills-subtitle">Primeiras linguagens de programação que tive contato</p>
+                    <h3 className="">Linguagens de programação base</h3>
+                    <p className="skills-subtitle secondary">Primeiras linguagens de programação que tive contato</p>
                 </div>
                 <div>
                     <MdOutlineKeyboardArrowDown

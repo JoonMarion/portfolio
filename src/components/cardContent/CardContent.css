@@ -1,6 +1,5 @@
 .main-content {
     height: 100vh;
-    background-color: rgb(19, 41, 61);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,13 +60,34 @@
     transition: ease 1s;
 }
 
+.button-roll-down a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    display: block;
+    transition: all 0.3s ease;
+    bottom: 0%;
+}
+.button-roll-down a:hover::after {
+    width: 100%;
+    height: 1px;
+    background-color: #57a4fc;
+}
+
 @media only screen and (max-width: 850px) {
+    .main-content {
+        height: 100vh;
+    }
+
+    .card-content {
+        padding-top: 6rem;
+    }
+
     .card {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        padding-top: 2rem;
-        margin-top: 0rem;
     }
 
     .text-content {
@@ -75,6 +95,7 @@
         flex-direction: column;
         justify-content: center;
         max-width: 480px;
+        height: 50%;
     }
 
     .button-roll-down {
@@ -86,5 +107,11 @@
     .text-content {
         padding: 1rem;
         margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .text-content .my-name {
+        font-size: 2rem;
     }
 }

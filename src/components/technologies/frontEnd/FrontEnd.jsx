@@ -11,8 +11,8 @@ const FrontEnd = () => {
         <div className="skills-cards">
             <button onClick={fonClick} className="skills-drop-button">
                 <div className="skills-title">
-                    <h2 className="secondary">Front-End</h2>
-                    <p className="skills-subtitle">Aqui é onde toda a parte gráfica é desenvolvida</p>
+                    <h2 className="">Front-End</h2>
+                    <p className="skills-subtitle secondary">Aqui é onde toda a parte gráfica é desenvolvida</p>
                 </div>
                 <div>
                     <MdOutlineKeyboardArrowDown

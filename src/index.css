@@ -11,7 +11,7 @@ html {
 
 body {
     background-repeat: reapeat-y;
-    background-color: #181a1b;
+    background-color: #0d1117;
     width: 100%;
     -webkit-font-smoothing: antialiased;
     height: 100vh;
@@ -52,11 +52,11 @@ h3 {
 }
 
 .primary {
-    color: #4da7fa;
+    color: #57a4fc;
 }
 
 .secondary {
-    color: #e8f1f2;
+    color: #b7cccf;
 }
 
 .tertiary {
@@ -87,7 +87,6 @@ h3 {
 ::-webkit-scrollbar-thumb {
     background-color: rgba(75, 99, 122);
     border-radius: 20px;
-    border: 2px solid #769dc2;
 }
 
 ::-webkit-scrollbar-thumb:hover {

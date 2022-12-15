@@ -10,7 +10,7 @@ const CardContent = () => {
             <div className="card">
                 <div className="avatar-card secondary">
                     <div className="text-content secondary">
-                        <h1 className="my-name secondary">Olá, meu nome é João Mariano</h1>
+                        <h1 className="my-name">Olá, meu nome é João Mariano</h1>
                         <h2 className="first-about secondary">Desenvolvedor Web</h2>
                         <h2 className="first-about secondary">Engenharia de Software</h2>
                         <h2 className="first-about secondary">Entusiasta de tecnologia e ciências exatas</h2>
@@ -23,7 +23,7 @@ const CardContent = () => {
                 </div>
             </div>
             <div className="button-roll-down">
-                <a href="#projects" className="secondary centered">
+                <a href="#projects" className="primary centered">
                     Rolar para baixo &nbsp;
                     <HiOutlineChevronDoubleDown size={20} />
                 </a>

@@ -12,8 +12,8 @@ const backEnd = () => {
         <div className="skills-cards">
             <button onClick={bonClick} className="skills-drop-button">
                 <div className="skills-title">
-                    <h3 className="secondary">Back-End</h3>
-                    <p className="skills-subtitle">Aqui é onde fica as regras de negócio do sistema</p>
+                    <h3 className="">Back-End</h3>
+                    <p className="skills-subtitle secondary">Aqui é onde fica as regras de negócio do sistema</p>
                 </div>
                 <div>
                     <MdOutlineKeyboardArrowDown

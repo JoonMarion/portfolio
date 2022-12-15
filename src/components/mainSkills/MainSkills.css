@@ -17,10 +17,15 @@
     align-items: flex-start;
 }
 
+.skills-dropdown {
+    margin: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid rgba(240, 246, 252, 0.1);
+}
+
 .skills-title .skills-subtitle {
     text-align: left;
     margin: 0.5rem 0;
-    color: #006494;
 }
 
 .skills-drop-button {
@@ -34,7 +39,7 @@
 }
 
 .skills-divisor {
-    border-bottom: 1px solid rgb(27, 152, 224, 0.5);
+    border-bottom: 1px solid rgba(240, 246, 252, 0.1);
     height: 1px;
     width: 100%;
 }

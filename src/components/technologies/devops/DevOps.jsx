@@ -11,8 +11,8 @@ const DevOps = () => {
         <div className="skills-cards">
             <button onClick={donClick} className="skills-drop-button">
                 <div className="skills-title">
-                    <h3 className="secondary">DevOps</h3>
-                    <p className="skills-subtitle">
+                    <h3 className="">DevOps</h3>
+                    <p className="skills-subtitle secondary">
                         Integração entre desenvolvimento e infraestrutura para produção de serviços
                     </p>
                 </div>
