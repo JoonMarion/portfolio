@@ -10,18 +10,20 @@ const CardContent = () => {
             <div className="card">
                 <div className="avatar-card secondary">
                     <div className="text-content secondary">
-                        <h1 className="my-name">Olá, meu nome é João Mariano</h1>
+                        <h1 className="my-name">João Pedro</h1>
                         <h2 className="first-about secondary">Desenvolvedor Web</h2>
                         <h2 className="first-about secondary">Engenharia de Software</h2>
                         <h2 className="first-about secondary">Entusiasta de tecnologia e ciências exatas</h2>
                         <Modal />
-                        <SocialNetworks size="25" style={{ display: 'flex', justifyContent: 'space-evenly' }} />
+                        <div className="social-networks-wrapper">
+                            <SocialNetworks size="25" style={{ justifyContent: 'space-evenly' }} />
+                        </div>
                     </div>
                 </div>
             </div>
             <div className="button-roll-down">
-                <a href="#projects" className="primary centered">
-                    Rolar para baixo &nbsp;
+                <a href="#projects" className="secondary button-roll-down-content">
+                    <div>Rolar para baixo &nbsp;</div>
                     <HiOutlineChevronDoubleDown size={20} />
                 </a>
             </div>

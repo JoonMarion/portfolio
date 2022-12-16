@@ -29,9 +29,9 @@ const CardContent = () => {
 
     return (
         <div>
-            <div className="centered">
+            <div className="button-43-wrapper">
                 <button className="button-43" role="button" onClick={openModal}>
-                    <p className="centered">
+                    <p className="button-43-content">
                         Sobre Mim <AiFillFileText className="margin-icon" size={18} />
                     </p>
                 </button>

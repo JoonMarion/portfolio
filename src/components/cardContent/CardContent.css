@@ -22,6 +22,12 @@
     height: 100%;
 }
 
+.social-networks-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .social-networks-card {
     width: 100%;
 }
@@ -35,6 +41,11 @@
     text-justify: inter-character;
     height: 100%;
     width: 50%;
+    text-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
+}
+
+.social-networks-wrapper {
+    width: 80%;
 }
 
 .my-name {
@@ -52,6 +63,7 @@
 .button-roll-down {
     position: absolute;
     bottom: 100px;
+    left: 100px;
 }
 
 .button-roll-down {
@@ -67,23 +79,44 @@
     position: absolute;
     width: 0%;
     height: 2px;
-    background: #57a4fc;
+    background: #b7cccf;
     transition: 0.3s;
 }
+
 .button-roll-down a:hover::after {
     width: 100%;
     height: 2px;
-    background-color: #57a4fc;
+    background-color: #b7cccf;
 }
 
-@media only screen and (max-width: 850px) {
+.button-roll-down-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
-    .card-content {
-        padding-top: 7rem;
+@media only screen and (max-width: 672px) {
+    .text-content {
+        width: 100%;
+        text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
     }
 
     .button-roll-down {
         display: none;
     }
+
+    .main-content {
+        background-position: 25% 75%;
+    }
+
+    .main-content {
+        background-image: url('../../assets/me2.jpg');
+    }
 }
 
+@media only screen and (max-width: 400px) {
+    .main-content {
+        background-position: 40% 60%;
+    }
+}

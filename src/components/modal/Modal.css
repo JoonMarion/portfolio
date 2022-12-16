@@ -30,6 +30,12 @@
     transform: translateX(-100px);
 }
 
+.button-43-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+}
+
 /* CSS */
 .button-43 {
     background-color: #21262d;
@@ -39,8 +45,10 @@
     display: flex;
     font-size: 16px;
     justify-content: center;
+    align-items: center;
     text-decoration: none;
     width: 80%;
+    max-width: 300px;
     border: 1px solid;
     border-color: rgba(240, 246, 252, 0.1);
     cursor: pointer;
@@ -57,6 +65,13 @@
 .button-43:hover {
     background-color: #414b59;
     border-color: rgba(240, 246, 252, 0.5);
+}
+
+.button-43-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .margin-icon {
