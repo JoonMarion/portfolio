@@ -29,6 +29,8 @@
 
 .modal-content-wrapper {
     max-width: 1000px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .button-43-wrapper {
