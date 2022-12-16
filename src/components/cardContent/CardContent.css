@@ -1,5 +1,6 @@
 .main-content {
     height: 100vh;
+    min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,7 +97,7 @@
     width: 100%;
 }
 
-@media only screen and (max-width: 672px) {
+@media only screen and (max-width: 800px) {
     .text-content {
         width: 100%;
         text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
@@ -115,8 +116,14 @@
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
     .main-content {
         background-position: 40% 60%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .main-content {
+        background-position: 50% 50%;
     }
 }
