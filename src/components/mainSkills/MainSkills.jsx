@@ -7,7 +7,7 @@ import Tools from '../technologies/tools/Tools';
 import Languages from '../technologies/languages/Languages';
 
 const MainSkills = () => {
-    const Skills = '<Skills />';
+    const Skills = 'Skills';
     return (
         <div className="skills-container" id="skills">
             <div className="centered session-title">

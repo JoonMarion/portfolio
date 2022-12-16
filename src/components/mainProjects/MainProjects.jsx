@@ -5,7 +5,7 @@ import ProjectsMobile from '../projectsMobile/ProjectsMobile';
 import ProjectsDesktop from '../projectsDesktop/ProjectsDesktop';
 
 const MainProjects = () => {
-    var text = '<Projetos />';
+    var text = 'Projetos';
     return (
         <div className="projects-container" id="projects">
             <div className="session-title">

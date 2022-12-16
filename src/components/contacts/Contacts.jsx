@@ -9,7 +9,7 @@ import { GrMail } from 'react-icons/gr';
 import { SiTelegram } from 'react-icons/si';
 
 const Contacts = () => {
-    const Contacts = '<Contatos />';
+    const Contacts = 'Contatos';
     return (
         <div className="contacts-container" id="contacts">
             <div className="centered session-title">

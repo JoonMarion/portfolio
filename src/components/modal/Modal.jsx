@@ -68,41 +68,54 @@ const CardContent = () => {
                     <div className="modal-content-wrapper">
                         <h3>Início de tudo</h3>
                         <p className="secondary">
-                            &emsp;&emsp;Desde muito novo eu sou apaixonado por tecnologia, do hardware ao software. Meu
-                            pai sempre precisou utilizar computador para trabalhar, então, desde muito novo eu tenho
-                            certa intimidade com o computador. Gostava de desmontar e montar, descobrir funcionalidades,
-                            jogar, etc. Com isso, aprendi sobre os componentes do computador e suas funções, além da
-                            familiaridade e a forma intuitiva de tratar a tecnologia.
+                            &emsp;&emsp;Desde muito novo sou aficionado por tecnologia, do hardware ao software. Meu pai
+                            sempre precisou utilizar computador para trabalhar (possui uma microempresa de comunicação
+                            visual), portanto, desde muito novo eu tenho certa intimidade com o computador propriamente
+                            dito. Gostava de desmontar, montar, descobrir funcionalidades, jogar, personalizar, etc. Com
+                            isso, aprendi sobre os componentes do computador e suas determinadas funções, além da
+                            familiaridade com a forma intuitiva de tratar a resolução de problemas por meio do
+                            desenvolvimento da capacidade analítica.
                         </p>
                         <br />
                         <h3>Primeiro contato com a programação</h3>
                         <p className="secondary">
                             &emsp;&emsp;Meu primeiro contato com a programação foi na faculdade, na matéria de
-                            Programação Estruturada, que foi ministrada pelo professor Thiago Conte, na linguagem C,
-                            onde vimos lógica de programação, estruturas condicionais e laços de repetição. A partir daí
-                            passei a ter certeza do que queria para o resto da minha vida, fiquei realmente encantado
-                            pela lógica e a resolução de problemas atrelada a programação.
+                            Programação Estruturada, ministrada pelo professor Thiago Conte, na linguagem C. Lógica de
+                            programação, estruturas condicionais e laços de repetição. A partir daí todas as dúvidas
+                            acerca do meu futuro foram sanadas, passei a ter certeza do que queria para o resto da minha
+                            vida, fiquei realmente encantado pela lógica e a resolução de problemas atrelada a
+                            programação.
                         </p>
                         <br />
                         <h3>Qual meu foco no desenvolvimento?</h3>
                         <p className="secondary">
                             &emsp;&emsp;Até certo tempo atrás eu não fazia ideia de qual caminho seguir dentro da
-                            programação, no entanto, dentro da empresa que performei, consegui me encontrar. Tendo foco
-                            total em desenvolvimento web, atualmente, realizo cursos, bootcamps, realizo projetos e
-                            dedico grande parte do meu tempo para me aperfeiçoar na área. Visite meu GitHub para ver
-                            alguns projetos que desenvolvi e meu progresso de atividades.
+                            programação, no entanto, dentro da empresa que performei, após desenvolver vários sistemas
+                            web que tiveram êxito no objetivo, tive a plena certeza de qual área escolher. Tendo foco
+                            total em desenvolvimento web, atualmente, realizo cursos, bootcamps, projetos e dedico
+                            grande parte do meu tempo para me aperfeiçoar na área. Visite meu{' '}
+                            <a
+                                className="link-hover"
+                                href="https://github.com/JoonMarion"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                GitHub
+                            </a>{' '}
+                            para ver alguns projetos que desenvolvi e meu progresso de atividades.
                         </p>
                         <br />
                         <h3>Experiência</h3>
                         <p className="secondary">
-                            &emsp;&emsp;Desenvolvi vários sistemas de gestão na empresa onde estagio, a maioria deles em
-                            Django. Ademais, tive experiência com criação de imagens Docker, manipulação de containers
-                            Docker, onde foi realizado o deploy no servidor da empresa. Dessa forma, criando um pequeno
-                            ambiente de microsserviços. Além disso, tive contato com a criação de documentação dos
-                            sistemas da empresa (diagramas, casos de uso, manual de usuário, etc) para facilitar a
-                            manutenibilidade. Tive experiência com desenvolvimento ágil. Fiz bootcamps de
-                            aperfeiçoamento pessoal e profissional. Dentre as tecnologias com as quais tive mais contato
-                            estão: React JS, Django, JavaScript, Python, HTML, CSS e Docker.
+                            &emsp;&emsp;Desenvolvi vários sistemas de gestão e controle, que resultaram na otimização de
+                            processos, a maioria deles em Django. Ademais, tive experiência com criação de imagens e
+                            manipulação de containers Docker, para realização de deploy no servidor da empresa, criando
+                            um pequeno ambiente de microsserviços. Além disso, tive contato com a criação de
+                            documentação dos sistemas da empresa (diagramas, casos de uso, manual de usuário, etc) para
+                            facilitar a manutenibilidade. Tive experiência com desenvolvimento ágil e boas práticas de
+                            Engenharia de Software. Fiz bootcamps de aperfeiçoamento pessoal e profissional. Dentre as
+                            tecnologias com as quais tive mais contato estão: React JS, Django, JavaScript, Python,
+                            HTML, CSS, Docker e os bancos MySQL e MongoDB.
                         </p>
                     </div>
                 </div>
