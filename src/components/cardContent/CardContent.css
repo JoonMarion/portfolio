@@ -42,7 +42,7 @@
     text-justify: inter-character;
     height: 100%;
     width: 50%;
-    text-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
+    text-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
 }
 
 .social-networks-wrapper {
@@ -62,32 +62,24 @@
 }
 
 .button-roll-down {
-    position: absolute;
-    bottom: 100px;
-    left: 100px;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
 }
 
 .button-roll-down {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    margin: 4rem 0 0 1rem;
     transform: translateY(-20%);
     animation: floater 2s infinite;
     transition: ease 1s;
 }
 
 .button-roll-down a:after {
-    content: '';
-    border-radius: 50px;
-    bottom: -5px;
-    position: absolute;
-    width: 0%;
-    height: 2px;
     background: #b7cccf;
-    transition: 0.3s;
 }
 
 .button-roll-down a:hover::after {
-    width: 100%;
-    height: 2px;
-    background-color: #b7cccf;
 }
 
 .button-roll-down-content {
@@ -100,12 +92,15 @@
 @media only screen and (max-width: 800px) {
     .text-content {
         width: 100%;
-        text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.4);
     }
 
     .button-roll-down {
-        display: none;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
     }
+    /* .button-roll-down {
+        display: none;
+    } */
 
     .main-content {
         background-position: 25% 75%;

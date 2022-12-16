@@ -2,7 +2,7 @@
 import './CardContent.css';
 import Modal from '../modal/Modal';
 import SocialNetworks from '../socialNetworks/SocialNetworks';
-import { HiOutlineChevronDoubleDown } from 'react-icons/hi';
+import { BsFillArrowDownSquareFill } from 'react-icons/bs';
 
 const CardContent = () => {
     return (
@@ -19,13 +19,15 @@ const CardContent = () => {
                             <SocialNetworks size="25" style={{ justifyContent: 'space-evenly' }} />
                         </div>
                     </div>
+                    <div className="button-roll-down">
+                        <div>
+                            <a href="#projects" className="button-roll-down-content">
+                                <div>Rolar para baixo &nbsp;</div>
+                                <BsFillArrowDownSquareFill size={25} />
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div className="button-roll-down">
-                <a href="#projects" className="secondary button-roll-down-content">
-                    <div>Rolar para baixo &nbsp;</div>
-                    <HiOutlineChevronDoubleDown size={20} />
-                </a>
             </div>
         </div>
     );
