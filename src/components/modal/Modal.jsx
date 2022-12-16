@@ -45,7 +45,7 @@ const CardContent = () => {
                 contentLabel="Sobre mim"
                 style={{
                     overlay: {
-                        backgroundColor: 'rgba(22, 27, 34, 0.8)',
+                        backgroundColor: '#0d1117',
                     },
 
                     content: {
@@ -53,55 +53,59 @@ const CardContent = () => {
                         border: 'none',
                         background: '#0d1117',
                         WebkitOverflowScrolling: 'touch',
-                        borderRadius: '1rem',
                         outline: 'none',
                         overflow: 'auto',
+                        width: '100vw',
                     },
                 }}
             >
                 <div className="close-modal-button">
                     <IoClose size={35} onClick={() => closeModal(false)} color="white" />
                 </div>
-                <h2 className="primary centered">Sobre mim</h2>
+                <h2 className="centered">Sobre mim</h2>
                 <br />
-                <h3>Início de tudo</h3>
-                <p className="secondary">
-                    &emsp;&emsp;Desde muito novo eu sou apaixonado por tecnologia, do hardware ao software. Meu pai
-                    sempre precisou utilizar computador para trabalhar, então, desde muito novo eu tenho certa
-                    intimidade com o computador. Gostava de desmontar e montar, descobrir funcionalidades, jogar, etc.
-                    Com isso, aprendi sobre os componentes do computador e suas funções, além da familiaridade e a forma
-                    intuitiva de tratar a tecnologia.
-                </p>
-                <br />
-                <h3>Primeiro contato com a programação</h3>
-                <p className="secondary">
-                    &emsp;&emsp;Meu primeiro contato com a programação foi na faculdade, na matéria de Programação
-                    Estruturada, que foi ministrada pelo professor Thiago Conte, na linguagem C, onde vimos lógica de
-                    programação, estruturas condicionais e laços de repetição. A partir daí passei a ter certeza do que
-                    queria para o resto da minha vida, fiquei realmente encantado pela lógica e a resolução de problemas
-                    atrelada a programação.
-                </p>
-                <br />
-                <h3>Qual meu foco no desenvolvimento?</h3>
-                <p className="secondary">
-                    &emsp;&emsp;Até certo tempo atrás eu não fazia ideia de qual caminho seguir dentro da programação,
-                    no entanto, dentro da empresa que performei, consegui me encontrar. Tendo foco total em
-                    desenvolvimento web, atualmente, realizo cursos, bootcamps, realizo projetos e dedico grande parte
-                    do meu tempo para me aperfeiçoar na área. Visite meu GitHub para ver alguns projetos que desenvolvi
-                    e meu progresso de atividades.
-                </p>
-                <br />
-                <h3>Experiência</h3>
-                <p className="secondary">
-                    &emsp;&emsp;Desenvolvi vários sistemas de gestão na empresa onde estagio, a maioria deles em Django.
-                    Ademais, tive experiência com criação de imagens Docker, manipulação de containers Docker, onde foi
-                    realizado o deploy no servidor da empresa. Dessa forma, criando um pequeno ambiente de
-                    microsserviços. Além disso, tive contato com a criação de documentação dos sistemas da empresa
-                    (diagramas, casos de uso, manual de usuário, etc) para facilitar a manutenibilidade. Tive
-                    experiência com desenvolvimento ágil. Fiz bootcamps de aperfeiçoamento pessoal e profissional.
-                    Dentre as tecnologias com as quais tive mais contato estão: React JS, Django, JavaScript, Python,
-                    HTML, CSS e Docker.
-                </p>
+                <div className="centered">
+                    <div className="modal-content-wrapper">
+                        <h3>Início de tudo</h3>
+                        <p className="secondary">
+                            &emsp;&emsp;Desde muito novo eu sou apaixonado por tecnologia, do hardware ao software. Meu
+                            pai sempre precisou utilizar computador para trabalhar, então, desde muito novo eu tenho
+                            certa intimidade com o computador. Gostava de desmontar e montar, descobrir funcionalidades,
+                            jogar, etc. Com isso, aprendi sobre os componentes do computador e suas funções, além da
+                            familiaridade e a forma intuitiva de tratar a tecnologia.
+                        </p>
+                        <br />
+                        <h3>Primeiro contato com a programação</h3>
+                        <p className="secondary">
+                            &emsp;&emsp;Meu primeiro contato com a programação foi na faculdade, na matéria de
+                            Programação Estruturada, que foi ministrada pelo professor Thiago Conte, na linguagem C,
+                            onde vimos lógica de programação, estruturas condicionais e laços de repetição. A partir daí
+                            passei a ter certeza do que queria para o resto da minha vida, fiquei realmente encantado
+                            pela lógica e a resolução de problemas atrelada a programação.
+                        </p>
+                        <br />
+                        <h3>Qual meu foco no desenvolvimento?</h3>
+                        <p className="secondary">
+                            &emsp;&emsp;Até certo tempo atrás eu não fazia ideia de qual caminho seguir dentro da
+                            programação, no entanto, dentro da empresa que performei, consegui me encontrar. Tendo foco
+                            total em desenvolvimento web, atualmente, realizo cursos, bootcamps, realizo projetos e
+                            dedico grande parte do meu tempo para me aperfeiçoar na área. Visite meu GitHub para ver
+                            alguns projetos que desenvolvi e meu progresso de atividades.
+                        </p>
+                        <br />
+                        <h3>Experiência</h3>
+                        <p className="secondary">
+                            &emsp;&emsp;Desenvolvi vários sistemas de gestão na empresa onde estagio, a maioria deles em
+                            Django. Ademais, tive experiência com criação de imagens Docker, manipulação de containers
+                            Docker, onde foi realizado o deploy no servidor da empresa. Dessa forma, criando um pequeno
+                            ambiente de microsserviços. Além disso, tive contato com a criação de documentação dos
+                            sistemas da empresa (diagramas, casos de uso, manual de usuário, etc) para facilitar a
+                            manutenibilidade. Tive experiência com desenvolvimento ágil. Fiz bootcamps de
+                            aperfeiçoamento pessoal e profissional. Dentre as tecnologias com as quais tive mais contato
+                            estão: React JS, Django, JavaScript, Python, HTML, CSS e Docker.
+                        </p>
+                    </div>
+                </div>
             </Modal>
         </div>
     );
