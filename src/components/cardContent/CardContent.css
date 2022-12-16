@@ -45,6 +45,40 @@
     text-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
 }
 
+.button-curriculo {
+    background-color: transparent;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid;
+    border-color: rgba(240, 246, 252, 0.3);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-bottom: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 1rem 2rem;
+    transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.button-curriculo:hover {
+    border-color: rgba(240, 246, 252, 0.8);
+    box-shadow: 1px 1px 2px 2px rgba(240, 246, 252, 0.1);
+}
+
+.curriculo-link {
+    width: 100%;
+    height: 100%;
+}
+
 .social-networks-wrapper {
     width: 80%;
 }
