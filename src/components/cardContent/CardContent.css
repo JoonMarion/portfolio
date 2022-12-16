@@ -89,7 +89,7 @@
     width: 100%;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     .text-content {
         width: 100%;
         text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.4);
@@ -103,21 +103,11 @@
     } */
 
     .main-content {
-        background-position: 25% 75%;
-    }
-
-    .main-content {
-        background-image: url('../../assets/me2.jpg');
+        background-position: 30% 70%;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .main-content {
-        background-position: 40% 60%;
-    }
-}
-
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 700px) {
     .main-content {
         background-position: 50% 50%;
     }
