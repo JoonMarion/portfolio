@@ -52,7 +52,6 @@
 }
 
 .menu {
-    overflow-y: auto;
     max-height: 700px;
     transition: 0.5s linear;
 }
