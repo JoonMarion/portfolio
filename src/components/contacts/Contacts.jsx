@@ -56,7 +56,7 @@ const Contacts = () => {
                             style={{
                                 display: 'flex',
                                 flexDirection: 'column',
-                                justifyContent: 'space-evenly',
+                                justifyContent: 'space-between',
                             }}
                         />
                     </div>
