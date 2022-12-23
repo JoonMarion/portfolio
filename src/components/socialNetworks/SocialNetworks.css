@@ -7,14 +7,19 @@
 
 .networks-wrapper .social-icons {
     list-style: none;
+    background-color: rgba(33, 38, 45, 0.6);
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    transition: 0.5s;
+}
+
+.networks-wrapper .social-icons:hover {
+    background-color: #414b59;
+    transition: 0.5s;
 }
 
 .social-icon {
     color: #e8f1f2;
-    transition: 0.5s;
-}
-
-.social-icon:hover {
-    color: #57a4fc;
     transition: 0.5s;
 }
