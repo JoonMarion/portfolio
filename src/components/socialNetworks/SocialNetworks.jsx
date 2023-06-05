@@ -1,7 +1,6 @@
 import React from 'react';
 import './SocialNetworks.css';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { BsInstagram } from 'react-icons/bs';
 import { AiTwotoneMail } from 'react-icons/ai';
 
 const SocialNetworks = ({ size, style }) => {
@@ -15,11 +14,6 @@ const SocialNetworks = ({ size, style }) => {
             <a href="https://github.com/JoonMarion" target="_blank" rel="noreferrer">
                 <div className="social-icons centered">
                     <FaGithub size={size} className="social-icon secondary" />
-                </div>
-            </a>
-            <a href="https://www.instagram.com/joonmarion/" target="_blank" rel="noreferrer">
-                <div className="social-icons centered">
-                    <BsInstagram size={size} className="social-icon secondary" />
                 </div>
             </a>
             <a

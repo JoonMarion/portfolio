@@ -68,32 +68,32 @@ const CardContent = () => {
                     <div className="modal-content-wrapper">
                         <h3>Início de tudo</h3>
                         <p className="secondary">
-                            &emsp;&emsp;Desde muito novo sou aficionado por tecnologia, do hardware ao software. Meu pai
-                            sempre precisou utilizar computador para trabalhar (possui uma microempresa de comunicação
-                            visual), portanto, desde muito novo eu tenho certa intimidade com o computador propriamente
-                            dito. Gostava de desmontar, montar, descobrir funcionalidades, jogar, personalizar, etc. Com
-                            isso, aprendi sobre os componentes do computador e suas determinadas funções, além da
-                            familiaridade com a forma intuitiva de tratar a resolução de problemas por meio do
-                            desenvolvimento da capacidade analítica.
+                            &emsp;&emsp;Desde muito jovem, sou apaixonado por tecnologia, tanto no que diz respeito ao
+                            hardware quanto ao software. Desde cedo, tive uma familiaridade com o computador, já que meu
+                            pai precisava usá-lo para trabalhar em sua microempresa de comunicação visual. Eu adorava
+                            desmontar, montar, descobrir funcionalidades, jogar e personalizar o computador. Essa
+                            experiência me permitiu aprender sobre os componentes do computador, suas funções
+                            específicas e desenvolver habilidades analíticas para resolver problemas.
                         </p>
                         <br />
                         <h3>Primeiro contato com a programação</h3>
                         <p className="secondary">
-                            &emsp;&emsp;Meu primeiro contato com a programação foi na faculdade, na matéria de
-                            Programação Estruturada, ministrada pelo professor Thiago Conte, na linguagem C. Lógica de
-                            programação, estruturas condicionais e laços de repetição. A partir daí todas as dúvidas
-                            acerca do meu futuro foram sanadas, passei a ter certeza do que queria para o resto da minha
-                            vida, fiquei realmente encantado pela lógica e a resolução de problemas atrelada a
-                            programação.
+                            &emsp;&emsp;Tive meu primeiro contato com a programação durante a faculdade, na disciplina
+                            de Programação Estruturada, ministrada pelo professor Thiago Conte, utilizando a linguagem
+                            C. Aprendi sobre lógica de programação, estruturas condicionais e loops. A partir desse
+                            momento, todas as dúvidas sobre meu futuro foram esclarecidas, e tive a certeza do que
+                            queria para o resto da minha vida. Fiquei verdadeiramente encantado pela lógica e pela
+                            resolução de problemas que a programação proporciona.
                         </p>
                         <br />
                         <h3>Qual meu foco no desenvolvimento?</h3>
                         <p className="secondary">
-                            &emsp;&emsp;Até certo tempo atrás eu não fazia ideia de qual caminho seguir dentro da
-                            programação, no entanto, dentro da empresa que performei, após desenvolver vários sistemas
-                            web que tiveram êxito no objetivo, tive a plena certeza de qual área escolher. Tendo foco
-                            total em desenvolvimento web, atualmente, realizo cursos, bootcamps, projetos e dedico
-                            grande parte do meu tempo para me aperfeiçoar na área. Visite meu{' '}
+                            &emsp;&emsp;Por um tempo, eu não tinha ideia de qual caminho seguir dentro da programação.
+                            No entanto, ao trabalhar em uma empresa e desenvolver vários sistemas web bem-sucedidos,
+                            tive a certeza de qual área escolher. Atualmente, meu foco principal é o desenvolvimento
+                            web. Dedico grande parte do meu tempo a cursos, bootcamps, projetos e aprimoramento pessoal
+                            nessa área. Você pode conferir alguns dos projetos que desenvolvi e meu progresso de
+                            atividades no meu{' '}
                             <a
                                 className="link-hover"
                                 href="https://github.com/JoonMarion"
@@ -102,20 +102,56 @@ const CardContent = () => {
                             >
                                 GitHub
                             </a>{' '}
-                            para ver alguns projetos que desenvolvi e meu progresso de atividades.
+                            .
                         </p>
                         <br />
                         <h3>Experiência</h3>
                         <p className="secondary">
-                            &emsp;&emsp;Desenvolvi vários sistemas de gestão e controle, que resultaram na otimização de
-                            processos, a maioria deles em Django. Ademais, tive experiência com criação de imagens e
-                            manipulação de containers Docker, para realização de deploy no servidor da empresa, criando
-                            um pequeno ambiente de microsserviços. Além disso, tive contato com a criação de
-                            documentação dos sistemas da empresa (diagramas, casos de uso, manual de usuário, etc) para
-                            facilitar a manutenibilidade. Tive experiência com desenvolvimento ágil e boas práticas de
-                            Engenharia de Software. Fiz bootcamps de aperfeiçoamento pessoal e profissional. Dentre as
-                            tecnologias com as quais tive mais contato estão: React JS, Django, JavaScript, Python,
-                            HTML, CSS, Docker e os bancos MySQL e MongoDB.
+                            &emsp;&emsp;Ao longo da minha trajetória, desenvolvi sistemas de gestão e controle que
+                            resultaram na otimização de processos, principalmente utilizando Django. Além disso, adquiri
+                            experiência na criação e manipulação de imagens e contêineres Docker para fazer o deploy dos
+                            sistemas no servidor da empresa, criando um ambiente de microsserviços. Também fui
+                            responsável pela criação da documentação dos sistemas da empresa, incluindo diagramas, casos
+                            de uso e manuais do usuário, visando facilitar a manutenção. Trabalhei com metodologias
+                            ágeis e boas práticas de Engenharia de Software. Além disso, participei de bootcamps para
+                            aprimoramento pessoal e profissional. Durante minha jornada, tive mais contato com
+                            tecnologias como React, Django, JavaScript, TypeScript, Python, HTML, CSS, Docker, bancos de
+                            dados MySQL e MongoDB.
+                        </p>
+                        <br />
+                        <h3>Programação Competitiva</h3>
+                        <p className="secondary">
+                            &emsp;&emsp;Sou entusiasta de algoritmos e ciências exatas, com uma paixão pela tecnologia e
+                            matemática. Minha dedicação e esforço nessa área me levaram a me destacar na renomada
+                            competição{' '}
+                            <a
+                                className="link-hover"
+                                href="https://maratonasbc2022.ufms.br/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Maratona de Programação
+                            </a>
+                            , onde minha equipe foi a melhor do estado do Pará e se classificou para a final brasileira.
+                        </p>
+                        <p className="secondary">
+                            &emsp;&emsp;Atualmente, estou me aprimorando ainda mais na área da programação competitiva,
+                            pois acredito que é uma excelente forma de desenvolver habilidades algorítmicas e melhorar
+                            minha capacidade de resolver problemas complexos. Estou frequentando um curso específico de
+                            programação competitiva, onde aprofundo meus conhecimentos em algoritmos e estruturas de
+                            dados utilizando a linguagem C++.
+                        </p>
+                        <p className="secondary">
+                            Além de estudar e praticar regularmente, também participo de contests, competições online
+                            que simulam desafios da programação competitiva. Isso me permite testar minha capacidade em
+                            um ambiente competitivo e me desafiar constantemente a encontrar soluções mais eficientes.
+                        </p>
+                        <p className="secondary">
+                            Tenho como objetivo evoluir continuamente na área da programação competitiva, buscando
+                            aprimorar minhas habilidades algorítmicas, aprender novos conceitos e técnicas, e conquistar
+                            resultados cada vez melhores em competições. Acredito que essa jornada me proporcionará uma
+                            base sólida de conhecimento e expertise, que poderei aplicar não apenas em competições, mas
+                            também em projetos de desenvolvimento de software desafiadores.
                         </p>
                     </div>
                 </div>

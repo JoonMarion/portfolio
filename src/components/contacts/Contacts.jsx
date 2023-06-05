@@ -24,7 +24,7 @@ const Contacts = () => {
                                 <FaPhone size={19} />
                                 Telefone
                             </h2>
-                            <p>(91) 98843-2057</p>
+                            <p>(91) 98918-2059</p>
                         </div>
                         <div>
                             <h2 className="contact-content">
