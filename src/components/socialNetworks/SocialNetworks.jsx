@@ -6,7 +6,7 @@ import { AiTwotoneMail } from 'react-icons/ai';
 const SocialNetworks = ({ size, style }) => {
     return (
         <div className="networks-wrapper" style={style}>
-            <a href="https://www.linkedin.com/in/joaomariano52/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/joaomariano-dev/" target="_blank" rel="noreferrer">
                 <div className="social-icons centered">
                     <FaLinkedin size={size} className="social-icon secondary" />
                 </div>
