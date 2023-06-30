@@ -2,6 +2,7 @@
 import React, { useRef, useState } from 'react';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import Skill from '../../skill/Skill';
+import django from '../../../assets/django.png';
 
 const backEnd = () => {
     const bdropDownRef = useRef(null);
@@ -34,11 +35,7 @@ const backEnd = () => {
                         />
                     </li>
                     <li>
-                        <Skill
-                            title="Django"
-                            img="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/django-icon.png"
-                            description="Framework para desenvolvimento web em Python"
-                        />
+                        <Skill title="Django" img={django} description="Framework para desenvolvimento web em Python" />
                     </li>
                     <li>
                         <Skill

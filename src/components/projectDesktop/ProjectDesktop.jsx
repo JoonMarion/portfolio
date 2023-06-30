@@ -3,7 +3,7 @@ import React from 'react';
 import './ProjectDesktop.css';
 import { ImArrowRight2 } from 'react-icons/im';
 
-const Project = ({ img, title, description, link, tecnologies }) => {
+const Project = ({ img, title, description, link, tecnologies, linkProject }) => {
     return (
         <div className="card-desktop-project">
             <div className="image-desktop">
@@ -24,15 +24,17 @@ const Project = ({ img, title, description, link, tecnologies }) => {
                 </div>
             </div>
 
-            <div className="projects-desktop-button">
-                <a href={link} className="centered projects2-button" target="_blank" rel="noreferrer">
-                    <button className="button-43" role="button">
-                        <p className="centered">
-                            Acessar Projeto <ImArrowRight2 className="margin-icon" size={18} />
-                        </p>
-                    </button>
-                </a>
-            </div>
+            {linkProject && (
+                <div className="projects-desktop-button">
+                    <a href={linkProject} className="centered projects2-button" target="_blank" rel="noreferrer">
+                        <button className="button-43" role="button">
+                            <p className="centered">
+                                Acessar Projeto <ImArrowRight2 className="margin-icon" size={18} />
+                            </p>
+                        </button>
+                    </a>
+                </div>
+            )}
         </div>
     );
 };
