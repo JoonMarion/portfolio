@@ -39,7 +39,7 @@ const CardContent = () => {
                     </div>
                     <div className="button-roll-down">
                         <div>
-                            <a href="#projects" className="button-roll-down-content">
+                            <a href="#Freelance" className="button-roll-down-content">
                                 <div>Rolar para baixo &nbsp;</div>
                                 <BsFillArrowDownSquareFill size={25} />
                             </a>
