@@ -275,16 +275,16 @@ function App() {
                         <div className="hero__portrait-reveal">
                             <div className="hero__portrait-float"><img src={portrait} alt="" fetchPriority="high" /></div>
                         </div>
-                        <div className="hero__visual-tag"><span className="hero__visual-tag-icon"><FiCode /></span><span>UI × ENGINEERING<small>PRECISION IN EVERY PIXEL</small></span></div>
+                        <div className="hero__visual-tag"><span className="hero__visual-tag-icon"><FiCode /></span><span>DJANGO · REACT<small>SISTEMAS EM PRODUÇÃO</small></span></div>
                     </div>
                     <div className="hero__inner page-container">
                         <div className="hero__copy">
                             <p className="eyebrow hero__eyebrow"><span className="status-dot" /> JOÃO MARIANO / FULL STACK DEVELOPER</p>
                             <h1 id="hero-title">Lógica sólida<span className="hero__period">.</span><br /><span className="hero__gradient-text">Interfaces vivas.</span></h1>
-                            <p className="hero__intro">Transformo problemas complexos em experiências digitais claras e marcantes — do React na interface ao Django que sustenta tudo.</p>
+                            <p className="hero__intro">Transformo problemas complexos em sistemas claros — do fluxo do negócio ao que precisa funcionar em produção.</p>
                             <div className="hero__actions">
                                 <a className="button button--accent" href="#projetos">Explorar projetos <FiArrowDownRight aria-hidden="true" /></a>
-                                <a className="button button--outline" href="#contato">Vamos conversar <FiArrowUpRight aria-hidden="true" /></a>
+                                <a className="button button--outline" href="#contato">Entrar em contato <FiArrowUpRight aria-hidden="true" /></a>
                             </div>
                         </div>
                         <div className="hero__bottom">
@@ -353,10 +353,10 @@ function App() {
                 <section className="contact-section" id="contato" aria-labelledby="contact-title">
                     <div className="page-container contact-section__inner">
                         <p className="eyebrow"><span className="status-dot" /> 04 / VAMOS CONVERSAR</p>
-                        <h2 id="contact-title">Vamos construir<br /><em>algo incrível</em><br />juntos<span>.</span></h2>
+                        <h2 id="contact-title">O próximo<br /><em>passo</em><br />é um e-mail<span>.</span></h2>
                         <div className="contact-section__bottom">
                             <a className="contact-email" href="mailto:marianojoao52@gmail.com?subject=Vamos%20conversar%2C%20Jo%C3%A3o">marianojoao52@gmail.com <FiArrowUpRight aria-hidden="true" /></a>
-                            <p>Fortaleza, Ceará · Brasil<br />Aberto a boas conversas e novos desafios.</p>
+                            <p>Fortaleza, Ceará · Brasil<br />Quanto mais contexto, melhor.</p>
                         </div>
                     </div>
                 </section>
