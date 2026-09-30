@@ -73,10 +73,7 @@ function ProjectCard({ project, active }) {
     return (
         <article className="project-card">
             <div className="project-card__image">
-                <div className="project-card__chrome" aria-hidden="true"><span /><span /><span /><small>preview / {project.number}</small></div>
                 <img src={project.image} alt={project.imageAlt} loading={active ? 'eager' : 'lazy'} />
-                <span className="project-card__image-index">/{project.number}</span>
-                {project.url && <span className="project-card__image-arrow" aria-hidden="true"><FiArrowUpRight /></span>}
             </div>
             <div className="project-card__body">
                 <div className="project-card__meta"><span>{project.category}</span><span>{project.number} / 07</span></div>
