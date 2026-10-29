@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "language": "pt-BR",
+  "slug": "agriaraujo-crm",
+  "name": "Agriaraujo CRM",
+  "category": "Sistema web de gestão agrícola",
+  "shortDescription": "Gestão de produtores, movimentações de pimenta-do-reino, saldos em kg e acertos financeiros.",
+  "about": "O Agriaraujo CRM é um sistema web desenvolvido para a gestão de uma operação de grãos e produtos agrícolas, com foco na pimenta-do-reino. A aplicação reúne o cadastro de produtores, o histórico de entregas e retiradas, os saldos em quilogramas e o acompanhamento dos valores a pagar. O Caixa funciona de forma independente, registrando compras à vista com quantidade, preço e valor total.\n\nA interface permite consultar os movimentos recentes, localizar registros por filtros, acompanhar pagamentos parciais, imprimir notas e comprovantes e exportar informações para planilhas. O sistema oferece navegação em computadores e celulares, instalação como aplicativo em navegadores compatíveis e uma área administrativa com autorização adicional para rotinas como a geração de backups. Sua evolução preserva a integração com a versão anterior e os registros de negócio compartilhados.",
+  "problem": "Acompanhar entregas, retiradas, saldos de pimenta e acertos de diferentes produtores, mantendo as quantidades em quilogramas separadas dos valores financeiros e dos lançamentos independentes do Caixa.",
+  "audience": [
+    "Empresas que comercializam pimenta-do-reino e produtos agrícolas.",
+    "Responsáveis pelo cadastro de produtores e pelo acompanhamento das entregas, retiradas e saldos.",
+    "Operadores que registram compras à vista, pagamentos aos produtores e documentos da operação."
+  ],
+  "creationDate": {
+    "value": "2023-05",
+    "precision": "month",
+    "isEstimated": true
+  },
+  "features": [
+    {
+      "name": "Visão geral da operação",
+      "description": "Apresenta o saldo conjunto dos produtores, a quantidade de produtores cadastrados, as entradas do Caixa do dia e os movimentos recentes, com atalhos para as principais ações."
+    },
+    {
+      "name": "Cadastro de produtores",
+      "description": "Organiza os dados de cada produtor, suas anotações e o acesso ao histórico de movimentações e ao saldo individual."
+    },
+    {
+      "name": "Movimentações de pimenta",
+      "description": "Registra entradas e saídas em quilogramas, com data, horário e histórico, permitindo acompanhar as entregas, retiradas e o saldo de cada produtor."
+    },
+    {
+      "name": "Pagamentos aos produtores",
+      "description": "Permite registrar pagamentos integrais ou parciais em reais nas saídas dos produtores e consultar o valor restante a pagar, preservando as quantidades de pimenta e os acertos anteriores."
+    },
+    {
+      "name": "Caixa independente",
+      "description": "Registra entradas de pimenta em operações à vista, com quantidade, preço por quilograma, valor total, data, horário e observações, sem criar movimentações de produtor automaticamente."
+    },
+    {
+      "name": "Consultas e exportação",
+      "description": "Oferece busca, filtros combináveis e ordenação nas listagens. Os resultados podem ser exportados em planilhas Excel, respeitando a seleção realizada na tela."
+    },
+    {
+      "name": "Notas e comprovantes",
+      "description": "Disponibiliza notas de movimentações e do Caixa, além de comprovantes individuais dos acertos, com apresentação para impressão e formatos térmicos."
+    },
+    {
+      "name": "Acesso administrativo e backup",
+      "description": "Utiliza login e permissões de acesso, com uma autorização adicional na área Business. Usuários autorizados podem gerar e baixar uma cópia do banco PostgreSQL, acompanhando o andamento mesmo após sair e voltar à página."
+    },
+    {
+      "name": "Interface responsiva e PWA",
+      "description": "Adapta a navegação, os cards e os registros ao computador e ao celular. Em navegadores compatíveis, pode ser instalado como aplicativo, com acesso aos dados pela conexão com o sistema."
+    }
+  ],
+  "highlights": [
+    "Quantidades em quilogramas e pagamentos em reais são tratados separadamente, preservando o significado de cada saldo.",
+    "Listagens, resumos e planilhas utilizam a mesma seleção de filtros, mantendo coerência entre consulta e exportação.",
+    "Buscas e filtros atualizam partes da interface com HTMX, com navegação convencional disponível como alternativa.",
+    "A evolução da aplicação preserva a convivência com a versão anterior e o uso dos mesmos registros de negócio.",
+    "A geração de backups ocorre em um processo separado, permitindo consultar novamente o andamento ao retornar à página."
+  ],
+  "technologies": [
+    {
+      "name": "Python",
+      "category": "backend",
+      "purpose": "Implementação das regras de negócio, cálculos, validações e serviços da aplicação.",
+      "version": "3.10.20"
+    },
+    {
+      "name": "Django",
+      "category": "backend",
+      "purpose": "Organização da aplicação, autenticação, permissões, formulários, consultas ao banco e evolução do esquema por migrations.",
+      "version": "4.0.1"
+    },
+    {
+      "name": "Django Templates",
+      "category": "frontend",
+      "purpose": "Renderização das páginas e dos fragmentos HTML no servidor, incluindo formulários, listagens e documentos para impressão.",
+      "version": null
+    },
+    {
+      "name": "HTML e CSS",
+      "category": "frontend",
+      "purpose": "Estrutura das telas, identidade visual própria, layouts responsivos e estilos de impressão.",
+      "version": null
+    },
+    {
+      "name": "JavaScript",
+      "category": "frontend",
+      "purpose": "Interações de formulários, menus, diálogos, acompanhamento de backups e instalação do aplicativo.",
+      "version": null
+    },
+    {
+      "name": "HTMX",
+      "category": "frontend",
+      "purpose": "Atualização parcial de listagens e resumos ao aplicar buscas e filtros.",
+      "version": "2.0.10"
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "database",
+      "purpose": "Persistência dos dados de negócio, transações e mecanismos de integridade e arquivamento compartilhados com a versão anterior.",
+      "version": null
+    },
+    {
+      "name": "SQLite",
+      "category": "database",
+      "purpose": "Banco disponível para desenvolvimento local, demonstrações isoladas e parte das verificações automatizadas.",
+      "version": null
+    },
+    {
+      "name": "openpyxl",
+      "category": "backend",
+      "purpose": "Geração de planilhas Excel com produtores, movimentações e entradas do Caixa.",
+      "version": "3.1.2"
+    },
+    {
+      "name": "Docker e Docker Compose",
+      "category": "infrastructure",
+      "purpose": "Empacotamento da aplicação e organização dos serviços de execução, incluindo o processo de geração de backups.",
+      "version": null
+    },
+    {
+      "name": "Gunicorn",
+      "category": "infrastructure",
+      "purpose": "Execução da aplicação Django como servidor WSGI no ambiente de publicação.",
+      "version": "22.0.0"
+    },
+    {
+      "name": "WhiteNoise",
+      "category": "infrastructure",
+      "purpose": "Distribuição dos arquivos estáticos da interface pela aplicação.",
+      "version": "6.7.0"
+    },
+    {
+      "name": "Django Test Framework e unittest",
+      "category": "testing",
+      "purpose": "Verificações automatizadas de regras de negócio, permissões, pagamentos, concorrência e compatibilidade dos dados.",
+      "version": null
+    }
+  ],
+  "assets": {
+    "cover": {
+      "src": "cover/cover-portfolio.png",
+      "alt": "Capa do Agriaraujo CRM agrícola com logotipo oficial e telas reais em notebook e celular.",
+      "width": 1920,
+      "height": 1080
+    },
+    "desktop": [
+      {
+        "src": "desktop/desktop-01.png",
+        "alt": "Visão geral do Agriaraujo no computador, com saldo dos produtores, Caixa do dia e movimentos recentes.",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "desktop/desktop-02.png",
+        "alt": "Histórico de um produtor demonstrativo no computador, com saldo em kg, entradas, saídas, valor a pagar e filtros.",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "desktop/desktop-03.png",
+        "alt": "Caixa no computador, com resumo do dia e entradas de pimenta contendo data, horário, quantidade, preço e total.",
+        "width": 1920,
+        "height": 1080
+      }
+    ],
+    "mobile": [
+      {
+        "src": "mobile/mobile-01.png",
+        "alt": "Visão geral do Agriaraujo no celular, com cards de saldo e indicadores e navegação inferior.",
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "src": "mobile/mobile-02.png",
+        "alt": "Movimentações de um produtor no celular, com registros de entrada e saída e destaque para o valor restante a pagar.",
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "src": "mobile/mobile-03.png",
+        "alt": "Registros do Caixa no celular, com datas, horários, quantidades, valores e ações de impressão.",
+        "width": 1080,
+        "height": 1920
+      }
+    ]
+  },
+  "links": {
+    "demo": null,
+    "repository": null
+  }
+}

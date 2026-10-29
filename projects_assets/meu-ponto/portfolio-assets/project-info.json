@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "language": "pt-BR",
+  "slug": "meu-ponto",
+  "name": "Meu Ponto",
+  "category": "Gestão de aluguéis com mapa",
+  "shortDescription": "Pontos no mapa, aluguéis e cobranças reunidos em um aplicativo pensado para o celular.",
+  "about": "O Meu Ponto organiza o aluguel de espaços e bens associados a um endereço. A proposta nasceu da gestão de outdoors e também atende salas, terrenos, vagas e outros pontos alugáveis. O mapa conecta cada local ao seu cliente, período de aluguel e situação de pagamento.\n\nPensado para pessoas com pouca familiaridade com tecnologia, o aplicativo usa cartões, linguagem direta e navegação pelo celular. Proprietários e participantes da mesma conta acompanham aluguéis, vencimentos e recebimentos em um só lugar, com acesso aos dados limitado à própria conta.",
+  "problem": "Controlar pontos, clientes, datas e valores em cadernos ou planilhas separadas dificulta saber quais locais estão livres, quando cobrar e quanto ainda falta receber. O sistema reúne essas informações e relaciona o financeiro a cada ponto no mapa.",
+  "audience": [
+    "Proprietários e pequenos negócios que alugam outdoors, salas, terrenos, vagas ou outros bens ligados a um local.",
+    "Equipes que ajudam a administrar pontos e registrar recebimentos.",
+    "Pessoas que precisam de um controle simples de aluguéis pelo celular."
+  ],
+  "creationDate": {
+    "value": "2026-09-29",
+    "precision": "day",
+    "isEstimated": true
+  },
+  "features": [
+    {
+      "name": "Pontos no mapa",
+      "description": "Localiza os pontos, mostra sua situação e permite cadastrar locais pelo mapa, pela localização atual ou pela busca de endereço."
+    },
+    {
+      "name": "Categorias e fotos",
+      "description": "Organiza os pontos por categorias personalizáveis e aceita até três fotos privadas por ponto."
+    },
+    {
+      "name": "Clientes e aluguéis",
+      "description": "Relaciona o cliente ao ponto, ao valor e às datas do aluguel, com pesquisa e filtros para acompanhar os contratos."
+    },
+    {
+      "name": "Cobranças automáticas",
+      "description": "Gera uma cobrança única ou recorrências a cada número escolhido de meses e impede a sobreposição indevida de aluguéis no mesmo ponto."
+    },
+    {
+      "name": "Recebimentos completos ou parciais",
+      "description": "Registra a forma de recebimento e quem recebeu, calcula o saldo restante e permite corrigir ou estornar pagamentos preservando o histórico."
+    },
+    {
+      "name": "Resumo financeiro",
+      "description": "Exibe os valores a receber e recebidos no mês, os saldos em atraso de meses anteriores e os clientes com valores vencidos."
+    },
+    {
+      "name": "Participantes e permissões",
+      "description": "Permite ao administrador criar acessos para sua equipe, gerenciar permissões e consultar o histórico de mudanças da conta."
+    },
+    {
+      "name": "Aplicativo instalável",
+      "description": "Oferece instalação como PWA e leitura de listas recentes em condições de conexão ruim, sem criação ou edição offline."
+    }
+  ],
+  "highlights": [
+    "Mapa e controle financeiro ligados ao mesmo ponto, sem restringir o produto a uma única categoria de aluguel.",
+    "Interface em português com prioridade para o celular, navegação inferior e estados de carregamento, vazio e erro.",
+    "Separação de dados por conta e permissões verificadas na API, incluindo fotos privadas.",
+    "Regras de recorrência, conflito de datas e pagamentos parciais cobertas por testes automatizados.",
+    "Cancelamentos, estornos e exclusões lógicas preservam o histórico financeiro e registram as mudanças."
+  ],
+  "technologies": [
+    {
+      "name": "Python",
+      "category": "backend",
+      "purpose": "Implementação da API e das regras de negócio.",
+      "version": null
+    },
+    {
+      "name": "Django",
+      "category": "backend",
+      "purpose": "Modelos, validações, migrations e organização do backend.",
+      "version": null
+    },
+    {
+      "name": "Django REST Framework",
+      "category": "backend",
+      "purpose": "API REST com autenticação, permissões, filtros e paginação.",
+      "version": null
+    },
+    {
+      "name": "Simple JWT",
+      "category": "backend",
+      "purpose": "Tokens de acesso e renovação, com invalidação do refresh no logout.",
+      "version": null
+    },
+    {
+      "name": "drf-spectacular",
+      "category": "backend",
+      "purpose": "Schema OpenAPI e documentação interativa da API.",
+      "version": null
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "database",
+      "purpose": "Persistência dos dados da aplicação em produção.",
+      "version": null
+    },
+    {
+      "name": "React",
+      "category": "frontend",
+      "purpose": "Componentes e telas da interface responsiva.",
+      "version": null
+    },
+    {
+      "name": "TypeScript",
+      "category": "frontend",
+      "purpose": "Tipagem dos componentes, formulários e contratos da API.",
+      "version": null
+    },
+    {
+      "name": "Vite",
+      "category": "frontend",
+      "purpose": "Ambiente de desenvolvimento e build dos arquivos do frontend.",
+      "version": null
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "frontend",
+      "purpose": "Estilos, identidade visual e adaptação das telas por largura.",
+      "version": null
+    },
+    {
+      "name": "React Router",
+      "category": "frontend",
+      "purpose": "Navegação entre páginas públicas e rotas autenticadas.",
+      "version": null
+    },
+    {
+      "name": "TanStack Query",
+      "category": "frontend",
+      "purpose": "Consultas, cache e atualização dos dados recebidos da API.",
+      "version": null
+    },
+    {
+      "name": "React Hook Form e Zod",
+      "category": "frontend",
+      "purpose": "Formulários e validação das informações digitadas.",
+      "version": null
+    },
+    {
+      "name": "Leaflet e React Leaflet",
+      "category": "frontend",
+      "purpose": "Mapa interativo, marcadores por situação e seleção de coordenadas.",
+      "version": null
+    },
+    {
+      "name": "OpenStreetMap",
+      "category": "frontend",
+      "purpose": "Cartografia exibida no mapa e atribuição aos seus colaboradores.",
+      "version": null
+    },
+    {
+      "name": "Photon",
+      "category": "frontend",
+      "purpose": "Busca de endereços com espera entre digitações e cache de resultados.",
+      "version": null
+    },
+    {
+      "name": "vite-plugin-pwa e Workbox",
+      "category": "frontend",
+      "purpose": "Manifesto instalável, service worker, cache do aplicativo e leituras recentes por sessão.",
+      "version": null
+    },
+    {
+      "name": "Docker e Compose",
+      "category": "infrastructure",
+      "purpose": "Empacotamento e execução dos serviços de produção.",
+      "version": null
+    },
+    {
+      "name": "Gunicorn e Nginx",
+      "category": "infrastructure",
+      "purpose": "Execução do backend e entrega do frontend estático com encaminhamento das requisições à API.",
+      "version": null
+    },
+    {
+      "name": "GitHub Actions",
+      "category": "infrastructure",
+      "purpose": "Automação de testes, verificações, build e publicação após os checks da linha principal.",
+      "version": null
+    },
+    {
+      "name": "pytest e pytest-django",
+      "category": "testing",
+      "purpose": "Testes das regras financeiras, permissões e isolamento entre contas.",
+      "version": null
+    },
+    {
+      "name": "Vitest e Testing Library",
+      "category": "testing",
+      "purpose": "Testes de componentes, navegação e interações do frontend.",
+      "version": null
+    }
+  ],
+  "assets": {
+    "cover": {
+      "src": "cover/cover-portfolio.png",
+      "alt": "Meu Ponto: aluguéis no mapa, com telas reais de cobranças no computador e do mapa no celular.",
+      "width": 1920,
+      "height": 1080
+    },
+    "desktop": [
+      {
+        "src": "desktop/desktop-01.png",
+        "alt": "Mapa de Belém com doze pontos fictícios, marcadores por situação e lista de pontos ao lado.",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "desktop/desktop-02.png",
+        "alt": "Lista de seis aluguéis fictícios no computador, com clientes, valores, datas e filtros por situação.",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "desktop/desktop-03.png",
+        "alt": "Cobranças no computador com resumo financeiro mensal e três cartões, incluindo uma cobrança paga em parte.",
+        "width": 1920,
+        "height": 1080
+      }
+    ],
+    "mobile": [
+      {
+        "src": "mobile/mobile-01.png",
+        "alt": "Mapa no celular com marcadores de pontos fictícios, busca de endereço e botão Minha localização.",
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "src": "mobile/mobile-02.png",
+        "alt": "Aluguéis no celular com pesquisa, filtros por situação e cartão do Outdoor Marco.",
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "src": "mobile/mobile-03.png",
+        "alt": "Resumo financeiro no celular com valores fictícios a receber, recebidos e em atraso, seguido dos filtros de cobranças.",
+        "width": 1080,
+        "height": 1920
+      }
+    ]
+  },
+  "links": {
+    "demo": null,
+    "repository": null
+  }
+}

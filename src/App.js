@@ -1,26 +1,11 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { FiArrowDownRight, FiArrowLeft, FiArrowRight, FiArrowUpRight, FiCode, FiFileText, FiGithub, FiGrid, FiHome, FiLayers, FiLinkedin, FiMail, FiSend, FiUser } from 'react-icons/fi';
 import portrait from './assets/me.jpg';
-import agriAraujo from './assets/agriaraujo.jpeg';
-import scheduling from './assets/SistemaAgendamento.jpeg';
-import finances from './assets/finance-manage.jpeg';
-import pokedex from './assets/pokedex.png';
-import quiz from './assets/dev-quiz.jpeg';
-import calculator from './assets/calculator.jpeg';
-import instagram from './assets/instagram-login-clone.png';
+import { projects, projectCount, projectHref, projectSlugFromHash } from './data/projects';
+import ProjectDetails, { ProjectNotFound } from './components/projectDetails/ProjectDetails';
 import './App.css';
 
 const resumeUrl = `${process.env.PUBLIC_URL}/Curriculo_Joao_Mariano.pdf`;
-
-const projects = [
-    { number: '01', title: 'AgriAraújo', category: 'Sistema de gestão', description: 'Uma operação inteira em um só lugar: clientes, estoque, compras, vendas, caixa, notas fiscais e relatórios.', image: agriAraujo, imageAlt: 'Tela do sistema de gestão AgriAraújo', tags: ['Django', 'Python', 'MySQL', 'Bootstrap'], featured: true },
-    { number: '02', title: 'Sistema de Agendamento', category: 'Produto web', description: 'Agenda, clientes, equipe e caixa conectados em uma interface para simplificar a rotina do negócio.', image: scheduling, imageAlt: 'Tela do sistema de agendamento', tags: ['Django', 'Python', 'Bootstrap'], featured: true },
-    { number: '03', title: 'Controle de Finanças', category: 'Projeto de estudo', description: 'Controle de entradas e saídas com categorias, totais e dados salvos no navegador.', image: finances, imageAlt: 'Interface do controle de finanças', tags: ['React', 'Styled Components', 'LocalStorage'], url: 'https://financemanage.netlify.app/' },
-    { number: '04', title: 'Pokédex', category: 'Projeto de estudo', description: 'Exploração da PokéAPI com paginação e interface construída em JavaScript puro.', image: pokedex, imageAlt: 'Interface da Pokédex', tags: ['JavaScript', 'HTML', 'CSS', 'API'], url: 'https://joonmarion.github.io/pokedex/' },
-    { number: '05', title: 'Quiz de Programação', category: 'Projeto de estudo', description: 'Um quiz interativo para testar conhecimentos de desenvolvimento.', image: quiz, imageAlt: 'Interface do quiz de programação', tags: ['React', 'Context API', 'CSS'], url: 'https://dev-js-quiz.netlify.app/' },
-    { number: '06', title: 'Calculadora', category: 'Projeto de estudo', description: 'Uma calculadora feita para praticar componentes, estado e interações em React.', image: calculator, imageAlt: 'Interface da calculadora', tags: ['React', 'Styled Components'], url: 'https://reactcalculatorjs.netlify.app/' },
-    { number: '07', title: 'Instagram Login Clone', category: 'Projeto de estudo', description: 'Estudo de layout responsivo e Flexbox a partir de uma tela de login conhecida.', image: instagram, imageAlt: 'Interface do clone da tela de login do Instagram', tags: ['HTML', 'CSS', 'Flexbox'], url: 'https://joonmarion.github.io/login-instagram/' },
-];
 
 const experience = [
     { period: '2025 — atual', role: 'Desenvolvedor Web', company: 'IntGest Inteligência e Gestão Tecnológica', details: 'Sistemas governamentais, documentos orçamentários, webhooks, tarefas assíncronas e atualizações em tempo real.' },
@@ -72,40 +57,73 @@ function SectionHeading({ index, eyebrow, title, description }) {
 function ProjectCard({ project, active }) {
     return (
         <article className="project-card">
-            <div className="project-card__image">
-                <div className="project-card__chrome" aria-hidden="true"><span /><span /><span /><small>preview / {project.number}</small></div>
-                <img src={project.image} alt={project.imageAlt} loading={active ? 'eager' : 'lazy'} />
-                <span className="project-card__image-index">/{project.number}</span>
-                {project.url && <span className="project-card__image-arrow" aria-hidden="true"><FiArrowUpRight /></span>}
-            </div>
+            <a className="project-card__image project-card__image--cover" href={projectHref(project.slug)} tabIndex={active ? 0 : -1} aria-label={`Ver detalhes de ${project.title}`}>
+                <img src={project.image} alt={project.imageAlt} width={project.assets.cover.width} height={project.assets.cover.height} loading={active ? 'eager' : 'lazy'} />
+                <span className="project-card__image-arrow" aria-hidden="true"><FiArrowRight /></span>
+            </a>
             <div className="project-card__body">
-                <div className="project-card__meta"><span>{project.category}</span><span>{project.number} / 07</span></div>
+                <div className="project-card__meta"><span>{project.category}</span><span>{project.number} / {projectCount}</span></div>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <div className="project-card__footer">
                     <div className="project-card__tags">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
-                    {project.url ? (
-                        <a className="project-card__action" href={project.url} target="_blank" rel="noopener noreferrer" tabIndex={active ? 0 : -1} aria-label={`Abrir ${project.title} em uma nova aba`}>Ver projeto <FiArrowUpRight aria-hidden="true" /></a>
-                    ) : <span className="project-card__action project-card__action--private">Projeto privado</span>}
+                    <a className="project-card__action" href={projectHref(project.slug)} tabIndex={active ? 0 : -1} aria-label={`Conhecer o projeto ${project.title}`}>Ver detalhes <FiArrowRight aria-hidden="true" /></a>
                 </div>
             </div>
         </article>
     );
 }
 
-function ProjectCarousel() {
-    const [activeIndex, setActiveIndex] = useState(0);
-    const touchStart = useRef(null);
+function ProjectCarousel({ activeIndex, setActiveIndex }) {
+    const viewportRef = useRef(null);
+    const gesture = useRef(null);
+    const suppressClick = useRef(false);
     const total = projects.length;
     const current = projects[activeIndex];
-    const goTo = index => setActiveIndex((index + total) % total);
+    const goTo = index => {
+        setActiveIndex((index + total) % total);
+        if (viewportRef.current?.contains(document.activeElement)) {
+            viewportRef.current.focus({ preventScroll: true });
+        }
+    };
 
-    const handleTouchStart = event => { touchStart.current = event.touches[0].clientX; };
-    const handleTouchEnd = event => {
-        if (touchStart.current === null) return;
-        const distance = event.changedTouches[0].clientX - touchStart.current;
-        if (Math.abs(distance) > 45) goTo(activeIndex + (distance < 0 ? 1 : -1));
-        touchStart.current = null;
+    const handlePointerDown = event => {
+        suppressClick.current = false;
+        if (!event.isPrimary || event.button !== 0 || event.target.closest('button, .project-card__action')) return;
+        gesture.current = { id: event.pointerId, x: event.clientX, y: event.clientY, dragging: false };
+    };
+    const handlePointerMove = event => {
+        const start = gesture.current;
+        if (!start || start.id !== event.pointerId) return;
+        const distance = event.clientX - start.x;
+        const verticalDistance = event.clientY - start.y;
+        if (!start.dragging) {
+            if (Math.abs(verticalDistance) > 10 && Math.abs(verticalDistance) > Math.abs(distance)) {
+                gesture.current = null;
+                return;
+            }
+            if (Math.abs(distance) < 8 || Math.abs(distance) < Math.abs(verticalDistance) * 1.2) return;
+            start.dragging = true;
+            event.currentTarget.setPointerCapture(event.pointerId);
+            event.currentTarget.dataset.dragging = 'true';
+        }
+        event.preventDefault();
+        const drag = Math.max(-180, Math.min(180, distance * 0.7));
+        event.currentTarget.style.setProperty('--carousel-drag', `${drag}px`);
+    };
+    const finishGesture = event => {
+        const start = gesture.current;
+        if (!start || start.id !== event.pointerId) return;
+        gesture.current = null;
+        const viewport = event.currentTarget;
+        delete viewport.dataset.dragging;
+        viewport.style.removeProperty('--carousel-drag');
+        if (viewport.hasPointerCapture(event.pointerId)) viewport.releasePointerCapture(event.pointerId);
+        suppressClick.current = start.dragging;
+        const distance = event.clientX - start.x;
+        if (event.type === 'pointerup' && start.dragging && Math.abs(distance) > 45) {
+            goTo(activeIndex + (distance < 0 ? 1 : -1));
+        }
     };
     const handleKeyDown = event => {
         if (event.key === 'ArrowRight') { event.preventDefault(); goTo(activeIndex + 1); }
@@ -113,10 +131,28 @@ function ProjectCarousel() {
     };
 
     return (
-        <div className="project-carousel" aria-label="Carrossel 3D de projetos" onKeyDown={handleKeyDown}>
-            <div className="project-carousel__topline"><span>EXPLORAR PROJETOS / 01—07</span><span>Arraste ou use as setas <FiArrowRight aria-hidden="true" /></span></div>
-            <div className="project-carousel__viewport" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
-                <div className="project-carousel__orbit" aria-hidden="true" />
+        <div className="project-carousel" role="region" aria-roledescription="carrossel" aria-label="Projetos selecionados" onKeyDown={handleKeyDown}>
+            <div className="project-carousel__topline"><span>EXPLORAR PROJETOS / 01—{projectCount}</span><span>Arraste ou use as setas <FiArrowRight aria-hidden="true" /></span></div>
+            <div
+                className="project-carousel__viewport"
+                ref={viewportRef}
+                tabIndex={0}
+                aria-label="Use as setas do teclado ou arraste para explorar os projetos"
+                onPointerDown={handlePointerDown}
+                onPointerMove={handlePointerMove}
+                onPointerUp={finishGesture}
+                onPointerCancel={finishGesture}
+                onLostPointerCapture={event => {
+                    if (event.target === event.currentTarget) finishGesture(event);
+                }}
+                onDragStart={event => event.preventDefault()}
+                onClickCapture={event => {
+                    if (!suppressClick.current) return;
+                    suppressClick.current = false;
+                    event.preventDefault();
+                    event.stopPropagation();
+                }}
+            >
                 {projects.map((project, index) => {
                     let offset = index - activeIndex;
                     if (offset > total / 2) offset -= total;
@@ -127,14 +163,16 @@ function ProjectCarousel() {
                         <div
                             key={project.number}
                             className={`project-carousel__slot ${active ? 'is-active' : distance === 1 ? 'is-neighbor' : 'is-distant'}`}
+                            role="group"
+                            aria-roledescription="slide"
+                            aria-label={`${project.number} de ${total}: ${project.title}`}
                             aria-hidden={!active}
                             style={{
-                                '--carousel-x': `${offset * 70}%`,
-                                '--carousel-z': `${active ? 110 : distance === 1 ? -90 : -240}px`,
-                                '--carousel-rotation': `${offset * -28}deg`,
-                                '--carousel-scale': active ? 1 : distance === 1 ? 0.79 : 0.62,
-                                '--carousel-opacity': active ? 1 : distance === 1 ? 0.82 : 0,
-                                zIndex: 10 - distance,
+                                '--carousel-x': `${offset * 100}%`,
+                                '--carousel-gap': `${offset * 24}px`,
+                                '--carousel-scale': active ? 1 : 0.92,
+                                '--carousel-opacity': active ? 1 : distance === 1 ? 0.4 : 0,
+                                zIndex: active ? 2 : 1,
                             }}
                             onClick={event => {
                                 if (active) return;
@@ -150,8 +188,8 @@ function ProjectCarousel() {
             <div className="project-carousel__controls">
                 <button type="button" className="project-carousel__arrow" aria-label="Projeto anterior" onClick={() => goTo(activeIndex - 1)}><FiArrowLeft aria-hidden="true" /></button>
                 <div className="project-carousel__readout" aria-live="polite" aria-atomic="true">
-                    <strong>{current.number} <span>/ 07</span></strong>
-                    <span>{current.title} · {current.featured ? 'Sistema real' : 'Projeto de estudo'}</span>
+                    <strong>{current.number} <span>/ {projectCount}</span></strong>
+                    <span>{current.title} · Em produção</span>
                 </div>
                 <button type="button" className="project-carousel__arrow" aria-label="Próximo projeto" onClick={() => goTo(activeIndex + 1)}><FiArrowRight aria-hidden="true" /></button>
             </div>
@@ -194,7 +232,7 @@ function CapabilityCard({ item }) {
     );
 }
 
-function App() {
+function HomePage({ activeProject, setActiveProject }) {
     const [activeSection, setActiveSection] = useState('inicio');
     const portraitRef = useRef(null);
 
@@ -305,8 +343,8 @@ function App() {
                 </div>
 
                 <section className="section projects-section page-container" id="projetos" aria-labelledby="projects-title">
-                    <SectionHeading index="01 /" eyebrow="TRABALHOS SELECIONADOS" title={<span id="projects-title">Ideias que viraram<br /><em>software.</em></span>} description="Soluções de gestão e experimentos que mostram como penso, construo e evoluo produtos digitais." />
-                    <ProjectCarousel />
+                    <SectionHeading index="01 /" eyebrow="PROJETOS EM PRODUÇÃO" title={<span id="projects-title">Projetos reais.<br /><em>Software em uso.</em></span>} description="Sistemas em uso por clientes reais. Conheça o contexto, as decisões e as interfaces de cada solução." />
+                    <ProjectCarousel activeIndex={activeProject} setActiveIndex={setActiveProject} />
                 </section>
 
                 <section className="section experience-section" id="experiencia" aria-labelledby="experience-title">
@@ -376,6 +414,54 @@ function App() {
             </footer>
         </div>
     );
+}
+
+const portfolioTitle = 'João Mariano — Desenvolvedor Full Stack';
+const portfolioDescription = 'João Mariano é desenvolvedor web full stack. Conheça seus projetos, experiência com Python, Django e React e entre em contato.';
+
+function App() {
+    const [hash, setHash] = useState(() => window.location.hash);
+    const [activeProject, setActiveProject] = useState(0);
+    const previousPage = useRef({ initial: true, detail: false });
+    const slug = projectSlugFromHash(hash);
+    const projectIndex = projects.findIndex(item => item.slug === slug);
+    const project = projects[projectIndex];
+
+    useEffect(() => {
+        const onHashChange = () => setHash(window.location.hash);
+        window.addEventListener('hashchange', onHashChange);
+        return () => window.removeEventListener('hashchange', onHashChange);
+    }, []);
+
+    useLayoutEffect(() => {
+        const detail = slug !== null;
+        const restoreHome = previousPage.current.initial || previousPage.current.detail;
+        document.title = detail ? `${project?.name || 'Projeto não encontrado'} — João Mariano` : portfolioTitle;
+        document.querySelector('meta[name="description"]')?.setAttribute('content', project?.shortDescription || portfolioDescription);
+        if (project) setActiveProject(projectIndex);
+        if (detail) {
+            window.scrollTo({ top: 0, behavior: 'instant' });
+            document.querySelector('[data-route-title]')?.focus({ preventScroll: true });
+        } else if (restoreHome) {
+            const target = hash ? hash.slice(1) : previousPage.current.detail ? 'projetos' : 'inicio';
+            const section = document.getElementById(target);
+            section?.scrollIntoView({ behavior: 'instant', block: 'start' });
+            if (previousPage.current.detail) {
+                const heading = section?.querySelector('h1, h2');
+                heading?.setAttribute('tabindex', '-1');
+                heading?.focus({ preventScroll: true });
+            }
+        }
+        previousPage.current = { initial: false, detail };
+    }, [hash, slug, project, projectIndex]);
+
+    if (slug !== null) {
+        const navigation = <SideNavigation activeSection="projetos" />;
+        return project
+            ? <ProjectDetails key={project.slug} project={project} nextProject={projects[(projectIndex + 1) % projects.length]} navigation={navigation} />
+            : <ProjectNotFound navigation={navigation} />;
+    }
+    return <HomePage activeProject={activeProject} setActiveProject={setActiveProject} />;
 }
 
 export default App;

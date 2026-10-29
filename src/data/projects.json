@@ -1,0 +1,847 @@
+[
+  {
+    "schemaVersion": 1,
+    "language": "pt-BR",
+    "slug": "agriaraujo-crm",
+    "name": "Agriaraujo CRM",
+    "category": "Sistema web de gestão agrícola",
+    "shortDescription": "Gestão de produtores, movimentações de pimenta-do-reino, saldos em kg e acertos financeiros.",
+    "about": "O Agriaraujo CRM é um sistema web desenvolvido para a gestão de uma operação de grãos e produtos agrícolas, com foco na pimenta-do-reino. A aplicação reúne o cadastro de produtores, o histórico de entregas e retiradas, os saldos em quilogramas e o acompanhamento dos valores a pagar. O Caixa funciona de forma independente, registrando compras à vista com quantidade, preço e valor total.\n\nA interface permite consultar os movimentos recentes, localizar registros por filtros, acompanhar pagamentos parciais, imprimir notas e comprovantes e exportar informações para planilhas. O sistema oferece navegação em computadores e celulares, instalação como aplicativo em navegadores compatíveis e uma área administrativa com autorização adicional para rotinas como a geração de backups. Sua evolução preserva a integração com a versão anterior e os registros de negócio compartilhados.",
+    "problem": "Acompanhar entregas, retiradas, saldos de pimenta e acertos de diferentes produtores, mantendo as quantidades em quilogramas separadas dos valores financeiros e dos lançamentos independentes do Caixa.",
+    "audience": [
+      "Empresas que comercializam pimenta-do-reino e produtos agrícolas.",
+      "Responsáveis pelo cadastro de produtores e pelo acompanhamento das entregas, retiradas e saldos.",
+      "Operadores que registram compras à vista, pagamentos aos produtores e documentos da operação."
+    ],
+    "creationDate": {
+      "value": "2023-05",
+      "precision": "month",
+      "isEstimated": true
+    },
+    "features": [
+      {
+        "name": "Visão geral da operação",
+        "description": "Apresenta o saldo conjunto dos produtores, a quantidade de produtores cadastrados, as entradas do Caixa do dia e os movimentos recentes, com atalhos para as principais ações."
+      },
+      {
+        "name": "Cadastro de produtores",
+        "description": "Organiza os dados de cada produtor, suas anotações e o acesso ao histórico de movimentações e ao saldo individual."
+      },
+      {
+        "name": "Movimentações de pimenta",
+        "description": "Registra entradas e saídas em quilogramas, com data, horário e histórico, permitindo acompanhar as entregas, retiradas e o saldo de cada produtor."
+      },
+      {
+        "name": "Pagamentos aos produtores",
+        "description": "Permite registrar pagamentos integrais ou parciais em reais nas saídas dos produtores e consultar o valor restante a pagar, preservando as quantidades de pimenta e os acertos anteriores."
+      },
+      {
+        "name": "Caixa independente",
+        "description": "Registra entradas de pimenta em operações à vista, com quantidade, preço por quilograma, valor total, data, horário e observações, sem criar movimentações de produtor automaticamente."
+      },
+      {
+        "name": "Consultas e exportação",
+        "description": "Oferece busca, filtros combináveis e ordenação nas listagens. Os resultados podem ser exportados em planilhas Excel, respeitando a seleção realizada na tela."
+      },
+      {
+        "name": "Notas e comprovantes",
+        "description": "Disponibiliza notas de movimentações e do Caixa, além de comprovantes individuais dos acertos, com apresentação para impressão e formatos térmicos."
+      },
+      {
+        "name": "Acesso administrativo e backup",
+        "description": "Utiliza login e permissões de acesso, com uma autorização adicional na área Business. Usuários autorizados podem gerar e baixar uma cópia do banco PostgreSQL, acompanhando o andamento mesmo após sair e voltar à página."
+      },
+      {
+        "name": "Interface responsiva e PWA",
+        "description": "Adapta a navegação, os cards e os registros ao computador e ao celular. Em navegadores compatíveis, pode ser instalado como aplicativo, com acesso aos dados pela conexão com o sistema."
+      }
+    ],
+    "highlights": [
+      "Quantidades em quilogramas e pagamentos em reais são tratados separadamente, preservando o significado de cada saldo.",
+      "Listagens, resumos e planilhas utilizam a mesma seleção de filtros, mantendo coerência entre consulta e exportação.",
+      "Buscas e filtros atualizam partes da interface com HTMX, com navegação convencional disponível como alternativa.",
+      "A evolução da aplicação preserva a convivência com a versão anterior e o uso dos mesmos registros de negócio.",
+      "A geração de backups ocorre em um processo separado, permitindo consultar novamente o andamento ao retornar à página."
+    ],
+    "technologies": [
+      {
+        "name": "Python",
+        "category": "backend",
+        "purpose": "Implementação das regras de negócio, cálculos, validações e serviços da aplicação.",
+        "version": "3.10.20"
+      },
+      {
+        "name": "Django",
+        "category": "backend",
+        "purpose": "Organização da aplicação, autenticação, permissões, formulários, consultas ao banco e evolução do esquema por migrations.",
+        "version": "4.0.1"
+      },
+      {
+        "name": "Django Templates",
+        "category": "frontend",
+        "purpose": "Renderização das páginas e dos fragmentos HTML no servidor, incluindo formulários, listagens e documentos para impressão.",
+        "version": null
+      },
+      {
+        "name": "HTML e CSS",
+        "category": "frontend",
+        "purpose": "Estrutura das telas, identidade visual própria, layouts responsivos e estilos de impressão.",
+        "version": null
+      },
+      {
+        "name": "JavaScript",
+        "category": "frontend",
+        "purpose": "Interações de formulários, menus, diálogos, acompanhamento de backups e instalação do aplicativo.",
+        "version": null
+      },
+      {
+        "name": "HTMX",
+        "category": "frontend",
+        "purpose": "Atualização parcial de listagens e resumos ao aplicar buscas e filtros.",
+        "version": "2.0.10"
+      },
+      {
+        "name": "PostgreSQL",
+        "category": "database",
+        "purpose": "Persistência dos dados de negócio, transações e mecanismos de integridade e arquivamento compartilhados com a versão anterior.",
+        "version": null
+      },
+      {
+        "name": "SQLite",
+        "category": "database",
+        "purpose": "Banco disponível para desenvolvimento local, demonstrações isoladas e parte das verificações automatizadas.",
+        "version": null
+      },
+      {
+        "name": "openpyxl",
+        "category": "backend",
+        "purpose": "Geração de planilhas Excel com produtores, movimentações e entradas do Caixa.",
+        "version": "3.1.2"
+      },
+      {
+        "name": "Docker e Docker Compose",
+        "category": "infrastructure",
+        "purpose": "Empacotamento da aplicação e organização dos serviços de execução, incluindo o processo de geração de backups.",
+        "version": null
+      },
+      {
+        "name": "Gunicorn",
+        "category": "infrastructure",
+        "purpose": "Execução da aplicação Django como servidor WSGI no ambiente de publicação.",
+        "version": "22.0.0"
+      },
+      {
+        "name": "WhiteNoise",
+        "category": "infrastructure",
+        "purpose": "Distribuição dos arquivos estáticos da interface pela aplicação.",
+        "version": "6.7.0"
+      },
+      {
+        "name": "Django Test Framework e unittest",
+        "category": "testing",
+        "purpose": "Verificações automatizadas de regras de negócio, permissões, pagamentos, concorrência e compatibilidade dos dados.",
+        "version": null
+      }
+    ],
+    "assets": {
+      "cover": {
+        "src": "cover/cover-portfolio.png",
+        "alt": "Capa do Agriaraujo CRM agrícola com logotipo oficial e telas reais em notebook e celular.",
+        "width": 1920,
+        "height": 1080
+      },
+      "desktop": [
+        {
+          "src": "desktop/desktop-01.png",
+          "alt": "Visão geral do Agriaraujo no computador, com saldo dos produtores, Caixa do dia e movimentos recentes.",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "desktop/desktop-02.png",
+          "alt": "Histórico de um produtor demonstrativo no computador, com saldo em kg, entradas, saídas, valor a pagar e filtros.",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "desktop/desktop-03.png",
+          "alt": "Caixa no computador, com resumo do dia e entradas de pimenta contendo data, horário, quantidade, preço e total.",
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "mobile": [
+        {
+          "src": "mobile/mobile-01.png",
+          "alt": "Visão geral do Agriaraujo no celular, com cards de saldo e indicadores e navegação inferior.",
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "src": "mobile/mobile-02.png",
+          "alt": "Movimentações de um produtor no celular, com registros de entrada e saída e destaque para o valor restante a pagar.",
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "src": "mobile/mobile-03.png",
+          "alt": "Registros do Caixa no celular, com datas, horários, quantidades, valores e ações de impressão.",
+          "width": 1080,
+          "height": 1920
+        }
+      ]
+    },
+    "links": {
+      "demo": null,
+      "repository": null
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "language": "pt-BR",
+    "slug": "articula",
+    "name": "Articula",
+    "category": "Gestão de agenda política e gabinete",
+    "shortDescription": "Agenda compartilhada para gabinetes, com compromissos, lembretes, chat e relatórios por município.",
+    "about": "O Articula é um sistema web para organizar a rotina de gabinetes políticos, mandatos e equipes de campanha. Ele reúne compromissos, participantes e informações de contexto em uma agenda compartilhada, acessível pelo computador e pelo celular.\n\nA aplicação conecta o planejamento diário ao acompanhamento da atuação da equipe. Calendário, alertas de sobreposição de horários, lembretes por diferentes canais, conversas internas e relatórios ajudam a consultar a programação e acompanhar os compromissos por cidade, tipo e status.",
+    "problem": "Centralizar uma agenda que pode ficar dispersa entre mensagens e anotações, facilitar o alinhamento da equipe e identificar sobreposições de horário antes de registrar novos compromissos.",
+    "audience": [
+      "Gabinetes políticos e equipes de assessoria",
+      "Representantes eleitos e equipes de mandato",
+      "Equipes de campanha que organizam compromissos e ações nos municípios"
+    ],
+    "creationDate": {
+      "value": "2026-05",
+      "precision": "month",
+      "isEstimated": true
+    },
+    "features": [
+      {
+        "name": "Agenda diária e calendário",
+        "description": "Consulta de compromissos do dia, grade mensal no computador e navegação semanal ou mapa de calor mensal no celular."
+      },
+      {
+        "name": "Gestão de compromissos",
+        "description": "Cadastro e edição de reuniões, audiências, eventos e visitas com horário, local, município, importância, participantes e status de realização."
+      },
+      {
+        "name": "Alertas de conflitos de horário",
+        "description": "Identifica sobreposição de horários durante o preenchimento e oferece opções para revisar ou resolver o conflito antes de salvar."
+      },
+      {
+        "name": "Participantes e permissões",
+        "description": "Organiza os usuários de cada gabinete e permite definir papéis e permissões de acesso por módulo e por pessoa."
+      },
+      {
+        "name": "Lembretes multicanal",
+        "description": "Permite configurar resumos da agenda do dia seguinte por e-mail, WhatsApp, Telegram e notificações push, conforme os canais disponíveis no plano."
+      },
+      {
+        "name": "Chat da equipe",
+        "description": "Conversas individuais e em grupo com mensagens em tempo real, indicação de leitura e compartilhamento de compromissos no plano Profissional."
+      },
+      {
+        "name": "Relatórios e exportação",
+        "description": "Apresenta indicadores de execução, gráficos por cidade, tipo, status e importância, além da evolução mensal. Inclui exportação em PDF para administradores no plano Profissional."
+      },
+      {
+        "name": "Assinaturas e recursos por plano",
+        "description": "Integra a contratação e a gestão de assinaturas ao acesso aos recursos e aos limites de usuários da equipe."
+      },
+      {
+        "name": "Aplicação instalável",
+        "description": "Oferece instalação como PWA e suporte a notificações push em navegadores e dispositivos compatíveis."
+      }
+    ],
+    "highlights": [
+      "Informações próprias da rotina política, como liderança, expectativa de voto e importância do compromisso.",
+      "Dados e participantes organizados por gabinete, com controle de acesso por papéis e permissões individuais.",
+      "Interfaces específicas para computador e celular, incluindo calendário semanal e mapa de calor mensal na versão mobile.",
+      "Planejamento, comunicação da equipe e análise dos compromissos reunidos na mesma aplicação.",
+      "Relatórios por município com visualizações dos dados e geração de PDF."
+    ],
+    "technologies": [
+      {
+        "name": "React",
+        "category": "frontend",
+        "purpose": "Construção das páginas, formulários, painéis e componentes interativos da aplicação.",
+        "version": null
+      },
+      {
+        "name": "TypeScript",
+        "category": "frontend",
+        "purpose": "Tipagem das entidades, componentes e contratos de comunicação com a API.",
+        "version": null
+      },
+      {
+        "name": "Tailwind CSS",
+        "category": "frontend",
+        "purpose": "Estilos da interface, temas claro e escuro e adaptação dos layouts aos diferentes tamanhos de tela.",
+        "version": null
+      },
+      {
+        "name": "TanStack Router e TanStack Query",
+        "category": "frontend",
+        "purpose": "Navegação entre páginas e consultas à API com cache e atualização dos dados.",
+        "version": null
+      },
+      {
+        "name": "Radix UI",
+        "category": "frontend",
+        "purpose": "Primitivos usados nos diálogos, painéis, seletores e outros controles da interface.",
+        "version": null
+      },
+      {
+        "name": "Recharts e D3 Geo",
+        "category": "frontend",
+        "purpose": "Gráficos dos relatórios e projeção geográfica dos municípios do Pará na geração do PDF.",
+        "version": null
+      },
+      {
+        "name": "jsPDF",
+        "category": "frontend",
+        "purpose": "Composição e exportação dos relatórios em PDF no navegador.",
+        "version": null
+      },
+      {
+        "name": "Vite",
+        "category": "frontend",
+        "purpose": "Servidor de desenvolvimento e geração dos arquivos do frontend para publicação.",
+        "version": null
+      },
+      {
+        "name": "Python e Django",
+        "category": "backend",
+        "purpose": "Regras de negócio, persistência de dados, autenticação, permissões e agendamento de notificações.",
+        "version": null
+      },
+      {
+        "name": "Django REST Framework e Simple JWT",
+        "category": "backend",
+        "purpose": "API REST e autenticação com tokens de acesso, renovação e controle da versão da sessão.",
+        "version": null
+      },
+      {
+        "name": "Django Channels",
+        "category": "backend",
+        "purpose": "Eventos e comunicação do chat por WebSocket, incluindo presença, leitura e digitação.",
+        "version": null
+      },
+      {
+        "name": "PostgreSQL",
+        "category": "database",
+        "purpose": "Banco relacional previsto na configuração e nos scripts de implantação do sistema.",
+        "version": null
+      },
+      {
+        "name": "Redis",
+        "category": "infrastructure",
+        "purpose": "Cache compartilhado e distribuição de eventos do chat entre processos em produção.",
+        "version": null
+      },
+      {
+        "name": "Stripe",
+        "category": "backend",
+        "purpose": "Integração com checkout, assinaturas, alterações de plano e eventos de cobrança.",
+        "version": null
+      },
+      {
+        "name": "Resend, Telegram Bot API, Evolution API e Web Push",
+        "category": "backend",
+        "purpose": "Integrações de envio de lembretes por e-mail, Telegram, WhatsApp e notificações push.",
+        "version": null
+      },
+      {
+        "name": "Nginx, Gunicorn e Daphne",
+        "category": "infrastructure",
+        "purpose": "Serviço do frontend e encaminhamento das requisições HTTP e WebSocket na implantação documentada.",
+        "version": null
+      }
+    ],
+    "assets": {
+      "cover": {
+        "src": "cover/cover-portfolio.png",
+        "alt": "Articula — Agenda política, com o símbolo oficial e telas reais do calendário no computador e da agenda no celular.",
+        "width": 1920,
+        "height": 1080
+      },
+      "desktop": [
+        {
+          "src": "desktop/desktop-01.png",
+          "alt": "Relatórios do Articula com filtros, indicadores e gráficos de compromissos por município, tipo e status, usando dados fictícios.",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "desktop/desktop-02.png",
+          "alt": "Calendário mensal do Articula em outubro de 2026, com compromissos fictícios identificados por cores e navegação lateral.",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "desktop/desktop-03.png",
+          "alt": "Agenda diária do Articula com o painel de detalhes de uma reunião fictícia, incluindo horário, local, descrição e participantes.",
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "mobile": [
+        {
+          "src": "mobile/mobile-01.png",
+          "alt": "Relatórios do Articula no celular, rolados até os indicadores e o gráfico de compromissos por município, com dados fictícios.",
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "src": "mobile/mobile-02.png",
+          "alt": "Calendário do Articula no celular com navegação semanal e dois compromissos fictícios do dia 29 de outubro de 2026.",
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "src": "mobile/mobile-03.png",
+          "alt": "Agenda diária responsiva do Articula com indicadores de confirmados e pendentes e dois cards de compromissos fictícios.",
+          "width": 1080,
+          "height": 1920
+        }
+      ]
+    },
+    "links": {
+      "demo": null,
+      "repository": null
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "language": "pt-BR",
+    "slug": "meu-ponto",
+    "name": "Meu Ponto",
+    "category": "Gestão de aluguéis com mapa",
+    "shortDescription": "Pontos no mapa, aluguéis e cobranças reunidos em um aplicativo pensado para o celular.",
+    "about": "O Meu Ponto organiza o aluguel de espaços e bens associados a um endereço. A proposta nasceu da gestão de outdoors e também atende salas, terrenos, vagas e outros pontos alugáveis. O mapa conecta cada local ao seu cliente, período de aluguel e situação de pagamento.\n\nPensado para pessoas com pouca familiaridade com tecnologia, o aplicativo usa cartões, linguagem direta e navegação pelo celular. Proprietários e participantes da mesma conta acompanham aluguéis, vencimentos e recebimentos em um só lugar, com acesso aos dados limitado à própria conta.",
+    "problem": "Controlar pontos, clientes, datas e valores em cadernos ou planilhas separadas dificulta saber quais locais estão livres, quando cobrar e quanto ainda falta receber. O sistema reúne essas informações e relaciona o financeiro a cada ponto no mapa.",
+    "audience": [
+      "Proprietários e pequenos negócios que alugam outdoors, salas, terrenos, vagas ou outros bens ligados a um local.",
+      "Equipes que ajudam a administrar pontos e registrar recebimentos.",
+      "Pessoas que precisam de um controle simples de aluguéis pelo celular."
+    ],
+    "creationDate": {
+      "value": "2026-09-29",
+      "precision": "day",
+      "isEstimated": true
+    },
+    "features": [
+      {
+        "name": "Pontos no mapa",
+        "description": "Localiza os pontos, mostra sua situação e permite cadastrar locais pelo mapa, pela localização atual ou pela busca de endereço."
+      },
+      {
+        "name": "Categorias e fotos",
+        "description": "Organiza os pontos por categorias personalizáveis e aceita até três fotos privadas por ponto."
+      },
+      {
+        "name": "Clientes e aluguéis",
+        "description": "Relaciona o cliente ao ponto, ao valor e às datas do aluguel, com pesquisa e filtros para acompanhar os contratos."
+      },
+      {
+        "name": "Cobranças automáticas",
+        "description": "Gera uma cobrança única ou recorrências a cada número escolhido de meses e impede a sobreposição indevida de aluguéis no mesmo ponto."
+      },
+      {
+        "name": "Recebimentos completos ou parciais",
+        "description": "Registra a forma de recebimento e quem recebeu, calcula o saldo restante e permite corrigir ou estornar pagamentos preservando o histórico."
+      },
+      {
+        "name": "Resumo financeiro",
+        "description": "Exibe os valores a receber e recebidos no mês, os saldos em atraso de meses anteriores e os clientes com valores vencidos."
+      },
+      {
+        "name": "Participantes e permissões",
+        "description": "Permite ao administrador criar acessos para sua equipe, gerenciar permissões e consultar o histórico de mudanças da conta."
+      },
+      {
+        "name": "Aplicativo instalável",
+        "description": "Oferece instalação como PWA e leitura de listas recentes em condições de conexão ruim, sem criação ou edição offline."
+      }
+    ],
+    "highlights": [
+      "Mapa e controle financeiro ligados ao mesmo ponto, sem restringir o produto a uma única categoria de aluguel.",
+      "Interface em português com prioridade para o celular, navegação inferior e estados de carregamento, vazio e erro.",
+      "Separação de dados por conta e permissões verificadas na API, incluindo fotos privadas.",
+      "Regras de recorrência, conflito de datas e pagamentos parciais cobertas por testes automatizados.",
+      "Cancelamentos, estornos e exclusões lógicas preservam o histórico financeiro e registram as mudanças."
+    ],
+    "technologies": [
+      {
+        "name": "Python",
+        "category": "backend",
+        "purpose": "Implementação da API e das regras de negócio.",
+        "version": null
+      },
+      {
+        "name": "Django",
+        "category": "backend",
+        "purpose": "Modelos, validações, migrations e organização do backend.",
+        "version": null
+      },
+      {
+        "name": "Django REST Framework",
+        "category": "backend",
+        "purpose": "API REST com autenticação, permissões, filtros e paginação.",
+        "version": null
+      },
+      {
+        "name": "Simple JWT",
+        "category": "backend",
+        "purpose": "Tokens de acesso e renovação, com invalidação do refresh no logout.",
+        "version": null
+      },
+      {
+        "name": "drf-spectacular",
+        "category": "backend",
+        "purpose": "Schema OpenAPI e documentação interativa da API.",
+        "version": null
+      },
+      {
+        "name": "PostgreSQL",
+        "category": "database",
+        "purpose": "Persistência dos dados da aplicação em produção.",
+        "version": null
+      },
+      {
+        "name": "React",
+        "category": "frontend",
+        "purpose": "Componentes e telas da interface responsiva.",
+        "version": null
+      },
+      {
+        "name": "TypeScript",
+        "category": "frontend",
+        "purpose": "Tipagem dos componentes, formulários e contratos da API.",
+        "version": null
+      },
+      {
+        "name": "Vite",
+        "category": "frontend",
+        "purpose": "Ambiente de desenvolvimento e build dos arquivos do frontend.",
+        "version": null
+      },
+      {
+        "name": "Tailwind CSS",
+        "category": "frontend",
+        "purpose": "Estilos, identidade visual e adaptação das telas por largura.",
+        "version": null
+      },
+      {
+        "name": "React Router",
+        "category": "frontend",
+        "purpose": "Navegação entre páginas públicas e rotas autenticadas.",
+        "version": null
+      },
+      {
+        "name": "TanStack Query",
+        "category": "frontend",
+        "purpose": "Consultas, cache e atualização dos dados recebidos da API.",
+        "version": null
+      },
+      {
+        "name": "React Hook Form e Zod",
+        "category": "frontend",
+        "purpose": "Formulários e validação das informações digitadas.",
+        "version": null
+      },
+      {
+        "name": "Leaflet e React Leaflet",
+        "category": "frontend",
+        "purpose": "Mapa interativo, marcadores por situação e seleção de coordenadas.",
+        "version": null
+      },
+      {
+        "name": "OpenStreetMap",
+        "category": "frontend",
+        "purpose": "Cartografia exibida no mapa e atribuição aos seus colaboradores.",
+        "version": null
+      },
+      {
+        "name": "Photon",
+        "category": "frontend",
+        "purpose": "Busca de endereços com espera entre digitações e cache de resultados.",
+        "version": null
+      },
+      {
+        "name": "vite-plugin-pwa e Workbox",
+        "category": "frontend",
+        "purpose": "Manifesto instalável, service worker, cache do aplicativo e leituras recentes por sessão.",
+        "version": null
+      },
+      {
+        "name": "Docker e Compose",
+        "category": "infrastructure",
+        "purpose": "Empacotamento e execução dos serviços de produção.",
+        "version": null
+      },
+      {
+        "name": "Gunicorn e Nginx",
+        "category": "infrastructure",
+        "purpose": "Execução do backend e entrega do frontend estático com encaminhamento das requisições à API.",
+        "version": null
+      },
+      {
+        "name": "GitHub Actions",
+        "category": "infrastructure",
+        "purpose": "Automação de testes, verificações, build e publicação após os checks da linha principal.",
+        "version": null
+      },
+      {
+        "name": "pytest e pytest-django",
+        "category": "testing",
+        "purpose": "Testes das regras financeiras, permissões e isolamento entre contas.",
+        "version": null
+      },
+      {
+        "name": "Vitest e Testing Library",
+        "category": "testing",
+        "purpose": "Testes de componentes, navegação e interações do frontend.",
+        "version": null
+      }
+    ],
+    "assets": {
+      "cover": {
+        "src": "cover/cover-portfolio.png",
+        "alt": "Meu Ponto: aluguéis no mapa, com telas reais de cobranças no computador e do mapa no celular.",
+        "width": 1920,
+        "height": 1080
+      },
+      "desktop": [
+        {
+          "src": "desktop/desktop-01.png",
+          "alt": "Mapa de Belém com doze pontos fictícios, marcadores por situação e lista de pontos ao lado.",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "desktop/desktop-02.png",
+          "alt": "Lista de seis aluguéis fictícios no computador, com clientes, valores, datas e filtros por situação.",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "desktop/desktop-03.png",
+          "alt": "Cobranças no computador com resumo financeiro mensal e três cartões, incluindo uma cobrança paga em parte.",
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "mobile": [
+        {
+          "src": "mobile/mobile-01.png",
+          "alt": "Mapa no celular com marcadores de pontos fictícios, busca de endereço e botão Minha localização.",
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "src": "mobile/mobile-02.png",
+          "alt": "Aluguéis no celular com pesquisa, filtros por situação e cartão do Outdoor Marco.",
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "src": "mobile/mobile-03.png",
+          "alt": "Resumo financeiro no celular com valores fictícios a receber, recebidos e em atraso, seguido dos filtros de cobranças.",
+          "width": 1080,
+          "height": 1920
+        }
+      ]
+    },
+    "links": {
+      "demo": null,
+      "repository": null
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "language": "pt-BR",
+    "slug": "resale-manager",
+    "name": "Gestor de Revendas",
+    "category": "Sistema de gestão de revendas",
+    "shortDescription": "Gestão de produtos, clientes, vendas e estoque, com acompanhamento financeiro pensado para o celular.",
+    "about": "O Gestor de Revendas é um sistema web desenvolvido para organizar a rotina de uma revendedora independente. Ele reúne produtos, clientes, vendas, estoque e acompanhamento financeiro em um só lugar, facilitando o registro das operações e a consulta das informações do negócio.\n\nA experiência foi pensada para o navegador do celular, por solicitação da cliente descrita na documentação do projeto. Com navegação inferior, listas em cartões e formulários acessíveis por modais, o sistema permite acompanhar o que foi vendido, os pagamentos pendentes e a necessidade de reposição durante o trabalho do dia a dia.",
+    "problem": "Informações de produtos, clientes, estoque e pagamentos dispersas entre cadernos, anotações e conversas dificultam saber o que já foi recebido, o que falta cobrar e quais mercadorias precisam de reposição.",
+    "audience": [
+      "Revendedoras e revendedores independentes",
+      "Pequenos negócios de revenda que registram suas operações pelo celular"
+    ],
+    "creationDate": {
+      "value": "2026-05-02",
+      "precision": "day",
+      "isEstimated": true
+    },
+    "features": [
+      {
+        "name": "Painel financeiro por período",
+        "description": "Apresenta faturamento, valores recebidos e a receber, custo e lucro sobre vendas pagas. Permite filtrar por mês, ano, todo o histórico ou intervalo de datas e comparar os valores em dois gráficos."
+      },
+      {
+        "name": "Gestão de vendas e pagamentos",
+        "description": "Registra cliente, produtos, quantidades, preços e forma de pagamento. Permite editar vendas, separar pagas e pendentes, marcar recebimentos e consultar um comprovante compartilhável."
+      },
+      {
+        "name": "Controle de estoque",
+        "description": "Atualiza as quantidades ao registrar itens vendidos, permite entradas e saídas manuais e destaca os produtos que atingiram o estoque mínimo."
+      },
+      {
+        "name": "Cadastro de produtos",
+        "description": "Organiza nome, categoria, SKU, imagem, custo, preço de venda e estoque mínimo de cada mercadoria, exibindo também a diferença entre preço de venda e custo."
+      },
+      {
+        "name": "Cadastro de clientes",
+        "description": "Centraliza nome, contatos, endereço e observações dos clientes, com busca e edição por modal para facilitar a consulta durante uma venda."
+      },
+      {
+        "name": "Busca e organização das listas",
+        "description": "Oferece busca, paginação e ordenação nas telas de gestão, com atualizações parciais da página e preferência de ordenação mantida na sessão."
+      },
+      {
+        "name": "Acesso e perfil",
+        "description": "Oferece login com usuário ou e-mail, perfil com informações da loja, alteração de senha e fluxo de recuperação por e-mail."
+      },
+      {
+        "name": "Catálogo público opcional",
+        "description": "Quando habilitado na configuração, apresenta produtos por categorias hierárquicas, busca, ordenação, carrinho e registro de pedidos, com link para confirmar o pedido pelo WhatsApp."
+      }
+    ],
+    "highlights": [
+      "Experiência orientada ao uso real pelo celular, com navegação fixa e ações acessíveis por toque.",
+      "Vendas integradas ao estoque, com reconciliação das quantidades ao editar ou excluir uma venda.",
+      "Visão financeira que distingue faturamento, recebimento e pendências e calcula lucro sobre vendas pagas.",
+      "Busca, paginação e formulários com HTMX para atualizar trechos da interface.",
+      "Preços de venda preservados nos itens da transação e imagens de produtos otimizadas para WebP."
+    ],
+    "technologies": [
+      {
+        "name": "Python",
+        "category": "backend",
+        "purpose": "Linguagem da aplicação, das regras de negócio e da integração com o banco de dados.",
+        "version": null
+      },
+      {
+        "name": "Django",
+        "category": "backend",
+        "purpose": "Estrutura os módulos, autenticação por sessão, formulários, ORM, migrações e renderização das páginas.",
+        "version": "5.2"
+      },
+      {
+        "name": "Django Templates",
+        "category": "frontend",
+        "purpose": "Renderiza as páginas e os fragmentos de interface no servidor.",
+        "version": null
+      },
+      {
+        "name": "HTMX",
+        "category": "frontend",
+        "purpose": "Executa buscas, paginação, modais e ações com atualização parcial do HTML.",
+        "version": null
+      },
+      {
+        "name": "Tailwind CSS",
+        "category": "frontend",
+        "purpose": "Define os estilos utilitários dos cartões, formulários, navegação e temas claro e escuro, com script servido localmente.",
+        "version": null
+      },
+      {
+        "name": "Chart.js",
+        "category": "frontend",
+        "purpose": "Renderiza os dois gráficos de comparação financeira no dashboard.",
+        "version": null
+      },
+      {
+        "name": "django-widget-tweaks",
+        "category": "frontend",
+        "purpose": "Aplica classes e atributos aos campos dos formulários nos templates.",
+        "version": "1.5.1"
+      },
+      {
+        "name": "SQLite",
+        "category": "database",
+        "purpose": "Banco da configuração padrão de desenvolvimento local.",
+        "version": null
+      },
+      {
+        "name": "PostgreSQL",
+        "category": "database",
+        "purpose": "Banco previsto na configuração e na documentação do ambiente de produção, selecionado por variável de ambiente.",
+        "version": null
+      },
+      {
+        "name": "Pillow",
+        "category": "backend",
+        "purpose": "Redimensiona imagens de produtos e fotos de perfil e as converte para WebP.",
+        "version": "12.2.0"
+      },
+      {
+        "name": "Gunicorn",
+        "category": "infrastructure",
+        "purpose": "Servidor WSGI configurado para executar a aplicação no serviço de publicação.",
+        "version": null
+      },
+      {
+        "name": "WhiteNoise",
+        "category": "infrastructure",
+        "purpose": "Integra a entrega de arquivos estáticos à aplicação Django.",
+        "version": "6.12.0"
+      }
+    ],
+    "assets": {
+      "cover": {
+        "src": "cover/cover-portfolio.png",
+        "alt": "Gestor de Revendas: gestão de revendas, com painel financeiro real em notebook e vendas reais em smartphone.",
+        "width": 1920,
+        "height": 1080
+      },
+      "desktop": [
+        {
+          "src": "desktop/desktop-01.png",
+          "alt": "Painel financeiro em desktop, com faturamento, recebimentos, pendências, custo, lucro, gráfico de recebimentos e início do gráfico de custo e venda, em coluna central.",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "desktop/desktop-02.png",
+          "alt": "Gestão de vendas em desktop, com busca por cliente, filtros de pagamento, itens vendidos, valores e situação de cada venda.",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "desktop/desktop-03.png",
+          "alt": "Controle de estoque em desktop, com alerta de três produtos abaixo do mínimo, busca, ordenação e ações de entrada e saída.",
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "mobile": [
+        {
+          "src": "mobile/mobile-01.png",
+          "alt": "Painel financeiro no celular, com filtros de período, quatro indicadores, lucro líquido e início do gráfico de recebimentos.",
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "src": "mobile/mobile-02.png",
+          "alt": "Lista de vendas no celular, com filtros, clientes fictícios, itens, valores, situações de pagamento e botão de nova venda.",
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "src": "mobile/mobile-03.png",
+          "alt": "Estoque no celular, com alerta de reposição, quantidades, limites mínimos e botões para registrar entradas e saídas.",
+          "width": 1080,
+          "height": 1920
+        }
+      ]
+    },
+    "links": {
+      "demo": null,
+      "repository": null
+    }
+  }
+]

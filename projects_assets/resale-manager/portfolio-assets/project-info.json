@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "language": "pt-BR",
+  "slug": "resale-manager",
+  "name": "Gestor de Revendas",
+  "category": "Sistema de gestão de revendas",
+  "shortDescription": "Gestão de produtos, clientes, vendas e estoque, com acompanhamento financeiro pensado para o celular.",
+  "about": "O Gestor de Revendas é um sistema web desenvolvido para organizar a rotina de uma revendedora independente. Ele reúne produtos, clientes, vendas, estoque e acompanhamento financeiro em um só lugar, facilitando o registro das operações e a consulta das informações do negócio.\n\nA experiência foi pensada para o navegador do celular, por solicitação da cliente descrita na documentação do projeto. Com navegação inferior, listas em cartões e formulários acessíveis por modais, o sistema permite acompanhar o que foi vendido, os pagamentos pendentes e a necessidade de reposição durante o trabalho do dia a dia.",
+  "problem": "Informações de produtos, clientes, estoque e pagamentos dispersas entre cadernos, anotações e conversas dificultam saber o que já foi recebido, o que falta cobrar e quais mercadorias precisam de reposição.",
+  "audience": [
+    "Revendedoras e revendedores independentes",
+    "Pequenos negócios de revenda que registram suas operações pelo celular"
+  ],
+  "creationDate": {
+    "value": "2026-05-02",
+    "precision": "day",
+    "isEstimated": true
+  },
+  "features": [
+    {
+      "name": "Painel financeiro por período",
+      "description": "Apresenta faturamento, valores recebidos e a receber, custo e lucro sobre vendas pagas. Permite filtrar por mês, ano, todo o histórico ou intervalo de datas e comparar os valores em dois gráficos."
+    },
+    {
+      "name": "Gestão de vendas e pagamentos",
+      "description": "Registra cliente, produtos, quantidades, preços e forma de pagamento. Permite editar vendas, separar pagas e pendentes, marcar recebimentos e consultar um comprovante compartilhável."
+    },
+    {
+      "name": "Controle de estoque",
+      "description": "Atualiza as quantidades ao registrar itens vendidos, permite entradas e saídas manuais e destaca os produtos que atingiram o estoque mínimo."
+    },
+    {
+      "name": "Cadastro de produtos",
+      "description": "Organiza nome, categoria, SKU, imagem, custo, preço de venda e estoque mínimo de cada mercadoria, exibindo também a diferença entre preço de venda e custo."
+    },
+    {
+      "name": "Cadastro de clientes",
+      "description": "Centraliza nome, contatos, endereço e observações dos clientes, com busca e edição por modal para facilitar a consulta durante uma venda."
+    },
+    {
+      "name": "Busca e organização das listas",
+      "description": "Oferece busca, paginação e ordenação nas telas de gestão, com atualizações parciais da página e preferência de ordenação mantida na sessão."
+    },
+    {
+      "name": "Acesso e perfil",
+      "description": "Oferece login com usuário ou e-mail, perfil com informações da loja, alteração de senha e fluxo de recuperação por e-mail."
+    },
+    {
+      "name": "Catálogo público opcional",
+      "description": "Quando habilitado na configuração, apresenta produtos por categorias hierárquicas, busca, ordenação, carrinho e registro de pedidos, com link para confirmar o pedido pelo WhatsApp."
+    }
+  ],
+  "highlights": [
+    "Experiência orientada ao uso real pelo celular, com navegação fixa e ações acessíveis por toque.",
+    "Vendas integradas ao estoque, com reconciliação das quantidades ao editar ou excluir uma venda.",
+    "Visão financeira que distingue faturamento, recebimento e pendências e calcula lucro sobre vendas pagas.",
+    "Busca, paginação e formulários com HTMX para atualizar trechos da interface.",
+    "Preços de venda preservados nos itens da transação e imagens de produtos otimizadas para WebP."
+  ],
+  "technologies": [
+    {
+      "name": "Python",
+      "category": "backend",
+      "purpose": "Linguagem da aplicação, das regras de negócio e da integração com o banco de dados.",
+      "version": null
+    },
+    {
+      "name": "Django",
+      "category": "backend",
+      "purpose": "Estrutura os módulos, autenticação por sessão, formulários, ORM, migrações e renderização das páginas.",
+      "version": "5.2"
+    },
+    {
+      "name": "Django Templates",
+      "category": "frontend",
+      "purpose": "Renderiza as páginas e os fragmentos de interface no servidor.",
+      "version": null
+    },
+    {
+      "name": "HTMX",
+      "category": "frontend",
+      "purpose": "Executa buscas, paginação, modais e ações com atualização parcial do HTML.",
+      "version": null
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "frontend",
+      "purpose": "Define os estilos utilitários dos cartões, formulários, navegação e temas claro e escuro, com script servido localmente.",
+      "version": null
+    },
+    {
+      "name": "Chart.js",
+      "category": "frontend",
+      "purpose": "Renderiza os dois gráficos de comparação financeira no dashboard.",
+      "version": null
+    },
+    {
+      "name": "django-widget-tweaks",
+      "category": "frontend",
+      "purpose": "Aplica classes e atributos aos campos dos formulários nos templates.",
+      "version": "1.5.1"
+    },
+    {
+      "name": "SQLite",
+      "category": "database",
+      "purpose": "Banco da configuração padrão de desenvolvimento local.",
+      "version": null
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "database",
+      "purpose": "Banco previsto na configuração e na documentação do ambiente de produção, selecionado por variável de ambiente.",
+      "version": null
+    },
+    {
+      "name": "Pillow",
+      "category": "backend",
+      "purpose": "Redimensiona imagens de produtos e fotos de perfil e as converte para WebP.",
+      "version": "12.2.0"
+    },
+    {
+      "name": "Gunicorn",
+      "category": "infrastructure",
+      "purpose": "Servidor WSGI configurado para executar a aplicação no serviço de publicação.",
+      "version": null
+    },
+    {
+      "name": "WhiteNoise",
+      "category": "infrastructure",
+      "purpose": "Integra a entrega de arquivos estáticos à aplicação Django.",
+      "version": "6.12.0"
+    }
+  ],
+  "assets": {
+    "cover": {
+      "src": "cover/cover-portfolio.png",
+      "alt": "Gestor de Revendas: gestão de revendas, com painel financeiro real em notebook e vendas reais em smartphone.",
+      "width": 1920,
+      "height": 1080
+    },
+    "desktop": [
+      {
+        "src": "desktop/desktop-01.png",
+        "alt": "Painel financeiro em desktop, com faturamento, recebimentos, pendências, custo, lucro, gráfico de recebimentos e início do gráfico de custo e venda, em coluna central.",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "desktop/desktop-02.png",
+        "alt": "Gestão de vendas em desktop, com busca por cliente, filtros de pagamento, itens vendidos, valores e situação de cada venda.",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "desktop/desktop-03.png",
+        "alt": "Controle de estoque em desktop, com alerta de três produtos abaixo do mínimo, busca, ordenação e ações de entrada e saída.",
+        "width": 1920,
+        "height": 1080
+      }
+    ],
+    "mobile": [
+      {
+        "src": "mobile/mobile-01.png",
+        "alt": "Painel financeiro no celular, com filtros de período, quatro indicadores, lucro líquido e início do gráfico de recebimentos.",
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "src": "mobile/mobile-02.png",
+        "alt": "Lista de vendas no celular, com filtros, clientes fictícios, itens, valores, situações de pagamento e botão de nova venda.",
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "src": "mobile/mobile-03.png",
+        "alt": "Estoque no celular, com alerta de reposição, quantidades, limites mínimos e botões para registrar entradas e saídas.",
+        "width": 1080,
+        "height": 1920
+      }
+    ]
+  },
+  "links": {
+    "demo": null,
+    "repository": null
+  }
+}

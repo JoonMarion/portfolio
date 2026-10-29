@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "language": "pt-BR",
+  "slug": "articula",
+  "name": "Articula",
+  "category": "Gestão de agenda política e gabinete",
+  "shortDescription": "Agenda compartilhada para gabinetes, com compromissos, lembretes, chat e relatórios por município.",
+  "about": "O Articula é um sistema web para organizar a rotina de gabinetes políticos, mandatos e equipes de campanha. Ele reúne compromissos, participantes e informações de contexto em uma agenda compartilhada, acessível pelo computador e pelo celular.\n\nA aplicação conecta o planejamento diário ao acompanhamento da atuação da equipe. Calendário, alertas de sobreposição de horários, lembretes por diferentes canais, conversas internas e relatórios ajudam a consultar a programação e acompanhar os compromissos por cidade, tipo e status.",
+  "problem": "Centralizar uma agenda que pode ficar dispersa entre mensagens e anotações, facilitar o alinhamento da equipe e identificar sobreposições de horário antes de registrar novos compromissos.",
+  "audience": [
+    "Gabinetes políticos e equipes de assessoria",
+    "Representantes eleitos e equipes de mandato",
+    "Equipes de campanha que organizam compromissos e ações nos municípios"
+  ],
+  "creationDate": {
+    "value": "2026-05",
+    "precision": "month",
+    "isEstimated": true
+  },
+  "features": [
+    {
+      "name": "Agenda diária e calendário",
+      "description": "Consulta de compromissos do dia, grade mensal no computador e navegação semanal ou mapa de calor mensal no celular."
+    },
+    {
+      "name": "Gestão de compromissos",
+      "description": "Cadastro e edição de reuniões, audiências, eventos e visitas com horário, local, município, importância, participantes e status de realização."
+    },
+    {
+      "name": "Alertas de conflitos de horário",
+      "description": "Identifica sobreposição de horários durante o preenchimento e oferece opções para revisar ou resolver o conflito antes de salvar."
+    },
+    {
+      "name": "Participantes e permissões",
+      "description": "Organiza os usuários de cada gabinete e permite definir papéis e permissões de acesso por módulo e por pessoa."
+    },
+    {
+      "name": "Lembretes multicanal",
+      "description": "Permite configurar resumos da agenda do dia seguinte por e-mail, WhatsApp, Telegram e notificações push, conforme os canais disponíveis no plano."
+    },
+    {
+      "name": "Chat da equipe",
+      "description": "Conversas individuais e em grupo com mensagens em tempo real, indicação de leitura e compartilhamento de compromissos no plano Profissional."
+    },
+    {
+      "name": "Relatórios e exportação",
+      "description": "Apresenta indicadores de execução, gráficos por cidade, tipo, status e importância, além da evolução mensal. Inclui exportação em PDF para administradores no plano Profissional."
+    },
+    {
+      "name": "Assinaturas e recursos por plano",
+      "description": "Integra a contratação e a gestão de assinaturas ao acesso aos recursos e aos limites de usuários da equipe."
+    },
+    {
+      "name": "Aplicação instalável",
+      "description": "Oferece instalação como PWA e suporte a notificações push em navegadores e dispositivos compatíveis."
+    }
+  ],
+  "highlights": [
+    "Informações próprias da rotina política, como liderança, expectativa de voto e importância do compromisso.",
+    "Dados e participantes organizados por gabinete, com controle de acesso por papéis e permissões individuais.",
+    "Interfaces específicas para computador e celular, incluindo calendário semanal e mapa de calor mensal na versão mobile.",
+    "Planejamento, comunicação da equipe e análise dos compromissos reunidos na mesma aplicação.",
+    "Relatórios por município com visualizações dos dados e geração de PDF."
+  ],
+  "technologies": [
+    {
+      "name": "React",
+      "category": "frontend",
+      "purpose": "Construção das páginas, formulários, painéis e componentes interativos da aplicação.",
+      "version": null
+    },
+    {
+      "name": "TypeScript",
+      "category": "frontend",
+      "purpose": "Tipagem das entidades, componentes e contratos de comunicação com a API.",
+      "version": null
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "frontend",
+      "purpose": "Estilos da interface, temas claro e escuro e adaptação dos layouts aos diferentes tamanhos de tela.",
+      "version": null
+    },
+    {
+      "name": "TanStack Router e TanStack Query",
+      "category": "frontend",
+      "purpose": "Navegação entre páginas e consultas à API com cache e atualização dos dados.",
+      "version": null
+    },
+    {
+      "name": "Radix UI",
+      "category": "frontend",
+      "purpose": "Primitivos usados nos diálogos, painéis, seletores e outros controles da interface.",
+      "version": null
+    },
+    {
+      "name": "Recharts e D3 Geo",
+      "category": "frontend",
+      "purpose": "Gráficos dos relatórios e projeção geográfica dos municípios do Pará na geração do PDF.",
+      "version": null
+    },
+    {
+      "name": "jsPDF",
+      "category": "frontend",
+      "purpose": "Composição e exportação dos relatórios em PDF no navegador.",
+      "version": null
+    },
+    {
+      "name": "Vite",
+      "category": "frontend",
+      "purpose": "Servidor de desenvolvimento e geração dos arquivos do frontend para publicação.",
+      "version": null
+    },
+    {
+      "name": "Python e Django",
+      "category": "backend",
+      "purpose": "Regras de negócio, persistência de dados, autenticação, permissões e agendamento de notificações.",
+      "version": null
+    },
+    {
+      "name": "Django REST Framework e Simple JWT",
+      "category": "backend",
+      "purpose": "API REST e autenticação com tokens de acesso, renovação e controle da versão da sessão.",
+      "version": null
+    },
+    {
+      "name": "Django Channels",
+      "category": "backend",
+      "purpose": "Eventos e comunicação do chat por WebSocket, incluindo presença, leitura e digitação.",
+      "version": null
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "database",
+      "purpose": "Banco relacional previsto na configuração e nos scripts de implantação do sistema.",
+      "version": null
+    },
+    {
+      "name": "Redis",
+      "category": "infrastructure",
+      "purpose": "Cache compartilhado e distribuição de eventos do chat entre processos em produção.",
+      "version": null
+    },
+    {
+      "name": "Stripe",
+      "category": "backend",
+      "purpose": "Integração com checkout, assinaturas, alterações de plano e eventos de cobrança.",
+      "version": null
+    },
+    {
+      "name": "Resend, Telegram Bot API, Evolution API e Web Push",
+      "category": "backend",
+      "purpose": "Integrações de envio de lembretes por e-mail, Telegram, WhatsApp e notificações push.",
+      "version": null
+    },
+    {
+      "name": "Nginx, Gunicorn e Daphne",
+      "category": "infrastructure",
+      "purpose": "Serviço do frontend e encaminhamento das requisições HTTP e WebSocket na implantação documentada.",
+      "version": null
+    }
+  ],
+  "assets": {
+    "cover": {
+      "src": "cover/cover-portfolio.png",
+      "alt": "Articula — Agenda política, com o símbolo oficial e telas reais do calendário no computador e da agenda no celular.",
+      "width": 1920,
+      "height": 1080
+    },
+    "desktop": [
+      {
+        "src": "desktop/desktop-01.png",
+        "alt": "Relatórios do Articula com filtros, indicadores e gráficos de compromissos por município, tipo e status, usando dados fictícios.",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "desktop/desktop-02.png",
+        "alt": "Calendário mensal do Articula em outubro de 2026, com compromissos fictícios identificados por cores e navegação lateral.",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "desktop/desktop-03.png",
+        "alt": "Agenda diária do Articula com o painel de detalhes de uma reunião fictícia, incluindo horário, local, descrição e participantes.",
+        "width": 1920,
+        "height": 1080
+      }
+    ],
+    "mobile": [
+      {
+        "src": "mobile/mobile-01.png",
+        "alt": "Relatórios do Articula no celular, rolados até os indicadores e o gráfico de compromissos por município, com dados fictícios.",
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "src": "mobile/mobile-02.png",
+        "alt": "Calendário do Articula no celular com navegação semanal e dois compromissos fictícios do dia 29 de outubro de 2026.",
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "src": "mobile/mobile-03.png",
+        "alt": "Agenda diária responsiva do Articula com indicadores de confirmados e pendentes e dois cards de compromissos fictícios.",
+        "width": 1080,
+        "height": 1920
+      }
+    ]
+  },
+  "links": {
+    "demo": null,
+    "repository": null
+  }
+}
