@@ -19,7 +19,7 @@
 .site-shell { margin-left: 78px; overflow: clip; color: var(--text); background: var(--bg); }
 .page-container { width: min(100% - 100px, 1300px); margin-inline: auto; }
 .section { padding-block: clamp(96px, 10vw, 160px); scroll-margin-top: 20px; }
-.eyebrow, .section-heading__label, .projects-intro, .project-card__meta, .project-card__image-index, .timeline__period, .timeline__index, .about-note > span, .hero__bottom, .hero__visual-tag, .brand__name, .site-header__signal {
+.eyebrow, .section-heading__label, .projects-intro, .project-card__meta, .timeline__period, .timeline__index, .about-note > span, .hero__bottom, .hero__visual-tag, .brand__name, .site-header__signal {
     font-family: 'DM Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: .08em;
 }
 .eyebrow { display: inline-flex; align-items: center; gap: 12px; }
@@ -149,15 +149,10 @@
 .section-heading__main > p { width: min(270px, 34%); flex: none; color: var(--muted); line-height: 1.65; font-size: 14px; padding-bottom: 7px; }
 .project-card { min-width: 0; display: flex; flex-direction: column; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; transition: transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .3s, border-color .3s, opacity .6s; }
 .project-card__image { position: relative; overflow: hidden; aspect-ratio: 1.55; background: var(--surface-raised); }
-.project-card__chrome { position: relative; z-index: 1; height: 30px; display: flex; align-items: center; gap: 5px; padding: 0 11px; background: #211e1a; border-bottom: 1px solid var(--line); }
-.project-card__chrome > span { width: 6px; height: 6px; background: #6d6359; border-radius: 50%; }
-.project-card__chrome > span:first-child { background: var(--accent); }
-.project-card__chrome small { margin-left: auto; font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); }
-.project-card__image img { display: block; width: 100%; height: calc(100% - 30px); object-fit: cover; object-position: top center; transition: transform .6s; }
+.project-card__image img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform .6s; }
 .project-card__image--cover { display: block; aspect-ratio: 16/9; }
 .project-card__image--cover img { height: 100%; object-fit: contain; }
 .project-carousel__slot.is-active .project-card:hover .project-card__image img { transform: scale(1.035); }
-.project-card__image-index { position: absolute; top: 46px; left: 16px; padding: 7px 9px; color: var(--text); background: rgb(14 12 10 / 88%); border: 1px solid rgb(var(--accent-rgb) / 28%); border-radius: 5px; font-size: 10px; }
 .project-card__image-arrow { position: absolute; right: 18px; bottom: 18px; width: 42px; height: 42px; display: grid; place-items: center; color: var(--on-accent); background: var(--accent-fill); border-radius: 11px; font-size: 21px; }
 .project-card__body { display: flex; flex-direction: column; flex: 1; padding: 25px 26px 27px; }
 .project-card__meta { display: flex; justify-content: space-between; gap: 16px; color: var(--muted); text-transform: uppercase; font-size: 10px; }
@@ -191,8 +186,6 @@
 .project-carousel__slot:not(.is-active) .project-card { pointer-events: none; }
 .project-carousel__slot .project-card { width: 100%; height: 100%; border-color: var(--carousel-line); box-shadow: none; }
 .project-carousel__slot.is-active .project-card { border-color: var(--carousel-line-active); }
-.project-carousel__slot .project-card__chrome { border-bottom-color: var(--carousel-line); }
-.project-carousel__slot .project-card__image-index { border-color: var(--carousel-line-active); }
 .project-carousel__slot .project-card__tags span { border-color: var(--carousel-line); }
 .project-carousel__slot .project-card__image { height: auto; flex: none; aspect-ratio: 16/9; }
 .project-carousel__slot .project-card__body { min-height: 0; padding: 20px 24px 22px; }
@@ -351,7 +344,7 @@
     .project-card__image { aspect-ratio: 1.55; }
     .project-card__body { padding: 20px 20px 23px; }
     .project-card h3 { font-size: 28px; }
-    .project-card__footer { flex-wrap: wrap; align-items: center; gap: 12px; top: 17px; }
+    .project-card__footer { align-items: center; }
     .experience-layout { grid-template-columns: 1fr; gap: 47px; }
     .experience-aside > p { max-width: 500px; font-size: 28px; }
     .timeline__item { grid-template-columns: 26px 1fr 18px; gap: 14px; }
